@@ -1,7 +1,7 @@
 import  { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
-
+import backgroundglobal from "../assets/backgroundglobal.jpg";
 const words = ["indices", "crypto", "commodities", "shares", "options", "ETFs"];
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
         <div
           className="relative bg-cover bg-center text-white"
           style={{
-            backgroundImage: `url('https://www.investopedia.com/thmb/VdMCkGC3UVkdzGb_hyvYNkDRiyQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1153657433_2600-573e917e27f9442eb87ac10f45ce43ea.jpg')`,
+            backgroundImage: `url(${backgroundglobal})`,
             height: "75vh",
           }}
         >
