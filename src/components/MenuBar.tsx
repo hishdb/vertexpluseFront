@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
 import logo from "../assets/vertexpluse.png";
@@ -9,9 +9,11 @@ type MenuItem = {
   href: string;
 };
 
-function MenuBar () {
+function MenuBar() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [backgroundOpacity, setBackgroundOpacity] = useState(1);
+  const [isScrolled, setIsScrolled] = useState(false); // New state for scroll tracking
 
   const handleMenuHover = (menu: string | null) => {
     setActiveMenu(menu);
@@ -24,6 +26,23 @@ function MenuBar () {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = 200;
+      const newOpacity = Math.max(0.85, 1 - scrollTop / maxScroll);
+      setBackgroundOpacity(newOpacity);
+
+      // Add or remove the scroll indicator
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const marketItems: MenuItem[] = [
     { label: "Crypto", href: "/crypto" },
@@ -66,36 +85,38 @@ function MenuBar () {
   ];
 
   return (
-    <nav className="bg-white text-blue-900 py-4 px-6 relative">
-      <div className="flex justify-center items-center space-x-60">
-       
-
-        {/* Mobile Menu Toggle */}
-        <div className="flex  space-x-20">
-  {/* Logo */}
-  <Link to="/" className="font-bold text-xl">
-    <img
-      src={logo}
-      alt="Logo"
-      className="h-10 md:h-12" // Adjust height for mobile and desktop
-    />
-  </Link>
-
-  {/* Mobile Menu Toggle */}
-  <div className="flex items-center space-x-2 md:hidden">
-    <button className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 mr-4 text-sm font-semibold rounded">
-      Trade
-    </button>
-    <button
-      className="text-blue-900 hover:text-blue-600 focus:outline-none"
-      onClick={toggleMenu}
+    <nav
+      className={`bg-white text-blue-900 py-4 px-6 fixed top-0 left-0 w-full z-50 shadow-md transition-opacity duration-300 ${
+        isScrolled ? "rounded-b-2xl" : ""
+      }`} 
+      style={{
+        backgroundColor: `rgba(255, 255, 255, ${backgroundOpacity})`,
+      }}
     >
-      {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-    </button>
-  </div>
-</div>
+      <div className="flex justify-center items-center space-x-60">
+        <div className="flex space-x-20">
+          {/* Logo */}
+          <Link to="/" className="font-bold text-xl">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-10 md:h-12"
+            />
+          </Link>
 
-
+          {/* Mobile Menu Toggle */}
+          <div className="flex items-center space-x-2 md:hidden">
+            <button className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 mr-4 text-sm font-semibold rounded">
+              Trade
+            </button>
+            <button
+              className="text-blue-900 hover:text-blue-600 focus:outline-none"
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex md:items-center md:space-x-6">
@@ -123,59 +144,56 @@ function MenuBar () {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        
-  <div className="md:hidden bg-blue-900 text-white fixed inset-0 z-50 flex flex-col">
-    <div className="flex items-center justify-between p-4">
-   
+        <div className="md:hidden bg-blue-900 text-white h-screen overflow-y-auto fixed inset-0 z-50 flex flex-col">
+          <div className="flex items-center justify-between p-4">
+            {/* Close Button */}
+            <button className="self-end text-xl text-white" onClick={toggleMenu}>
+              <FaTimes />
+            </button>
+          </div>
 
-      {/* Close Button */}
-      <button
-        className="self-end text-xl text-white"
-        onClick={toggleMenu}
-      >
-        <FaTimes />
-      </button>
-    </div>
-
-    {/* Mobile Menu Content */}
-    <div className="flex-grow p-6">
-      {categories.map((category) => (
-        <div key={category.label} className="mb-4">
-          <button
-            className={`flex justify-between items-center w-full text-left text-lg font-semibold ${
-              activeMenu === category.label ? "text-blue-300" : "text-white"
-            }`}
-            onClick={() =>
-              setActiveMenu(activeMenu === category.label ? null : category.label)
-            }
-          >
-            {category.label}
-            
-            <ArrowDropDownIcon />
-          </button>
-          {activeMenu === category.label && (
-            <ul className="mt-2 space-y-2 pl-4">
-              {category.items.map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.href}
-                    className="block hover:text-blue-300"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+          {/* Mobile Menu Content */}
+          <div className="flex-grow p-6">
+            {categories.map((category) => (
+              <div key={category.label} className="mb-4">
+                <button
+                  className={`flex justify-between items-center w-full text-left text-lg font-semibold ${
+                    activeMenu === category.label
+                      ? "text-blue-300"
+                      : "text-white"
+                  }`}
+                  onClick={() =>
+                    setActiveMenu(
+                      activeMenu === category.label ? null : category.label
+                    )
+                  }
+                >
+                  {category.label}
+                  <ArrowDropDownIcon />
+                </button>
+                {activeMenu === category.label && (
+                  <ul className="mt-2 space-y-2 pl-4">
+                    {category.items.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          href={item.href}
+                          className="block hover:text-blue-300"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-)}
-
+      )}
     </nav>
   );
-};
+}
+
 
 interface MenuLinkProps {
   label: string;

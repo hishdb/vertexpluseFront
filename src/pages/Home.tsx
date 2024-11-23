@@ -31,7 +31,7 @@ function Home() {
           className="relative bg-cover bg-center text-white"
           style={{
             backgroundImage: `url(${backgroundglobal})`,
-            height: "75vh",
+            height: "82vh",
           }}
         >
           {/* Overlay for contrast */}
