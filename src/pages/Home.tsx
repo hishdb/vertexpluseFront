@@ -5,7 +5,7 @@ import MenuBar from "../components/MenuBar";
 import backgroundglobal from "../assets/backgroundglobal.jpg";
 import shapeImage1 from "../assets/shapeObject1.png";
 import shapeImage2 from "../assets/shapeObject2.png";
-import shapeImage3 from "../assets/shapeObject3.png";
+
 
 const words = ["indices", "crypto", "commodities", "shares", "options", "ETFs"];
 
