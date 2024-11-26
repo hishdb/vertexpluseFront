@@ -137,7 +137,7 @@ type MarketData = {
   
 function GlobalMarketsSection ()  {
   const [activeTab, setActiveTab] = useState<TabID>('crypto');
-  const [isVisible, setIsVisible] = useState(false);
+  const [, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const marketListRef = useRef<HTMLDivElement>(null);
 
