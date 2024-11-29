@@ -176,7 +176,7 @@ function GlobalMarketsSection ()  {
 
 
   return (
-    <div ref={sectionRef} className="relative bg-white min-h-screen w-full py-12 px-6 md:px-16 overflow-hidden ">
+    <div ref={sectionRef} className="relative bg-trasnparent min-h-screen w-full overflow-hidden ">
     <div className="absolute left-0 top-44 h-full w-full pointer-events-none">
       {/* First background element with original animation */}
       <motion.div
@@ -207,7 +207,7 @@ function GlobalMarketsSection ()  {
               x="160"
               y="20"
               width="850"
-              height="400"
+              height="350"
               rx="16"
               ry="16"
               className="fill-blue-900/20"
@@ -217,7 +217,7 @@ function GlobalMarketsSection ()  {
               x="180"
               y="40"
               width="850"
-              height="400"
+              height="350"
               rx="16"
               ry="16"
               className="fill-blue-900"

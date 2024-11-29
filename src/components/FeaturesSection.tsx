@@ -12,8 +12,8 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center bg-white">
-      <div className=" px-6 md:px-16 bg-white">
+    <section className="flex items-center justify-center bg-transparent pt-40">
+      <div className=" px-6 md:px-16">
             <ul className="space-y-10 pb-20">
                 {features.map((feature, index) => (
                 <li

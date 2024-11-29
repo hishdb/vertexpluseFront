@@ -70,7 +70,7 @@ function CoverAnimation ()  {
       <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
         <motion.div
           style={{ y: springY1 }}
-          className="absolute left-24 top-1/4 w-32 h-32 opacity-60"
+          className="absolute left-0 top-4 w-48 h-48 opacity-60"
         >
           <img src={shapeImage2} alt="Shape Image 4" className="rotate-[40deg]" />
         </motion.div>
@@ -84,22 +84,22 @@ function CoverAnimation ()  {
 
         <motion.div
           style={{ y: springY3 }}
-          className="absolute left-8 bottom-1/3 w-16 h-16 opacity-30"
+          className="absolute left-8 bottom-1/2 w-16 h-16 opacity-30"
         >
           <img src={shapeImage2} alt="Shape Image 4" className="rotate-[240deg]" />
         </motion.div>
       </div>
 
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-6 md:px-16">
+       <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-6 md:px-10">
         {/* Left Section: Text and Buttons */}
         <div className="w-full h-full flex justify-center items-center">
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6">
+          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 ">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-7xl font-bold leading-tight md:leading-snug tracking-normal"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium leading-tight md:leading-snug tracking-wide"
             >
               IT'S TRADING <br />
               <span className="text-blue-300">WITH A PLUS</span>
@@ -125,7 +125,7 @@ function CoverAnimation ()  {
             >
               <motion.button
                 animate={controls}
-                className="relative overflow-hidden bg-blue-500 text-white font-semibold px-8 md:px-14 py-3 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600"
+                className="relative overflow-hidden bg-blue-500 text-white font-semibold px-16 py-3 rounded-lg transition-colors duration-300 hover:bg-blue-600"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -134,7 +134,7 @@ function CoverAnimation ()  {
               </motion.button>
 
               <motion.button
-                className="relative overflow-hidden bg-transparent text-white border-2 border-white font-semibold px-8 md:px-14 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500 group"
+                className="relative overflow-hidden bg-transparent text-white border-2 border-white font-semibold px-16 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500 group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -145,7 +145,6 @@ function CoverAnimation ()  {
           </div>
         </div>
 
-        {/* Right Section: Image */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}

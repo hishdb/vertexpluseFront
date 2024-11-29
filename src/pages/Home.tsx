@@ -4,17 +4,18 @@ import GlobalMarketsSection from "../components/GlobalMarketsSection";
 import CoverAnimation from "../components/CoverAnimation";
 import FeaturesSection from "../components/FeaturesSection";
 import InsightsIntroductionSection from "../components/InsightsIntroductionSection";
-
+import PlusInfoUsersNumberSection from "../components/PlusInfoUsersNumberSection";
+import WhyVertexPluse from "../components/WhyVertexpluse";
+import PaymentMethodsSection from "../components/PaymentMethodsSection";
+import TradingSlider from "../components/TradingSlider";
 
 
 function Home() {
-
-
   return (
   <div className="flex flex-col min-h-screen">
   <MenuBar />
   
-  <main className="flex-grow">
+  <main className="flex-grow ">
 
     <CoverAnimation/>  
     {/* Black Bar */}
@@ -35,6 +36,12 @@ function Home() {
      <GlobalMarketsSection/>
      <FeaturesSection/>
      <InsightsIntroductionSection/>
+     <PlusInfoUsersNumberSection/>
+     <WhyVertexPluse/>
+     <PaymentMethodsSection/>
+     
+     <TradingSlider/>
+    
   </main>
   <Footer />
 </div>

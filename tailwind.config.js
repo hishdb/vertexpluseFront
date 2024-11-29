@@ -4,6 +4,9 @@ export default {
   
   theme: {
     extend: {
+      rotate: {
+        '20': '20deg',
+      },
       keyframes: {
         slideFadeIn: {
           '0%': {
