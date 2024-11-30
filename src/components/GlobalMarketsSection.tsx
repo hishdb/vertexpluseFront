@@ -207,7 +207,7 @@ function GlobalMarketsSection ()  {
             x="160"
             y="20"
             width="850"
-            height="350"
+            height="450"
             rx="16"
             ry="16"
             className="fill-blue-900/20"
@@ -217,7 +217,7 @@ function GlobalMarketsSection ()  {
             x="180"
             y="40"
             width="850"
-            height="350"
+            height="450"
             rx="16"
             ry="16"
             className="fill-blue-900"
@@ -229,8 +229,8 @@ function GlobalMarketsSection ()  {
     {/* Content */}
     <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto h-full px-4 sm:px-8 lg:px-12">
       {/* Left Content */}
-      <div className="text-white w-full md:w-1/2 space-y-6 px-4 sm:px-6 lg:px-8 mt-24 md:mt-0">
-        <h2 className="text-2xl sm:text-3xl lg:text-5xl leading-snug lg:leading-normal">
+      <div className="text-white w-full md:w-1/2 space-y-6 px-4 sm:px-6 lg:px-8 mt-32 md:mt-0">
+        <h2 className="text-xl sm:text-2xl lg:text-4xl leading-snug lg:leading-normal">
           A world of opportunities with <br />
           <span className="text-blue-400 font-bold">GLOBAL MARKETS</span>
         </h2>
