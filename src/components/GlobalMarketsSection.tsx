@@ -200,7 +200,7 @@ function GlobalMarketsSection ()  {
       <svg 
         viewBox="0 0 1200 600" 
         className="w-full h-[100vh]"
-        preserveAspectRatio="xMidYMid slice"
+        preserveAspectRatio="xMidYMin slice"
       >
         <g transform="rotate(4, 300, 300)">
           <rect
