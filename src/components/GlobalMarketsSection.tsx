@@ -207,7 +207,7 @@ function GlobalMarketsSection ()  {
             x="160"
             y="20"
             width="850"
-            height="450"
+            height="400"
             rx="16"
             ry="16"
             className="fill-blue-900/20"
@@ -217,7 +217,7 @@ function GlobalMarketsSection ()  {
             x="180"
             y="40"
             width="850"
-            height="450"
+            height="400"
             rx="16"
             ry="16"
             className="fill-blue-900"
@@ -234,7 +234,7 @@ function GlobalMarketsSection ()  {
           A world of opportunities with <br />
           <span className="text-blue-400 font-bold">GLOBAL MARKETS</span>
         </h2>
-        <p className="text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed opacity-90">
+        <p className="text-lg sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90">
           Discover thousands of CFDs on the world's most popular financial
           instruments and get free real-time quotes to explore endless trading
           opportunities.
