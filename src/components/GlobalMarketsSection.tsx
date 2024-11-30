@@ -176,7 +176,7 @@ function GlobalMarketsSection ()  {
 
 
   return (
-    <div ref={sectionRef} className="relative bg-transparent min-h-fit w-full overflow-hidden">
+    <div ref={sectionRef} className="relative bg-transparent min-h-min w-full overflow-hidden">
     <div className="absolute left-0 top-44 h-full w-full pointer-events-none">
       {/* First background element */}
       <motion.div
