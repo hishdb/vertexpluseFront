@@ -176,7 +176,7 @@ function GlobalMarketsSection ()  {
 
 
   return (
-    <div ref={sectionRef} className="relative bg-transparent min-h-screen w-full overflow-hidden">
+    <div ref={sectionRef} className="relative bg-transparent min-h-fit w-full overflow-hidden">
     <div className="absolute left-0 top-44 h-full w-full pointer-events-none">
       {/* First background element */}
       <motion.div
@@ -249,7 +249,7 @@ function GlobalMarketsSection ()  {
         scale: springScale,
         y: springY,
       }}
-      className="w-full md:w-[500px] lg:w-[550px] bg-white rounded-3xl shadow-2xl p-4 md:p-6 lg:p-6 mt-10 md:mt-0"
+      className="w-full md:w-[500px] lg:w-[550px] bg-white rounded-3xl shadow-2xl p-4 md:p-6 lg:p-6 mt-10 md:mt-0 mb-60"
     >
       {/* Tab Navigation */}
       <div className="flex items-center justify-between mb-6 md:mb-8 bg-gray-50/80 rounded-2xl p-2">
