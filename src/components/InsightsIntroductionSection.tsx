@@ -45,32 +45,34 @@ function InsightsIntroductionSection ()  {
    
       {/* Content */}
       <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto h-full  ">
-      {/* Left Content */}
-      <div className="text-white w-full md:w-1/2 space-y-8 md:space-y-10 lg:space-y-14 px-4 md:px-6 lg:px-8 mt-32 md:mt-0">
-      <span className="text-sky-500 text-3xl sm:text-4xl lg:text-5xl font-bold flex items-center space-x-2">
-        Introducing: <InsightsIcon style={{ fontSize: '2.5rem' }} />
-        <span>+Insights</span>
-      </span>
-      <ul className="space-y-4 md:space-y-6 lg:space-y-8 pb-10 md:pb-14">
-        {features.map((feature, index) => (
-          <li
-            key={index}
-            className="flex items-center space-x-4 md:space-x-6 lg:space-x-8"
-          >
-            <img
-              src={itemListIconWhite}
-              width="24px"
-              height="24px"
-              className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
-              alt="Icon"
-            />
-            <p className="text-white font-normal text-md md:text-lg lg:text-xl">
-              {feature}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
+        {/* Left Content */}
+        <div className="text-white w-full md:w-1/2 space-y-14 p-8 mt-32 md:mt-0">
+                
+                <span className="text-sky-500 text-5xl font-bold">Introducing:  <InsightsIcon style={{ fontSize: '3.5rem' }}/> +Insights</span>
+              
+                <ul className="space-y-6 pb-20">
+                      {features.map((feature, index) => (
+                      <li
+                      key={index}
+                      className="flex items-center space-x-8" // Use flex and items-center for vertical alignment
+                      >
+                      <img
+                          src={itemListIconWhite}
+                          width="28px"
+                          height="28px"
+                          className="flex-shrink-0" // Prevent the image from shrinking
+                      />
+                      <p className="text-white font-normal text-sm md:text-lg lg:text-xl">
+                        
+                          {feature}
+                          
+                      </p>
+                      </li>
+                  ))}
+              </ul>
+            </div>
+
+
 
 
       {/* Right Content: two images - Centered and Responsive */}
