@@ -176,7 +176,7 @@ function GlobalMarketsSection ()  {
 
 
   return (
-    <div ref={sectionRef} className="relative bg-transparent min-h-min w-full overflow-hidden">
+    <div ref={sectionRef} className="relative bg-transparent min-h-screen w-full overflow-hidden">
     <div className="absolute left-0 top-44 h-full w-full pointer-events-none">
       {/* First background element */}
       <motion.div
@@ -200,7 +200,7 @@ function GlobalMarketsSection ()  {
       <svg 
         viewBox="0 0 1200 600" 
         className="w-full h-[100vh]"
-        preserveAspectRatio="xMidYMin slice"
+        preserveAspectRatio="xMidYMid slice"
       >
         <g transform="rotate(4, 300, 300)">
           <rect
@@ -227,88 +227,89 @@ function GlobalMarketsSection ()  {
     </div>
   
    
-  {/* Content */}
-  <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto h-full px-4 sm:px-8 lg:px-12">
-    {/* Left Content */}
-    <div className="text-white w-full md:w-1/2 space-y-6 px-4 sm:px-6 lg:px-8 mt-32 md:mt-0">
-      <h2 className="text-xl sm:text-2xl lg:text-4xl leading-snug lg:leading-normal">
-        A world of opportunities with <br />
-        <span className="text-blue-400 font-bold">GLOBAL MARKETS</span>
-      </h2>
-      <p className="text-lg sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90">
-        Discover thousands of CFDs on the world's most popular financial
-        instruments and get free real-time quotes to explore endless trading
-        opportunities.
-      </p>
+{/* Content */}
+<div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto h-full px-0 pt-28 sm:px-8 lg:px-12">
+  {/* Left Content */}
+  <div className="order-1 md:order-none text-white w-full md:w-1/2 space-y-6 px-4 sm:px-6 lg:px-8 ">
+    <h2 className="text-xl sm:text-2xl lg:text-4xl leading-snug lg:leading-normal">
+      A world of opportunities with <br />
+      <span className="text-blue-400 font-bold">GLOBAL MARKETS</span>
+    </h2>
+    <p className="text-lg sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90">
+      Discover thousands of CFDs on the world's most popular financial
+      instruments and get free real-time quotes to explore endless trading
+      opportunities.
+    </p>
+  </div>
+
+  {/* Right Content: Market List */}
+  <motion.div
+    ref={marketListRef}
+    style={{
+      scale: springScale,
+      y: springY,
+    }}
+    className="order-2 w-full md:w-[500px] lg:w-[550px] bg-white rounded-3xl shadow-2xl p-4 md:p-6 lg:p-6 mt-10 md:mt-0"
+  >
+    {/* Tab Navigation */}
+    <div className="flex items-center justify-between mb-6 md:mb-8 bg-gray-50/80 rounded-2xl p-2">
+      {tabs.map((tab) => (
+        <motion.button
+          key={tab.id}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setActiveTab(tab.id)}
+          className={`relative w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200
+            ${
+              tab.id === activeTab
+                ? "bg-white text-blue-500 shadow-lg transform scale-110"
+                : "text-gray-400 hover:text-blue-400"
+            }`}
+        >
+          {tab.icon}
+        </motion.button>
+      ))}
     </div>
 
-    {/* Right Content: Market List */}
-    <motion.div
-      ref={marketListRef}
-      style={{
-        scale: springScale,
-        y: springY,
-      }}
-      className="w-full md:w-[500px] lg:w-[550px] bg-white rounded-3xl shadow-2xl p-4 md:p-6 lg:p-6 mt-10 md:mt-0 mb-60"
-    >
-      {/* Tab Navigation */}
-      <div className="flex items-center justify-between mb-6 md:mb-8 bg-gray-50/80 rounded-2xl p-2">
-        {tabs.map((tab) => (
-          <motion.button
-            key={tab.id}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => setActiveTab(tab.id)}
-            className={`relative w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200
-              ${
-                tab.id === activeTab
-                  ? "bg-white text-blue-500 shadow-lg transform scale-110"
-                  : "text-gray-400 hover:text-blue-400"
+    {/* Market Items */}
+    <div className="space-y-2">
+      {marketData[activeTab]?.map((item, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.1 }}
+          className="flex items-center justify-between p-1 hover:bg-gray-50 rounded-xl transition-colors duration-200"
+        >
+          <div className="flex items-center gap-4">
+            <div
+              className={`w-10 h-10 ${item.color} rounded-xl flex items-center justify-center text-white font-medium shadow-sm`}
+            >
+              {item.icon}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-gray-900 font-medium">{item.name}</span>
+              <span className="text-gray-500">${item.price}</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <span
+              className={`font-medium ${
+                item.positive ? "text-green-500" : "text-red-500"
               }`}
-          >
-            {tab.icon}
-          </motion.button>
-        ))}
-      </div>
+            >
+              {item.change}
+            </span>
+            <button className="px-4 py-1.5 text-sm border border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200">
+              Trade
+            </button>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </motion.div>
+</div>
 
-      {/* Market Items */}
-      <div className="space-y-2">
-        {marketData[activeTab]?.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="flex items-center justify-between p-1 hover:bg-gray-50 rounded-xl transition-colors duration-200"
-          >
-            <div className="flex items-center gap-4">
-              <div
-                className={`w-10 h-10 ${item.color} rounded-xl flex items-center justify-center text-white font-medium shadow-sm`}
-              >
-                {item.icon}
-              </div>
-              <div className="flex flex-col">
-                <span className="text-gray-900 font-medium">{item.name}</span>
-                <span className="text-gray-500">${item.price}</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span
-                className={`font-medium ${
-                  item.positive ? "text-green-500" : "text-red-500"
-                }`}
-              >
-                {item.change}
-              </span>
-              <button className="px-4 py-1.5 text-sm border border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200">
-                Trade
-              </button>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </motion.div>
-  </div>
   </div>  
   );
 };

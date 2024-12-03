@@ -33,7 +33,7 @@ function WhyVertexPluse() {
   ];
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden mt-40">
       {/* Decorative Background */}
       <div className="absolute inset-0 z-0 ">
         <svg
@@ -46,7 +46,7 @@ function WhyVertexPluse() {
               x="160"
               y="20"
               width="850"
-              height="400"
+              height="450"
               rx="16"
               ry="16"
               className="fill-blue-900/20"
@@ -56,7 +56,7 @@ function WhyVertexPluse() {
               x="180"
               y="40"
               width="850"
-              height="400"
+              height="450"
               rx="16"
               ry="16"
               className="fill-blue-900"

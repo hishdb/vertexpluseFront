@@ -8,7 +8,9 @@ import PlusInfoUsersNumberSection from "../components/PlusInfoUsersNumberSection
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
 import TradingSlider from "../components/TradingSlider";
-
+import TradeSmarterSection from "../components/TradeSmarterSection"
+import WeSponsor from "../components/weSponsor";
+import VertexPluse3decorativebg from "../components/vertexPluse3decorativebg";
 
 function Home() {
   return (
@@ -39,9 +41,10 @@ function Home() {
      <PlusInfoUsersNumberSection/>
      <WhyVertexPluse/>
      <PaymentMethodsSection/>
-     
      <TradingSlider/>
-    
+     <TradeSmarterSection/>
+     <WeSponsor/>
+     <VertexPluse3decorativebg/>
   </main>
   <Footer />
 </div>

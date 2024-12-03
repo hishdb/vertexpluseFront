@@ -78,7 +78,7 @@ function InsightsIntroductionSection ()  {
       {/* Right Content: two images - Centered and Responsive */}
       <div className="flex mb-8 mt-10 relative">
         <motion.div
-          className="relative -right-0 transform shadow-2xl rounded-full sm:-right-20 md:-right-40 lg:-right-48 w-2/3  sm:w-1/2 md:w-[60%] lg:w-[80%]"
+          className="relative -right-0 transform shadow-2xl rounded-full sm:-right-20 md:-right-40 lg:-right-48  w-2/3 sm:w-1/2 md:w-[60%] lg:w-[80%]"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0.3 }}
           viewport={{ once: true }}
@@ -87,7 +87,7 @@ function InsightsIntroductionSection ()  {
           <img src={instrumentScreen2} />
         </motion.div>
         <motion.div
-          className="absolute w-full shadow-2xl rounded-full right-16 sm:-right-20 md:-right-44 lg:-right-72     w-2/3 sm:w-1/2 md:w-[60%] lg:w-[80%]"
+          className="absolute  shadow-2xl rounded-full right-16 sm:-right-20 md:-right-44 lg:-right-72   w-2/3 sm:w-1/2 md:w-[60%] lg:w-[80%]"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0.3, rotate: ['0deg', '14deg'] }}
           viewport={{ once: true }}
