@@ -9,8 +9,8 @@ import WhyVertexPluse from "../components/WhyVertexpluse";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
 import TradingSlider from "../components/TradingSlider";
 import TradeSmarterSection from "../components/TradeSmarterSection"
-import WeSponsor from "../components/weSponsor";
-import VertexPluse3decorativebg from "../components/vertexPluse3decorativebg";
+import WeSponsor from "../components/WeSponsor";
+import VertexPluse3decorativebg from "../components/VertexPluse3decorativebg";
 
 function Home() {
   return (
