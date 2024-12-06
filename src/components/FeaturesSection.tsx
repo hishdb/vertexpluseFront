@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 import itemListIcon from "../assets/itemListIcon.png";
+import { useTranslation } from "react-i18next";
 
-const FeaturesSection = () => {
+function FeaturesSection () {
+  const {t} = useTranslation();
   const features = [
-    "Fast and reliable order execution",
-    "No commissions and tight spreads",
-    "Advanced analytical tools",
-    "Leverage of up to 1:300",
-    "Real-time quotes",
-    "Fast and secure withdrawals",
+    t("FastAndReliableOrderExecution"),
+    t("NoCommissionsAndTightSpreads"),
+    t("AdvancedAnalyticalTools"),
+    t("LeverageOfUpTo1_300"),
+    t("RealTimeQuotes"),
+    t("FastAndSecureWithdrawals"),
   ];
 
   return (
@@ -33,9 +35,9 @@ const FeaturesSection = () => {
                         href="#"
                         className="text-blue-500 underline hover:no-underline font-normal text-md sm:text-2xl"
                         >
-                        No commissions
+                        {t("NoCommissions")}
                         </a>{" "}
-                        and tight spreads
+                        {t("AndTightSpreads")}
                     </>
                     ) : (
                     feature
@@ -55,7 +57,7 @@ const FeaturesSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         >
-            <span className="relative z-10">Explore Markets</span>
+            <span className="relative z-10">{t("ExploreMarkets")}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
         </motion.button>
 
@@ -64,7 +66,7 @@ const FeaturesSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         >
-            <span className="relative z-10">Market News</span>
+            <span className="relative z-10">{t("MarketNews")}</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
         </motion.button>
         </motion.div>

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/vertexpluse.png";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 type MenuItem = {
   label: string;
@@ -62,45 +64,45 @@ const MenuBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [backgroundOpacity, setBackgroundOpacity] = useState(1);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const {t} = useTranslation();
   const marketItems: MenuItem[] = [
-    { label: "Crypto", href: "/crypto" },
-    { label: "Indices", href: "/indices" },
-    { label: "Forex", href: "/forex" },
-    { label: "Commodities", href: "/commodities" },
-    { label: "Shares", href: "/shares" },
-    { label: "Options", href: "/options" },
-    { label: "ETFs", href: "/etfs" },
-    { label: "All Markets", href: "/all-markets" },
+    { label: t("Crypto"), href: "/crypto" },
+    { label: t("Indices"), href: "/indices" },
+    { label: t("Forex"), href: "/forex" },
+    { label: t("Commodities"), href: "/commodities" },
+    { label: t("Shares"), href: "/shares" },
+    { label: t("Options"), href: "/options" },
+    { label: t("ETFs"), href: "/etfs" },
+    { label: t("All Markets"), href: "/all-markets" },
   ];
 
   const tradingItems: MenuItem[] = [
-    { label: "About Us", href: "/About Us" },
-    { label: "Affiliate", href: "/Affiliate" },
-    { label: "Investor Relations", href: "/Investor Relations" },
-    { label: "Cookies & Privacy", href: "/CookiesPrivacy" },
+    { label: t("About Us"), href: "/About Us" },
+    { label: t("Affiliate"), href: "/Affiliate" },
+    { label: t("Investor Relations"), href: "/Investor Relations" },
+    { label: t("Cookies & Privacy"), href: "/CookiesPrivacy" },
   ];
 
   const companyItems: MenuItem[] = [
-    { label: "Premium Service", href: "/PremiumService" },
-    { label: "Fees & Charges", href: "/FeesCharges" },
-    { label: "ESG", href: "/ESG" },
+    { label: t("Premium Service"), href: "/PremiumService" },
+    { label: t("Fees & Charges"), href: "/FeesCharges" },
+    { label: t("ESG"), href: "/ESG" },
   ];
 
   const educationItems: MenuItem[] = [
-    { label: "Trading Academy", href: "/TradingAcademy" },
-    { label: "News & Market Insights", href: "/NewsMarketInsights" },
-    { label: "+Insights", href: "/Insights" },
-    { label: "Economic Calendar", href: "/EconomicCalendar" },
-    { label: "Risk Management", href: "/RiskManagement" },
-    { label: "Alerts", href: "/Alerts" },
+    { label: t("Trading Academy"), href: "/TradingAcademy" },
+    { label: t("News & Market Insights"), href: "/NewsMarketInsights" },
+    { label: t("+Insights"), href: "/Insights" },
+    { label: t("Economic Calendar"), href: "/EconomicCalendar" },
+    { label: t("Risk Management"), href: "/RiskManagement" },
+    { label: t("Alerts"), href: "/Alerts" },
   ];
 
   const categories = [
-    { label: "Markets", items: marketItems },
-    { label: "Trading", items: tradingItems },
-    { label: "Company", items: companyItems },
-    { label: "Education", items: educationItems },
+    { label: t("Markets"), items: marketItems },
+    { label: t("Trading"), items: tradingItems },
+    { label: t("Company"), items: companyItems },
+    { label: t("Education"), items: educationItems },
   ];
 
   const handleMenuHover = (menu: string | null) => {
@@ -149,11 +151,11 @@ const MenuBar: React.FC = () => {
               className="h-8 md:h-10 lg:h-12"
             />
           </Link>
-
+          <LanguageSwitcher />
           {/* Mobile Menu Toggle */}
           <div className="flex items-center space-x-2 md:hidden">
             <button className="bg-blue-600 text-white hover:bg-blue-700 px-3 py-1 mr-2 text-xs font-semibold rounded">
-              Trade
+              {t("Trade")}
             </button>
             <button
               className="text-blue-900 hover:text-blue-600 focus:outline-none"
@@ -181,10 +183,10 @@ const MenuBar: React.FC = () => {
           </div>
           <div className="flex items-center space-x-2 lg:space-x-4">
             <button className="px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold text-blue-700 hover:text-blue-500">
-              Login
+              {t("Login")}
             </button>
             <button className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded">
-              Start Trading
+            {t("StartTrading")}
             </button>
           </div>
         </div>

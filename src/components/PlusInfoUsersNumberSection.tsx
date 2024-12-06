@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const PlusInfoUsersNumberSection = () => {
-  const words = ["26+ Million", "2800*"];
-  const words2 = ["Registered Customers", "Instruments*"];
-  const words3 = ["50+", "300+ Million"];
-  const words4 = ["Countries", "Positions Opened"];
+  const { t } = useTranslation();
+  const words = [t("26+Million"), t("2800*")];
+  const words2 = [t("RegisteredCustomers"), t("Instruments*")];
+  const words3 = [t("50+"), t("300+Million")];
+  const words4 = [t("Countries"), t("PositionsOpened")];  
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -56,10 +58,10 @@ const PlusInfoUsersNumberSection = () => {
       <div className="relative z-10 flex flex-col items-center space-y-8">
         {/* Top Section */}
         <h3 className="text-blue-900 text-center text-lg md:text-xl lg:text-2xl font-medium max-w-2xl">
-          Join over{" "}
-          <span className="text-blue-500 font-medium">26 million </span>
+          {t("JoinOver")}{" "}
+          <span className="text-blue-500 font-medium">{t("26million")} </span>
           <span className="font-normal">
-            worldwide who have already chosen the Plus500 Group
+            {t("WorldwideWhoHaveAlreadyChosenThePlus500Group")}
           </span>
         </h3>
 
@@ -107,12 +109,12 @@ const PlusInfoUsersNumberSection = () => {
 
           {/* Floating Label */}
           <div className="absolute -top-6 md:-top-8 right-8 md:right-12 bg-blue-800 text-white px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold rounded-full shadow-lg">
-            * Since inception
+            {t("SinceInception")}
           </div>
         </div>
 
         <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-          * Instrument availability is subject to jurisdiction.
+         {t("InstrumentAvailabilitySubjectToJurisdiction")}
         </p>
       </div>
     </div>

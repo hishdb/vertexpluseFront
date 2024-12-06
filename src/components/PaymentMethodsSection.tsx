@@ -1,8 +1,10 @@
 import visaLogo from "../assets/visa.svg"; // Replace with the path to your Visa logo
 import mastercardLogo from "../assets/mastercard.svg"; // Replace with the path to your Mastercard logo
 import exchangeLogo from "../assets/wire.svg"; // Replace with the path to your third logo
+import { useTranslation } from "react-i18next";
 
 function PaymentMethodsSection() {
+  const {t} = useTranslation();
   return (
     <div className="relative bg-transparent py-10">
       {/* Logos Section */}
@@ -26,7 +28,7 @@ function PaymentMethodsSection() {
 
       {/* Description */}
       <p className="text-center text-gray-500 mt-6 text-sm">
-        * Plus500 offers multiple global payment methods.
+        {t("VertexPluseOffersGlobalPaymentMethods")}
       </p>
     </div>
   );

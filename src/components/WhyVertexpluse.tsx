@@ -2,32 +2,31 @@ import ProtectedSecure from "../assets/ProtectedSecureIcon.png";
 import supportIcon from "../assets/supportIcon2.png";
 import regulatedIcon from "../assets/regulatedIcon.png";
 import reliable from "../assets/reliable.png";
+import { useTranslation } from "react-i18next";
 
 
 function WhyVertexPluse() {
+  const { t, i18n } = useTranslation(); 
+  const isArabic = i18n.language === "ar"; 
   const features = [
     {
-      title: "Protected & secure",
-      description:
-        "Your data is safe and your funds are kept in segregated bank accounts, in accordance with regulatory requirements.",
+      title: t("ProtectedSecureTitle"),
+      description: t("ProtectedSecureDescription"),
       icon: ProtectedSecure, // Using the imported image
     },
     {
-      title: "Professional support",
-      description:
-        "Get around-the-clock dedicated customer service in multiple languages.",
+      title: t("ProfessionalSupportTitle"),
+      description: t("ProfessionalSupportDescription"),
       icon: supportIcon, // Using an emoji as a placeholder
     },
     {
-      title: "Regulated",
-      description:
-        "Licensed and regulated by a variety of global leading regulators. Learn more.",
+      title: t("RegulatedTitle"),
+      description: t("RegulatedDescription"),
       icon: regulatedIcon, // Using an emoji as a placeholder
     },
     {
-      title: "Reliable",
-      description:
-        "Plus500 Ltd is a FTSE 250 company listed on the London Stock Exchange’s Main Market for Listed Companies.",
+      title: t("ReliableTitle"),
+      description: t("ReliableDescription"),
       icon: reliable, // Using an emoji as a placeholder
     },
   ];
@@ -67,9 +66,12 @@ function WhyVertexPluse() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-24 bg-blue-900 sm:bg-transparent">
-        <h2 className="text-center text-blue-500 text-5xl font-semibold mb-10">
-          WHY VERTEXPLUSE ?
+      <h2 className={`text-center text-blue-500 text-5xl font-semibold mb-10`}
+          dir={isArabic ? "rtl" : "ltr"}
+        >
+          {t("WHYVERTEXPLUSE?")}
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-2">
           {features.map((feature, index) => (
             <div

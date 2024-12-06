@@ -3,12 +3,14 @@ import instrumentScreen2 from "../assets/instrument-screen2-en.png";
 import instrumentScreen1 from "../assets/instrument-screen1-en.png";
 import itemListIconWhite from "../assets/itemListIconWhite.png";
 import InsightsIcon from '@mui/icons-material/Insights';
+import { useTranslation } from 'react-i18next';
 
 function InsightsIntroductionSection ()  {
+  const { t } = useTranslation();
   const features = [
-    "Uncover a universe of exclusive trading data in the palm of your hand.",
-    "Harness the wisdom of the crowd to empower your trading strategy.",
-    "Analyse trends and see what other Plus500 traders are doing."
+    t("UncoverUniverseOfExclusive"),
+    t("HarnessTheWisdomCrowd"),
+    t("AnalyseTrendsAndSeeWhat")
   ];
   return (
     <div className="relative bg-trasnparent min-h-screen w-full overflow-hidden mt-60">
@@ -48,7 +50,7 @@ function InsightsIntroductionSection ()  {
         {/* Left Content */}
         <div className="text-white w-full md:w-1/2 space-y-14 p-8 mt-32 md:mt-0">
                 
-                <span className="text-sky-500 text-5xl font-bold">Introducing:  <InsightsIcon style={{ fontSize: '3.5rem' }}/> +Insights</span>
+                <span className="text-sky-500 text-5xl font-bold">{t("Introducing")}  <InsightsIcon style={{ fontSize: '3.5rem' }}/> {t("Insights")}</span>
               
                 <ul className="space-y-6 pb-20">
                       {features.map((feature, index) => (

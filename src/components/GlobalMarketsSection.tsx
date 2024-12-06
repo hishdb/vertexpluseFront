@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring,  } from "framer-motion";
 import shapeImage2Black from "../assets/shapeObject2-black.png";
 import shapeImage1Black from "../assets/shapeObject1-black.png";
+import { useTranslation } from 'react-i18next';
 
 // Define the market item type
 type MarketItem = {
@@ -140,7 +141,7 @@ function GlobalMarketsSection ()  {
   const [, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const marketListRef = useRef<HTMLDivElement>(null);
-
+  const { t } = useTranslation();
   // Scroll animation config
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -232,13 +233,11 @@ function GlobalMarketsSection ()  {
   {/* Left Content */}
   <div className="order-1 md:order-none text-white w-full md:w-1/2 space-y-6 px-4 sm:px-6 lg:px-8 ">
     <h2 className="text-xl sm:text-2xl lg:text-4xl leading-snug lg:leading-normal">
-      A world of opportunities with <br />
-      <span className="text-blue-400 font-bold">GLOBAL MARKETS</span>
+      {t("AworldOfOpportunitiesWith")} <br />
+      <span className="text-blue-400 font-bold">{t("GLOBALMARKETS")}</span>
     </h2>
     <p className="text-lg sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90">
-      Discover thousands of CFDs on the world's most popular financial
-      instruments and get free real-time quotes to explore endless trading
-      opportunities.
+     {t("DiscoverThousandsOfCDF")}
     </p>
   </div>
 

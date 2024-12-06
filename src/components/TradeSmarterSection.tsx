@@ -4,28 +4,30 @@ import iconcheck from "../assets/icon-check.svg";
 import iconknowledgecdf from "../assets/icon-knowledgecdf.svg";
 import iconstartegy from "../assets/icon-strategy.svg";
 import forexTrading from "../assets/ForexTrading.webp";
+import { useTranslation } from "react-i18next";
 
 function TradeSmarterSection() {
+  const {t} = useTranslation();
   const features = [
     {
-      title: "Practice your strategy",
+      title: t("TradeSmarterTitle1"),
       description:
-        "Try our free demo account before you open a real trading account to explore our intuitive platform.",
-      buttonLabel: "Try now",
+       t("TradeSmarterDescription1"),
+      buttonLabel: t("TradeButtonLabel1"),
       icon: iconcheck,
     },
     {
-      title: "Expand your knowledge",
+      title: t("TradeSmarterTitle2"),
       description:
-        "Learn about trading CFDs with Plus500 using our comprehensive educational materials.",
-      buttonLabel: "Enter Trading Academy",
+      t("TradeSmarterDescription2"),
+      buttonLabel: t("TradeButtonLabel2"),
       icon: iconknowledgecdf,
     },
     {
-      title: "Manage your risk",
+      title: t("TradeSmarterTitle3"),
       description:
-        "Use our advanced financial risk management tools to effectively limit your losses and lock.",
-      buttonLabel: "Read more",
+      t("TradeSmarterDescription3"),
+      buttonLabel: t("TradeButtonLabel3"),
       icon: iconstartegy,
     },
   ];
@@ -42,10 +44,10 @@ function TradeSmarterSection() {
       <div className="relative z-10 text-white max-w-7xl mx-auto space-y-14 py-16 md:py-24 px-6 sm:px-10 lg:px-50">
         {/* Title */}
         <h2 className="text-center text-2xl md:text3xl lg:text-4xl font-normal text-white">
-          Trade
+          {t("Trade")}
           <br />
           <span className="text-blue-400 font-semibold text-3xl md:text4xl lg:text-5xl">
-            SMARTER
+            {t("SMARTER")}
           </span>
         </h2>
 

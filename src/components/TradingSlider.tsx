@@ -3,8 +3,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./TradingSlider.module.css"; // Import as `styles`
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function TradeSlider() {
+
+  const {t} = useTranslation();
   const settings = {
     dots: true,
     infinite: false,
@@ -42,45 +45,41 @@ function TradeSlider() {
   const slides = [
     {
       background: "./src/assets/bitcoinBackground.png",
-      beforeTitle: "Trade CFDs on Cryptos",
-      title: "HASSLE-FREE",
-      description:
-        "Buy or Sell CFDs on Cryptos such as Bitcoin, Ethereum, Litecoin, and other cryptocurrencies without the need of having an exchange account or a special wallet.",
-      buttonLabel: "Trade Shares",
+      SlideTitle: t("SlideTitle1"),
+      title: t("Title1"),
+      description: t("Description1"),
+      SlideButtonLabel: t("SlideButtonLabel1"),
     },
     {
       background: "./src/assets/bitcoinBackground.png",
-      beforeTitle: "Trade CFDs on",
-      title: "Popular Shares",
-      description:
-        "Buy or Sell CFDs on Shares such as Apple, Amazon, Tesla, and other world-leading Stocks with our innovative trading platform.",
-      buttonLabel: "Trade Commodities",
+      SlideTitle: t("SlideTitle2"),
+      title: t("Title2"),
+      description: t("Description2"),
+      SlideButtonLabel: t("SlideButtonLabel2"),
     },
     {
       background: "./src/assets/bitcoinBackground.png",
-      beforeTitle: "Trade CFDs on a variety of",
-      title: "Commodities",
-      description:
-        "Buy or Sell CFDs on Commodities such as Oil, Gold, Silver, and other commodities using our advanced technology.",
-      buttonLabel: "Trade Crypto",
+      SlideTitle: t("SlideTitle3"),
+      title: t("Title3"),
+      description: t("Description3"),
+      SlideButtonLabel: t("SlideButtonLabel3"),
     },
     {
       background: "./src/assets/bitcoinBackground.png",
-      beforeTitle: "Trade CFDs on your favourite",
-      title: "Forex Pairs",
-      description:
-        "Buy or Sell CFDs on Forex pairs such as EUR/USD, GBP/USD, EUR/GBP, and more using our economic calendar to keep up to date on global events.",
-      buttonLabel: "Trade ETFs",
+      SlideTitle: t("SlideTitle4"),
+      title: t("Title4"),
+      description: t("Description4"),
+      SlideButtonLabel: t("SlideButtonLabel4"),
     },
     {
       background: "./src/assets/bitcoinBackground.png",
-      beforeTitle: "Trade CFDs on Indices from",
-      title: "Around the Globe",
-      description:
-        "Buy or Sell CFDs on Indices such as S&P 500 (ES), NASDAQ 100 (NQ), FTSE 100 (UK100), and other popular indices using our free real-time quotes.",
-      buttonLabel: "Trade ETFs",
+      SlideTitle: t("SlideTitle5"),
+      title: t("Title5"),
+      description: t("Description5"),
+      SlideButtonLabel: t("SlideButtonLabel5"),
     },
   ];
+  
 
   return (
     <div className="relative bg-transparent py-12 lg:py-20 mt-40">
@@ -94,7 +93,7 @@ function TradeSlider() {
              {/* Left Section: Content */}
              <div className="text-center md:text-left md:w-1/2 space-y-4 md:space-y-6">
                 <h4 className="text-sm md:text-lg font-medium text-blue-700 leading-tight">
-                  {slide.beforeTitle}
+                  {slide.SlideTitle}
                 </h4>
                 <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-blue-500 leading-snug">
                   {slide.title}
@@ -107,7 +106,7 @@ function TradeSlider() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span className="relative z-10">{slide.buttonLabel}</span>
+                  <span className="relative z-10">{slide.SlideButtonLabel}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                 </motion.button>
               </div>

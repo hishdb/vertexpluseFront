@@ -6,8 +6,10 @@ import youngBoys from "../assets/youngboys.webp";
 import sponsorbulls from "../assets/sponsorship-logo-bulls-back.svg"
 import sponsorLegia from "../assets/sponsorship-logo-legia-back.svg"
 import sponsorYoungBoys from "../assets/sponsorship-logo-young-boys-back.svg"
+import { useTranslation } from 'react-i18next';
 
 function WeSponsor() {
+  const {t} = useTranslation();
   const [selectedJersey, setSelectedJersey] = useState<{
     src: string;
     src2: string;
@@ -77,18 +79,16 @@ function WeSponsor() {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="max-w-7xl mx-auto space-y-14"
-      >
+        className="max-w-7xl mx-auto space-y-14">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center text-2xl md:text-3xl lg:text-4xl font-normal text-blue-950"
-        >
-          We
+          className="text-center text-2xl md:text-3xl lg:text-4xl font-normal text-blue-950">
+          {t("We")}
           <br />
           <span className="text-blue-400 font-semibold text-3xl md:text-4xl lg:text-5xl">
-            Sponsor
+            {t("Sponsor")}
           </span>
         </motion.h2>
 
@@ -99,8 +99,7 @@ function WeSponsor() {
               variants={itemVariants}
               whileHover="hover"
               onClick={() => setSelectedJersey(jersey)}
-              className="flex flex-col items-center cursor-pointer group"
-            >
+              className="flex flex-col items-center cursor-pointer group">
               <motion.img
                 src={jersey.src}
                 alt={jersey.alt}

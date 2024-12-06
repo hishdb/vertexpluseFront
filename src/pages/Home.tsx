@@ -10,9 +10,12 @@ import PaymentMethodsSection from "../components/PaymentMethodsSection";
 import TradingSlider from "../components/TradingSlider";
 import TradeSmarterSection from "../components/TradeSmarterSection"
 import WeSponsor from "../components/WeSponsor";
-import VertexPluse3decorativebg from "../components/VertexPluse3decorativebg";
-
+import VertexPluse3Packages from "../components/VertexPluse3Packages";
+import { useTranslation } from "react-i18next";
 function Home() {
+  const { t } = useTranslation();
+
+
   return (
   <div className="flex flex-col min-h-screen">
   <MenuBar />
@@ -21,15 +24,15 @@ function Home() {
 
     <CoverAnimation/>  
     {/* Black Bar */}
-    <div className="bg-black text-white flex justify-center items-center px-6 py-6 relative">
-      <p className="text-sm md:text-3xl flex items-center">
-        Official Partner of the NBA's iconic basketball team
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg"
-          alt="Chicago Bulls Logo"
-          className="ml-3 h-6 md:h-8"
-        />
-      </p>
+     <div className="bg-black text-white flex justify-center items-center px-6 py-6 relative">
+          <p className="text-sm md:text-3xl flex items-center">
+            {t("OfficialPartnerNBA")}
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg"
+              alt="Chicago Bulls Logo"
+              className="ml-3 h-6 md:h-8"
+            />
+          </p>
     </div>
 
      {/* Gradient Shadow */}
@@ -44,7 +47,7 @@ function Home() {
      <TradingSlider/>
      <TradeSmarterSection/>
      <WeSponsor/>
-     <VertexPluse3decorativebg/>
+     <VertexPluse3Packages/>
   </main>
   <Footer />
 </div>

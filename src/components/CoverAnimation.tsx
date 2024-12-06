@@ -3,10 +3,11 @@ import shapeImage1 from "../assets/shapeObject1.png";
 import shapeImage2 from "../assets/shapeObject2.png";
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
-
-const words = ["indices", "crypto", "commodities", "shares", "options", "ETFs"];    
+import { useTranslation } from 'react-i18next';
 
 function CoverAnimation ()  {   
+  const {t} = useTranslation();
+  const words = [t("Indices"), t("Crypto"), t("Commodities"), t("Options"), t("ETFs"), t("Shares")];    
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const controls = useAnimation();
@@ -101,8 +102,8 @@ function CoverAnimation ()  {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium leading-tight md:leading-snug tracking-wide"
             >
-              IT'S TRADING <br />
-              <span className="text-blue-300">WITH A PLUS</span>
+              {t("ItsTrading")} <br />
+              <span className="text-blue-300">{t("WithPlus")}</span>
             </motion.h1>
 
             {/* Rotating Words */}
@@ -129,7 +130,7 @@ function CoverAnimation ()  {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="relative z-10">Start Trading Now</span>
+                <span className="relative z-10">{t("StartTradingNow")}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
               </motion.button>
 
@@ -138,7 +139,7 @@ function CoverAnimation ()  {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="relative z-10">Try Free Demo</span>
+                <span className="relative z-10">{t("TryFreeDemo")}</span>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               </motion.button>
             </motion.div>
