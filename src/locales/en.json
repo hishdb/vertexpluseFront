@@ -149,7 +149,35 @@
   "InvestmentAmountLimit": "Investment amount limit",
   "TotalReturn": "Total Return:",
   "InvestNow": "Invest Now",
-  "RECOMMENDED": "RECOMMENDED"
-
+  "RECOMMENDED": "RECOMMENDED",
+  "BuySell": "Buy or Sell",
+  "CryptocurrencyCdf": "Cryptocurrency CFDs",
+  "TradeTheWorldMostPopular": "Trade the world's most popular cryptocurrencies with leverage and 24/71 availability: Bitcoin | Ethereum | Cardano | Polygon",
+  "TradeCryptocurrenciesWithLeverage": "Trade Cryptocurrencies with Leverage",
+  "TradeCryptocurrenciesDescription": "Trade cryptocurrencies with up to 1:5 leverage. You can start with as little as 100 € to gain the effect of 500 € capital!",
+  "WhatIsCryptocurrency": "What is a Cryptocurrency?",
+  "Cryptocurrencies(Crypto)AreVirtual": "Cryptocurrencies (Crypto) are virtual currencies that typically use a decentralized network to carry out secure financial transactions. With Plus500's trading platform, you can trade Crypto CFDs – such as Bitcoin, Ethereum, and more – by speculating on their price movements, without actually owning them.",
+  "ControlYourProfitsandLosses": "Control your Profits and Losses",
+  "PriceAlertsAndStops": "Price alerts and Stops, such as Stop Loss and Trailing Stop, will help to manage your risk when trading on these extremely volatile instruments.",
+  "WhatAreTheBenefitsofCryptoCFDs": "What are the Benefits of Crypto CFDs?",
+  "hatAreTheBenefitsOfCryptoCFDsDetail": {
+    "1": "No need to have an exchange account or use a special wallet",
+    "2": "Trade in any direction - Selling is just as accessible as Buying",
+    "3": "Available 7 days a week, 24 hours a day!"
+  },
+  "learnMore": "learn more",
+  "YouCanTradeCryptocurrenciesCFDs": "1 You can trade cryptocurrencies CFDs around the clock and on weekends (except for one hour on Sundays).",
+  "YouDoNotOwnOrHaveAnyRights": "2 You do not own or have any rights to the underlying assets.",
+  "WhatIsCryptoTrading": "What is Crypto trading?",
+  "TradingCryptoCFDInvolvesTheBuying": "Trading crypto CFD involves the buying and selling of cryptocurrencies Contracts for Difference. Cryptocurrencies are digital currencies that operate on blockchain technology, allowing secure and transparent transactions without the need for an intermediary. To trade on the cryptocurrency market, traders can refer to platforms offering cryptocurrency CFDs such as Plus500. These platforms enable crypto trading without the necessity of a cryptocurrency wallet.",
+  "HOWDOITRADECRYPTO?": "HOW DO I TRADE CRYPTO?",
+  "StartTradingCryptoIn5SimpleSteps": "Start trading Crypto in 5 simple steps:",
+  "1.ChooseYourCryptoTradingMethod": "1. Choose your Crypto trading method",
+  "2.LearnAboutTheCryptoMarket": "2. Learn about the Crypto market",
+  "3.OpenAndVerifyYourPlus500Account": "3. Open and verify your Plus500 account",
+  "4.PlanYourCryptoTradingStrategy": "4. Plan your Crypto trading strategy",
+  "5.StartTrading!": "5. Start trading!",
+  "DIVEINTOEXTENSIVELEARNINGWITHOUR": "DIVE INTO EXTENSIVE LEARNING WITH OUR",
+  "LearnAboutTrading": "Learn About Trading"
 
 }

@@ -146,7 +146,38 @@
   "InvestmentAmountLimit": "Limite du montant d'investissement",
   "TotalReturn": "Retour total :",
   "InvestNow": "Investissez maintenant",
-  "RECOMMENDED": "RECOMMANDÉ"
+  "RECOMMENDED": "RECOMMANDÉ",
+  "BuySellCryptocurrency": "Achetez ou vendez des CFD sur les cryptomonnaies",
+  "TradeTheWorldMostPopular": "Tradez les cryptomonnaies les plus populaires au monde avec effet de levier et disponibilité 24h/7 : Bitcoin | Ethereum | Cardano | Polygon",
+  "TradeCryptocurrenciesWithLeverage": "Tradez des cryptomonnaies avec effet de levier",
+  "TradeCryptocurrenciesDescription": "Tradez des cryptomonnaies avec un effet de levier allant jusqu'à 1:5. Vous pouvez commencer avec seulement 100 € pour obtenir l'effet d'un capital de 500 € !",
+  "WhatIsCryptocurrency": "Qu'est-ce qu'une cryptomonnaie ?",
+  "Cryptocurrencies(Crypto)AreVirtual": "Les cryptomonnaies (Crypto) sont des monnaies virtuelles qui utilisent généralement un réseau décentralisé pour effectuer des transactions financières sécurisées. Avec la plateforme de trading Plus500, vous pouvez trader des CFD sur les cryptomonnaies – comme Bitcoin, Ethereum, et bien d'autres – en spéculant sur leurs mouvements de prix, sans les posséder réellement.",
+  "ControlYourProfitsandLosses": "Contrôlez vos profits et vos pertes",
+  "PriceAlertsAndStops": "Les alertes de prix et Stops, comme Stop Loss et Trailing Stop, vous aideront à gérer vos risques lors du trading de ces instruments extrêmement volatils.",
+  "WhatAreTheBenefitsofCryptoCFDs": "Quels sont les avantages des CFD sur cryptomonnaies ?",
+  "hatAreTheBenefitsOfCryptoCFDsDetail": {
+    "1": "Pas besoin d'avoir un compte d'échange ou d'utiliser un portefeuille spécial",
+    "2": "Tradez dans les deux directions - vendre est aussi facile qu'acheter",
+    "3": "Disponible 7 jours sur 7, 24 heures sur 24 !"
+  },
+  "learnMore": "en savoir plus",
+  "YouCanTradeCryptocurrenciesCFDs": "1 Vous pouvez trader des CFD sur cryptomonnaies à tout moment, même le week-end (sauf pendant une heure le dimanche).",
+  "YouDoNotOwnOrHaveAnyRights": "2 Vous ne possédez ni n'avez aucun droit sur les actifs sous-jacents.",
+  "WhatIsCryptoTrading": "Qu'est-ce que le trading de cryptomonnaies ?",
+  "TradingCryptoCFDInvolvesTheBuying": "Le trading de CFD sur cryptomonnaies implique l'achat et la vente de contrats pour différence sur cryptomonnaies. Les cryptomonnaies sont des devises numériques qui fonctionnent sur la technologie blockchain, permettant des transactions sécurisées et transparentes sans intermédiaire. Pour trader sur le marché des cryptomonnaies, les traders peuvent se référer à des plateformes proposant des CFD sur cryptomonnaies telles que Plus500. Ces plateformes permettent le trading de cryptos sans la nécessité d'un portefeuille de cryptomonnaies.",
+
+  "HOWDOITRADECRYPTO?": "Comment trader les cryptomonnaies ?",
+  "StartTradingCryptoIn5SimpleSteps": "Commencez à trader des cryptomonnaies en 5 étapes simples :",
+  "1.ChooseYourCryptoTradingMethod": "1. Choisissez votre méthode de trading des cryptomonnaies",
+  "2.LearnAboutTheCryptoMarket": "2. Apprenez-en plus sur le marché des cryptomonnaies",
+  "3.OpenAndVerifyYourPlus500Account": "3. Ouvrez et vérifiez votre compte Plus500",
+  "4.PlanYourCryptoTradingStrategy": "4. Planifiez votre stratégie de trading des cryptomonnaies",
+  "5.StartTrading!": "5. Commencez à trader !",
+  "DIVEINTOEXTENSIVELEARNINGWITHOUR": "Plongez dans un apprentissage approfondi avec nos ressources",
+  "LearnAboutTrading": "Apprenez-en plus sur le trading"
+  
+
 
 }
 
