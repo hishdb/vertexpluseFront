@@ -6,11 +6,11 @@ import GlobalMarketsSectionWithParameters from "../components/GlobalMarketSectio
 import { useTranslation } from "react-i18next";
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
-import HowDoITrade from "../components/HowDoI";
+import HowDoITrade from "../components/HowDoITrade";
 import DiveIntoExtensive from "../components/DiveIntoExtensive";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-
+import backgroundglobal from "../assets/backgroundglobal.jpg";
 
 
 
@@ -43,7 +43,7 @@ function Crypto() {
     
     <main className="flex-grow ">
   
-      <CoverAnimationWithoutImage/>  
+      <CoverAnimationWithoutImage backgroundImage={backgroundglobal}  text1={t("BuySell")} text2={t("CryptocurrencyCdf")} text3={t("TradeTheWorldMostPopular")}/>  
       <PaymentMethodsSection/>
     <GlobalMarketsSectionWithParameters text1={t("TradeCryptocurrenciesWithLeverage")} text2={t("TradeCryptocurrenciesDescription")} />
       
@@ -110,7 +110,17 @@ function Crypto() {
       <WhyVertexPluse/>  
       <TwoTexts text1={t("WhatIsCryptoTrading")} text2={t("TradingCryptoCFDInvolvesTheBuying")}/>
       
-      <HowDoITrade/>
+      <HowDoITrade
+      title={t("HOWDOITRADECRYPTO?")}
+      subtitle={t("StartTradingCryptoIn5SimpleSteps")}
+      steps={[
+        t("1.ChooseYourCryptoTradingMethod"),
+        t("2.LearnAboutTheCryptoMarket"),
+        t("3.OpenAndVerifyYourPlus500Account"),
+        t("4.PlanYourCryptoTradingStrategy"),
+        t("5.StartTrading!"),
+      ]}
+    />
       <DiveIntoExtensive/>
 
       <motion.div

@@ -1,12 +1,19 @@
-import backgroundglobal from "../assets/backgroundglobal.jpg";
 import shapeImage1 from "../assets/shapeObject1.png";
 import shapeImage2 from "../assets/shapeObject2.png";
 import { useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 
-function CoverAnimationWithoutImage ()  {   
-  const {t} = useTranslation();
+// Define the type for the props
+interface CoverAnimationWithoutImageProps {
+  backgroundImage: string;
+  text1: string;
+  text2: string;
+  text3: string;
+}
+
+function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: CoverAnimationWithoutImageProps)  {
+  const { t } = useTranslation();
   const controls = useAnimation();
 
   // Scroll animations setup
@@ -42,12 +49,11 @@ function CoverAnimationWithoutImage ()  {
     startButtonAnimation();
   }, [controls]);
 
-
-  return(
+  return (
     <div
       className="relative bg-cover bg-center text-white overflow-hidden"
       style={{
-        backgroundImage: `url(${backgroundglobal})`,
+        backgroundImage: `url(${backgroundImage})`,
         height: "82vh",
       }}
     >
@@ -79,7 +85,7 @@ function CoverAnimationWithoutImage ()  {
       </div>
 
       {/* Content Wrapper */}
-       <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-6 md:px-10">
+       <div className="relative  flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-6 md:px-10">
         <div className="w-full h-full flex justify-center items-center">
           <div className="flex flex-col justify-center items-center text-center  space-y-6 ">
           <motion.h1
@@ -88,9 +94,9 @@ function CoverAnimationWithoutImage ()  {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 leading-snug tracking-wide"
           >
-            {t("BuySell")}
+            {text1}
             <br />
-           {t("CryptocurrencyCdf")}
+           {text2}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -98,7 +104,7 @@ function CoverAnimationWithoutImage ()  {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white max-w-3xl mx-auto leading-relaxed"
           >
-            {t("TradeTheWorldMostPopular")}
+            {text3}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -128,8 +134,6 @@ function CoverAnimationWithoutImage ()  {
 
           </div>
         </div>
-
-
       </div>
     </div>
   );

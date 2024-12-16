@@ -175,8 +175,99 @@
   "4.PlanYourCryptoTradingStrategy": "4. Planifiez votre stratégie de trading des cryptomonnaies",
   "5.StartTrading!": "5. Commencez à trader !",
   "DIVEINTOEXTENSIVELEARNINGWITHOUR": "Plongez dans un apprentissage approfondi avec nos ressources",
-  "LearnAboutTrading": "Apprenez-en plus sur le trading"
-  
+  "LearnAboutTrading": "Apprenez-en plus sur le trading",
+  "TradeIndexCFDs": "Tradez des CFD sur indices",
+  "TradeTheMostPopularIndicesAround": "Tradez les indices les plus populaires au monde, comme le S&P 500, le US-TECH 100 et le France 40, avec effet de levier.",
+  "TradeIndicesWithLeverage": "Tradez des indices avec effet de levier",
+  "MagnifyTheSizeOfYourTradesWithoutCommittingLargeAmountsOfCapital": "Augmentez la taille de vos transactions sans engager de gros montants de capital. Un effet de levier allant jusqu'à 1:150 vous permet de commencer à trader des CFD avec seulement 100 € pour obtenir l'effet d'un capital de 15 000 € !",
+  "FREERealTimeIndexQuotes": "Citations gratuites en temps réel sur les indices",
+  "GetFreeRealTimeStreamingQuotesOnAllIndices": "Obtenez des citations gratuites en temps réel sur tous les indices. Définissez des alertes de prix et des notifications sur les cotations en direct gratuitement.",
+  "QuickAndEasyAccountFunding": "Financement de compte rapide et facile",
+  "ApplyingForAccountTakesOnlyFewMinutes": "La demande de compte ne prend que quelques minutes. Utilisez des cartes, un virement bancaire, PayPal ou Skrill pour alimenter votre compte.",
+  "WhatIsIndicesTrading": "Qu'est-ce que le trading d'indices ?",
+  "HowDoITradeCommodities": "Comment trader des matières premières ?",
+  "TradingIndicesCFDInvolvesTheBuyingOrSellingOfIndex": "Le trading de CFD sur indices consiste à acheter ou vendre des contrats pour différence sur indices. Ce type de trading se concentre sur le suivi des indices boursiers, qui sont des compilations de diverses actions. Les traders se concentrent sur ces indices majeurs, tels que le S&P 500 ou le Dow, en prévoyant les mouvements collectifs des actions qu'ils contiennent plutôt que les actions individuelles. En d'autres termes, les CFD sur indices offrent un aperçu des tendances du marché plus larges en mesurant les mouvements des actions, reflétant ainsi la santé de l'économie globale ainsi que des marchés spécifiques.",
+  "StartTradingCommodities5SimpleSteps": "Commencez à trader des matières premières en 5 étapes simples :",
+  "1.ChooseYourCommoditiesTradingMethod": "1. Choisissez votre méthode de trading des matières premières",
+  "2.LearnAboutTheCommoditiesMarket": "2. Découvrez le marché des matières premières",
+  "3.OpenAndVerifyYourVertexpluseAccount": "3. Ouvrez et vérifiez votre compte Vertexpluse",
+  "4.PlanYourCommoditiesTradingStrategy": "4. Planifiez votre stratégie de trading des matières premières",
+  "5.StartTrading": "5. Commencez à trader !",
+  "IndicesFAQ": "FAQ sur les indices",
+  "IndicesFaq": {
+    "q1": "Qu'est-ce qu'un indice boursier et que mesure-t-il ?",
+    "a1": "Un indice boursier est un indicateur de performance ou une mesure de l'économie d'un pays ou d'un secteur industriel. Par exemple, le Nasdaq 100 représente les 100 plus grandes entreprises cotées à la bourse Nasdaq. Si, en moyenne, le prix des actions de ces entreprises augmente, l'indice monte. À l'inverse, s'ils diminuent, l'indice baisse. La plupart des principaux indices sont basés sur un panier d'actions et sont donc considérés comme de bons indicateurs du sentiment actuel du marché. Lorsque vous prenez une position sur un indice, vous investissez effectivement dans la performance de ces actions, évitant ainsi les facteurs qui influencent les performances des entreprises individuelles (tels qu'un manque de volume sur le marché). Pour une liste complète des contrats CFD sur indices proposés sur la plateforme Plus500.",
+    
+    "q2": "Quelles sont les différentes formes de calcul des indices ?",
+    "a2": "Les indices boursiers utilisent différentes formes de calcul. Voici les deux plus courantes : La capitalisation boursière ajustée (ou pondérée par la capitalisation) est utilisée pour suivre un certain nombre d'entreprises en fonction de la capitalisation boursière ajustée des actions constituantes. Les grandes entreprises ont un impact plus important sur le prix de l'indice que les petites entreprises. Le S&P 500 est un exemple d'indice calculé de cette manière. Moyenne pondérée par le prix – additionne les prix des actions de tous les constituants, puis divise ce chiffre par le nombre total d'actions dans l'indice. Le Dow Jones est un exemple d'indice calculé de cette manière.",
+    
+    "q3": "Comment fonctionne l'effet de levier dans les CFD sur indices ?",
+    "a3": "En tradant des contrats à terme sur indices avec effet de levier, vous pouvez multiplier la valeur d'une transaction grâce à l'utilisation de capitaux empruntés, augmentant ainsi le profit ou la perte potentiels à réaliser sur cette transaction. L'effet de levier disponible pour les CFD sur indices sur la plateforme Plus500 peut aller jusqu'à 1:150.",
+    
+    "q4": "Quels sont les points forts du trading de CFD sur indices ?",
+    "a4": "Voici quelques points forts du trading de CFD sur indices : Vous pouvez obtenir une exposition diversifiée en utilisant un seul instrument – car la plupart des facteurs qui affectent les entreprises individuelles sont supprimés. Plus d'opportunités de trading – nous offrons un accès à une large gamme d'indices des plus grands et des plus importants marchés boursiers mondiaux. Profitez de spreads serrés et de zéro commissions sur les cotations en temps réel des indices, les graphiques, les dépôts et les ouvertures/fermetures de transactions avec Plus500. Pour explorer plus de points forts et d'avantages possibles des CFD sur indices."
+  },
+  "TradeForexCFDs": "Tradez des CFD sur le Forex",
+  "TradeTheMostPopularForexPairsLikeEUR/USD": "Tradez les paires de devises les plus populaires comme EUR/USD, GBP/USD et EUR/GBP sur Plus500. Utilisez nos outils de trading avancés pour protéger vos profits et limiter vos pertes.",
+  "TradeOn60+ForexPairsWithLeverage": "Tradez sur plus de 60 paires de devises avec effet de levier",
+  "TradeForexWithUpTo1300Leverage": "Tradez le forex avec un effet de levier allant jusqu'à 1:300. Avec seulement 100 €, vous pouvez obtenir l'effet d'un capital de 30 000 € !",
+  "AdvancedTradingTools": "Outils de trading avancés",
+  "UseOurTradingToolsSuchAsStopLoss": "Utilisez nos outils de trading tels que Stop Loss, Take Profit et Stop Garanti pour limiter les pertes et sécuriser les profits. Obtenez des cotations forex en temps réel GRATUITEMENT et configurez des indicateurs pour analyser facilement les graphiques.",
+  "EasyAccountOpening": "Ouverture de compte facile",
+  "ApplyForAnAccountInAFewMinutes": "Postulez pour un compte en quelques minutes, entraînez-vous au trading avec notre compte de démonstration GRATUIT et illimité jusqu'à ce que vous soyez prêt à passer au niveau supérieur.",
+  "WhatIsForexTrading": "Qu'est-ce que le trading Forex ?",
+  "TradingForexOrFXCFDsInvolvesTheBuyingSelling": "Le trading de Forex ou de CFD ‘FX’ implique l'achat, la vente et l'échange de contrats pour différence sur le Forex, basés sur les taux de change fluctuants des devises. Le Forex (marché des changes) est un marché mondial où les traders cherchent à tirer profit des variations des taux en prédisant comment une devise se comportera par rapport à une autre. Ce marché fonctionne du dimanche soir au vendredi soir et repose sur l'analyse des facteurs influençant les valeurs des devises pour prendre des décisions de trading éclairées.",
+  "HowDoITradeForex?": "Comment trader sur le Forex ?",
+  "StartTradingForexIn5SimpleSteps": "Commencez à trader sur le Forex en 5 étapes simples :",
+  "1.ChooseYourForexTradingMethod": "1. Choisissez votre méthode de trading Forex",
+  "2.LearnAboutTheForexMarket": "2. Découvrez le marché du Forex",
+  "4.PlanYourForexTradingStrategy": "4. Planifiez votre stratégie de trading Forex",
+  "TradeCommodityCFDs": "Tradez des CFD sur matières premières",
+  "TradeAvarietyOfPopularCommodityCFDsWithLeverage": "Tradez une variété de CFD populaires sur matières premières avec effet de levier. L'or, le pétrole et l'argent sont tous disponibles sur notre plateforme de trading leader.",
+  "TradingCommoditiesWithLeverage": "Tradez des matières premières avec effet de levier",
+  "CommoditiesCFDsAreAvailableForTradingAtPlus500": "Les CFD sur matières premières sont disponibles pour le trading sur Plus500 avec un effet de levier allant jusqu'à 1:150. Vous pouvez commencer à trader avec seulement 100 € pour obtenir l'effet d'un capital de 15 000 € !",
+  "SimpleAccountManagement": "Gestion de compte simple",
+  "QuickAndSmoothFundingProcessViaBankAccount": "Processus de financement rapide et fluide via compte bancaire, paiement par carte, PayPal ou Skrill. Divers outils pour gérer vos activités financières et de trading, y compris un service de notifications gratuit.",
+  "ProfitAndLossControl": "Contrôle des profits et des pertes",
+  "OnThePlus500TradingPlatformYouCanEasilyDefine": "Sur la plateforme de trading Plus500, vous pouvez facilement définir des Stops et des Limites pour demander la fermeture des positions à un taux spécifique. Pour éviter complètement le glissement, vous pouvez également définir un Stop Garanti.",
+  "WhatIsCommoditiesTrading": "Qu'est-ce que le trading de matières premières ?",
+  "CommoditiesCFDTradingInvolvesTheBuyingAndSelling": "Le trading de CFD sur matières premières implique l'achat et la vente de contrats pour différence sur des matières premières comme les produits agricoles, les métaux précieux et le pétrole sur les marchés financiers. Lors du trading de matières premières, les traders spéculent sur les prix des matières premières influencés par l'offre, la demande et les événements mondiaux. C'est un moyen de diversifier les portefeuilles et de participer aux fluctuations des valeurs de ces biens essentiels.",
+  "HowDoITradeCommodities?": "Comment trader des matières premières ?",
+  "StartTradingCommoditiesIn5SimpleSteps": "Commencez à trader des matières premières en 5 étapes simples :",
+  "CommoditiesFAQ": "FAQ sur les matières premières",
+  "CommoditiesFaq": {
+    "q1": "Quelles sont les différentes bourses à terme pour les matières premières ?",
+    "a1": "Les bourses à terme sont des marchés où les institutions financières et les individus peuvent échanger une grande variété de matières premières. Les principales bourses mondiales pour le trading de matières premières sont principalement situées aux États-Unis : Chicago Board of Trade (CBOT) - une bourse à terme de matières premières basée à Chicago et exploitée par CME. Intercontinental Exchange (ICE) - une bourse basée à Atlanta, axée sur les matières premières énergétiques. New York Mercantile Exchange (NYMEX) - une bourse située à New York et exploitée par CME.",
+    "q2": "Comment fonctionne le trading des matières premières ?",
+    "a2": "La façon la plus courante de trader des matières premières est d'acheter ou de vendre un contrat à terme. Le prix d'un contrat à terme sur une matière première est standardisé, ce qui signifie que la quantité de l'instrument sous-jacent (livre, once, baril, etc.) est prédéterminée et apparaît la même pour tous les fournisseurs de marché. Un contrat à terme oblige également le détenteur à acheter ou vendre une matière première à un prix prédéterminé à une date de livraison dans le futur. Dans le trading CFD, une fois qu'un contrat à terme sur une matière première expire, un trader peut soit clôturer la transaction et en ouvrir une nouvelle, soit permettre au contrat de se prolonger jusqu'au mois suivant (si possible).",
+    "q3": "Comment les matières premières sont-elles échangées ?",
+    "a3": "Il existe 3 principales classes d'actifs pour les matières premières : Énergies ou matières premières énergétiques - fait référence à une variété de produits dérivés du pétrole et de l'essence nécessaires pour les véhicules, les générateurs et autres moteurs. Parmi celles-ci, le pétrole brut américain (WTI), le pétrole Brent international extrait de la mer du Nord, ainsi que le gaz naturel, le mazout et l'essence. Métaux, métaux précieux (or, argent, platine, etc.) et métaux de base (cuivre, etc.) - se réfèrent principalement à l'or et à l'argent, initialement utilisés sous forme de pièces, lingots et barres, émis par les gouvernements et les banques centrales. Agriculture ou matières premières agricoles - comprend une large gamme de matières premières douces, c'est-à-dire les cultures et le bétail qui sont cultivés, par opposition aux métaux qui sont extraits ou aux énergies qui sont extraites. Les matières premières agricoles les plus courantes sont le café, le blé, le bétail vivant, le maïs et le soja.",
+    "q4": "Où pouvez-vous trouver les prix historiques des matières premières ?",
+    "a4": "Nos graphiques vous permettent de revenir en arrière et de visualiser les prix des contrats à terme sur matières premières (pour les mois actuels et précédents). Vous pouvez utiliser ces informations pour vous appuyer sur les performances passées et développer vos stratégies de trading. De plus, vous pouvez utiliser notre calendrier économique pour consulter une gamme d'événements susceptibles de bouger le marché qui ont déjà eu lieu ou sont attendus dans le futur. Ces événements concernent principalement le pétrole et le gaz naturel.",
+    "q5": "Comment commencer à trader des CFD sur matières premières ?",
+    "a5": "Pour commencer à trader des matières premières avec Plus500, il vous suffit de : Créez un compte / Connectez-vous à votre compte. Recherchez l'instrument que vous souhaitez trader parmi notre gamme de 'Toutes les matières premières'. Cliquez sur le bouton 'Acheter' ou 'Vendre' en fonction de la direction dans laquelle vous pensez que la matière première évoluera. Ouvrez une transaction."
+  },
+  "TradeShareCFDs": "Tradez des CFD sur actions",
+  "Plus500TradingPlatformAllowsYouToTradeShares": "La plateforme de trading Plus500 vous permet de trader des actions sur tous les marchés populaires tels que les États-Unis, le Royaume-Uni, l'Allemagne et bien d'autres, avec effet de levier et faibles spreads. En utilisant nos outils de trading avancés, vous pouvez également contrôler vos profits et vos pertes.",
+  "TradePopularShares": "Tradez des actions populaires",
+  "TradeSharesCFDsSuchAsMeta": "Tradez des CFD sur actions telles que Meta, Apple, Microsoft et Alphabet. Profitez des marchés à la hausse ou à la baisse en ouvrant des positions de vente ou d'achat.",
+  "TradeSharesWithLeverage": "Tradez des actions avec effet de levier",
+  "FlexibleTradingInSharesCFDs": "Trading flexible sur les CFD actions. Un effet de levier allant jusqu'à 1:20 vous permet de commencer à trader avec seulement 100 € pour obtenir l'effet d'un capital de 2 000 € !",
+  "ControlYourProfitsAndLosses": "Contrôlez vos profits et vos pertes",
+  "PredefineStopsAndLimitsOnThePlus500Platform": "Prédéfinissez des Stops et des Limites sur la plateforme Plus500 pour limiter vos pertes et sécuriser vos profits. Pour éviter le glissement, essayez notre fonctionnalité de Stop Garanti.",
+  "WhatIsSharesTrading?": "Qu'est-ce que le trading d'actions ?",
+  "SharesCFDTradingInvolvesTheBuyingAndSellingContracts": "Le trading de CFD sur actions consiste à acheter et vendre des contrats pour différence sur des actions. Les traders peuvent s'engager dans le trading de CFD sur actions en surveillant les prix des actions et en utilisant des graphiques pour analyser les tendances avant d'acheter ou de vendre des actions. Ce marché permet aux investisseurs d'acheter et de vendre des CFD basés sur les prix des actions en bourse, participant ainsi aux hauts et aux bas du marché boursier sans posséder l'action sous-jacente.",
+  "HowDoITradeShares?": "Comment trader des actions ?",
+  "StartTradingSharesIn5SimpleSteps": "Commencez à trader des actions en 5 étapes simples :",
+  "1.ChooseYourSharesTradingMethod": "1. Choisissez votre méthode de trading sur actions",
+  "2.LearnAboutTheSharesMarket": "2. Découvrez le marché des actions",
+  "4.PlanYourSharesTradingStrategy": "4. Planifiez votre stratégie de trading sur actions"
+
+
+
+
+
+
 
 
 }
