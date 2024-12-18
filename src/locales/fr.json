@@ -261,9 +261,59 @@
   "StartTradingSharesIn5SimpleSteps": "Commencez à trader des actions en 5 étapes simples :",
   "1.ChooseYourSharesTradingMethod": "1. Choisissez votre méthode de trading sur actions",
   "2.LearnAboutTheSharesMarket": "2. Découvrez le marché des actions",
-  "4.PlanYourSharesTradingStrategy": "4. Planifiez votre stratégie de trading sur actions"
-
-
+  "4.PlanYourSharesTradingStrategy": "4. Planifiez votre stratégie de trading sur actions",
+  "TradeOptionsCFDs": "Tradez des CFD sur options",
+  "CallAndPutOptionsOnGermany": "Les options d'achat et de vente sur l'Allemagne 40, le pétrole et Meta sont disponibles pour le trading avec effet de levier. Tradez sur la volatilité grâce à nos CFD flexibles sur options.",
+  "TradeOptionsCFDsWithLeverage": "Tradez des CFD sur options avec effet de levier",
+  "TradeOnOptionsWithUpToLeverage": "Tradez sur options avec un effet de levier allant jusqu'à 1:5. Vous pouvez commencer avec seulement 100 € pour obtenir l'effet d'un capital de 500 € !",
+  "UseOurRiskManagementTools": "Utilisez nos outils de gestion des risques",
+  "SetPriceAlertsAndStopsSuchAsStopLossAndTrailing": "Définissez des alertes de prix et des Stops tels que le Stop Loss et le Stop Suiveur pour gérer vos risques. Pour éviter totalement les dérapages, utilisez notre fonctionnalité Stop Garanti et la position sera clôturée au taux exact que vous définissez.",
+  "WhatIsOptionsTrading": "Qu'est-ce que le trading d'options ?",
+  "OptionsCFDTradingInvolvesTheTradingOfContractsForDifference": "Le trading de CFD sur options implique le trading de contrats pour différence sur des contrats d'options qui accordent le droit d'acheter (option d'achat) ou de vendre (option de vente) un actif sous-jacent à un prix prédéterminé dans un délai spécifique.",
+  "HowDoITradeOptions": "Comment trader des options ?",
+  "StartTradingOptionsIn5SimpleSteps": "Commencez à trader des options en 5 étapes simples :",
+  "1.ChooseYourOptionsTradingMethod": "1. Choisissez votre méthode de trading d'options",
+  "2.LearnAboutTheOptionsMarket": "2. Découvrez le marché des options",
+  "4.PlanYourOptionsTradingStrategy": "4. Planifiez votre stratégie de trading d'options",
+  "OptionsFAQ": "FAQ sur les options",
+  "OptionsFaq": {
+    "q1": "Que devez-vous savoir sur les CFD sur options ?",
+    "a1": "Quand vous tradez des options, vous spéculez sur le prix futur (prix d'exercice) d'un instrument sous-jacent comme une action, un indice ou une matière première. Plus500 offre deux types de CFD sur options : option d'achat et option de vente.",
+    "q2": "Quels sont les principaux avantages du trading de CFD sur options ?",
+    "a2": "Les options offrent une volatilité plus élevée – les changements en pourcentage des options ont tendance à être beaucoup plus significatifs.",
+    "q3": "Comment fonctionne l'effet de levier dans le trading d'options ?",
+    "a3": "L'effet de levier jusqu'à 1:5 permet d'augmenter vos profits (ou pertes) potentiels.",
+    "q4": "Comment expirent les CFD sur options ?",
+    "a4": "Chaque option a une date d'expiration définie. Pour les CFD, la date d'expiration est souvent définie quelques jours avant.",
+    "q5": "Comment les CFD sur options sont-ils évalués ?",
+    "a5": "Les prix des options sont influencés par la volatilité, la demande et les mouvements de prix des actifs sous-jacents."
+  },
+  "ETFsCFDsTrading": "Trading des CFD sur ETFs",
+  "TradeOnTheMostPopularExchangeTradedFunds": "Tradez sur les fonds négociés en bourse (ETFs) les plus populaires comme VXX Volatility et SPDRUSA500 sur Plus500 avec effet de levier. Gérez vos profits et pertes en définissant gratuitement des Stops et Limites sur vos positions.",
+ "TradeETFsWithLeverage": "Tradez des ETFs avec effet de levier",
+  "TradeOnTheETFsMarketWithUpToLeverage": "Tradez sur le marché des ETFs avec un effet de levier allant jusqu'à 1:100. Commencez avec seulement 100 € pour obtenir l'effet d'un capital de 10 000 € !",
+  "AdvancedTechnicalAnalysisTools": "Outils d'analyse technique avancés",
+  "GetFREERealTimeStreamingQuotes": "Obtenez des cotations en temps réel gratuites. Analysez nos graphiques pour découvrir les tendances de trading en utilisant une variété d'indicateurs configurés selon vos préférences personnelles.",
+  "ProfessionalCustomerSupport": "Support client professionnel",
+  "Plus500CustomersEnjoyHighStandardCustomer": "Les clients de Plus500 bénéficient d'un support client de qualité 24/7 via email et chat. Nos représentants répondront volontiers à toutes vos questions.",
+  "WhatIsETFsTrading": "Qu'est-ce que le trading d'ETFs ?",
+  "ETFCFDTradingInvolvesBuyingAndSellingContracts": "Le trading de CFD sur ETFs implique l'achat et la vente de contrats pour différence sur des fonds négociés en bourse (ETFs). Ces fonds comprennent une collection d'actifs tels que des actions, des obligations ou des matières premières et sont conçus pour suivre la performance d'un indice ou d'un secteur spécifique.",
+  "HowDoITradeETFs": "Comment trader des ETFs ?",
+  "StartTradingETFsIn5SimpleSteps": "Commencez à trader des ETFs en 5 étapes simples :",
+  "1.ChooseYourETFsTradingMethod": "1. Choisissez votre méthode de trading d'ETFs",
+  "2.LearnAboutTheETFsMarket": "2. Découvrez le marché des ETFs",
+  "4.PlanYourETFsTradingStrategy": "4. Planifiez votre stratégie de trading d'ETFs",
+  "ETFsFAQ": "FAQ sur les ETFs",
+  "ETFsFaq": {
+    "q1": "Pourquoi trader des ETFs ?",
+    "a1": "Les CFDs sur ETFs offrent plusieurs avantages, notamment la diversification du portefeuille avec un faible capital initial.",
+    "q2": "Comment fonctionne l'effet de levier sur les ETFs ?",
+    "a2": "L'effet de levier sur les ETFs permet d'augmenter la taille de la transaction en utilisant des capitaux empruntés.",
+    "q3": "Qu'est-ce que le SPDR S&P 500 ETF ?",
+    "a3": "Le SPDR S&P 500 Trust est un ETF populaire qui suit la performance journalière de l'indice S&P 500.",
+    "q4": "Comment fonctionnent les CFDs sur ETFs en or ?",
+    "a4": "L'or peut être tradé via des ETFs tels que SPDR Gold Shares qui suivent le prix de l'or."
+  }
 
 
 

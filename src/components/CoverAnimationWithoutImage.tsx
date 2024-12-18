@@ -58,7 +58,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
       }}
     >
       {/* Enhanced gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-500/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-300/50"></div>
 
       {/* Animated decorative elements */}
       <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
@@ -92,7 +92,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 leading-snug tracking-wide"
+            className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-sky-400 leading-snug tracking-wide"
           >
             {text1}
             <br />

@@ -10,6 +10,8 @@ import Indices from './pages/Indices.tsx';
 import Forex from './pages/Forex.tsx';
 import Commodities from './pages/Commodities.tsx';
 import Shares from './pages/Shares.tsx';
+import Options from './pages/Options.tsx';
+import ETFS from './pages/ETFs.tsx';
 const router = createBrowserRouter([
   {
   path:'/',
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
   {
     path:'/shares',
     element: <Shares/>,
+  },
+  {
+    path:'/options',
+    element: <Options/>,
+  },
+  {
+    path:'/etfs',
+    element: <ETFS/>,
   }
 ]);
 

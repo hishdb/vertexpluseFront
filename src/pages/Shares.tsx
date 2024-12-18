@@ -10,7 +10,7 @@ import HowDoITrade from "../components/HowDoITrade";
 import DiveIntoExtensive from "../components/DiveIntoExtensive";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import backgroundglobal from "../assets/backgroundglobal.jpg";
+import backgroundglobal from "../assets/CoverSharesBackground.png";
 import FAQ from "../components/FAQ";
 
 function Shares() {
