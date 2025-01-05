@@ -45,6 +45,7 @@ function CoverAnimation ()  {
     startButtonAnimation();
   }, [controls]);
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);

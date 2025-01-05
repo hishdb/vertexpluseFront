@@ -77,16 +77,17 @@ const MenuBar: React.FC = () => {
   ];
 
   const tradingItems: MenuItem[] = [
+    { label: t("Premium Service"), href: "/PremiumService" },
+    { label: t("Fees & Charges"), href: "/FeesCharges" },
+    { label: t("ESG"), href: "/ESG" },
+ 
+  ];
+
+  const companyItems: MenuItem[] = [
     { label: t("About Us"), href: "/About Us" },
     { label: t("Affiliate"), href: "/Affiliate" },
     { label: t("Investor Relations"), href: "/Investor Relations" },
     { label: t("Cookies & Privacy"), href: "/CookiesPrivacy" },
-  ];
-
-  const companyItems: MenuItem[] = [
-    { label: t("Premium Service"), href: "/PremiumService" },
-    { label: t("Fees & Charges"), href: "/FeesCharges" },
-    { label: t("ESG"), href: "/ESG" },
   ];
 
   const educationItems: MenuItem[] = [

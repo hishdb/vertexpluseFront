@@ -61,7 +61,7 @@ const PlusInfoUsersNumberSection = () => {
           {t("JoinOver")}{" "}
           <span className="text-blue-500 font-medium">{t("26million")} </span>
           <span className="font-normal">
-            {t("WorldwideWhoHaveAlreadyChosenThePlus500Group")}
+            {t("WorldwideWhoHaveAlreadyChosenTheVertexPluseGroup")}
           </span>
         </h3>
 
@@ -114,7 +114,7 @@ const PlusInfoUsersNumberSection = () => {
         </div>
 
         <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-         {t("InstrumentAvailabilitySubjectToJurisdiction")}
+          {t("InstrumentAvailabilitySubjectToJurisdiction")}
         </p>
       </div>
     </div>

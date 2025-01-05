@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
-import GlobalMarketsSection from "../components/GlobalMarketsSection";
 import CoverAnimation from "../components/CoverAnimation";
 import FeaturesSection from "../components/FeaturesSection";
 import InsightsIntroductionSection from "../components/InsightsIntroductionSection";
@@ -12,6 +11,7 @@ import TradeSmarterSection from "../components/TradeSmarterSection"
 import WeSponsor from "../components/WeSponsor";
 import VertexPluse3Packages from "../components/VertexPluse3Packages";
 import { useTranslation } from "react-i18next";
+import GlobalMarketsSectionWith3TextParameter from "../components/GlobalMarketSectionWIth3TextParameter";
 function Home() {
   const { t } = useTranslation();
 
@@ -38,7 +38,7 @@ function Home() {
      {/* Gradient Shadow */}
      <div className="w-full h-20 bg-gradient-to-b from-blue-100 to-tranparent"></div>
 
-     <GlobalMarketsSection/>
+     <GlobalMarketsSectionWith3TextParameter text1={t("AworldOfOpportunitiesWith")} text2={t("GLOBALMARKETS")} text3={t("DiscoverThousandsOfCDF")}/>
      <FeaturesSection/>
      <InsightsIntroductionSection/>
      <PlusInfoUsersNumberSection/>

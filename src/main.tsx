@@ -12,6 +12,9 @@ import Commodities from './pages/Commodities.tsx';
 import Shares from './pages/Shares.tsx';
 import Options from './pages/Options.tsx';
 import ETFS from './pages/ETFs.tsx';
+import PremiumService from './pages/PremiumService.tsx';
+import FeesCharges from './pages/FeesCharges.tsx';
+import ESG from './pages/ESG.tsx';
 
 
 
@@ -49,6 +52,18 @@ const router = createBrowserRouter(
     {
       path:'/etfs',
       element: <ETFS/>,
+    },
+    {
+      path:'/PremiumService',
+      element: <PremiumService/>,
+    },
+    {
+      path:'/FeesCharges',
+      element: <FeesCharges/>,
+    },
+    {
+      path:'/ESG',
+      element: <ESG/>,
     }
   ],
   {

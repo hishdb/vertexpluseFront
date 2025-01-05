@@ -29,17 +29,17 @@ function Footer () {
             you. Please ensure you fully understand the risks involved.
           </p>
           <p className="text-md font-medium">
-            Plus500 is mainly compensated for its services through the Bid/Ask
+            VertexPluse is mainly compensated for its services through the Bid/Ask
             spread. Check our Fees & Charges.
           </p>
-          <p className="text-md font-medium">Plus500 is a trademark of Plus500 Ltd.</p>
+          <p className="text-md font-medium">VertexPluse is a trademark of VertexPluse Ltd.</p>
           <p className="text-md font-medium">
             The S&P 500, Dow Jones Industrial Average and S&P/ASX 200 Indices
             are products of S&P Dow Jones Indices LLC (“SPDJI”) and/or its
             licensors. S&P 500®, USA 500, USA 30 are trademarks of Standard &
             Poor’s Financial Services LLC (“S&P”); Dow Jones® is a trademark of
             Dow Jones Trademark Holdings LLC (“Dow Jones”). ASX® is a trademark
-            of the Australian Securities Exchange. Plus500 products are not
+            of the Australian Securities Exchange. VertexPluse products are not
             sponsored, endorsed, sold or promoted by SPDJI, Dow Jones, ASX or
             their affiliates and none makes any representation about investing
             in such product(s) or has any liability for any errors, omissions,
@@ -50,7 +50,7 @@ function Footer () {
               <span>
                 <img src={secureLock} alt="secureLock"/>
               </span>
-              <p>Secured by SSL. Copyright © Plus500. All rights reserved.</p>
+              <p>Secured by SSL. Copyright © VertexPluse. All rights reserved.</p>
             </span>
           </p>
 

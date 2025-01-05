@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import MenuBar from "../components/MenuBar";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
-import GlobalMarketsSectionWithParameters from "../components/GlobalMarketSectionWIthTextParameter";
+import GlobalMarketsSectionWithParameters from "../components/GlobalMarketsSectionWith2TextParameter";
 import { useTranslation } from "react-i18next";
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
@@ -60,7 +60,7 @@ function Shares() {
     
     <main className="flex-grow ">
    
-      <CoverAnimationWithoutImage backgroundImage={backgroundglobal}   text1={t("TradeShareCFDs")} text2={t("")} text3={t("Plus500TradingPlatformAllowsYouToTradeShares")}/>  
+      <CoverAnimationWithoutImage backgroundImage={backgroundglobal}   text1={t("TradeShareCFDs")} text2={t("")} text3={t("VertexPluseTradingPlatformAllowsYouToTradeShares")}/>  
       <PaymentMethodsSection/>
     <GlobalMarketsSectionWithParameters text1={t("TradePopularShares")} text2={t("TradeSharesCFDsSuchAsMeta")} />
       
@@ -90,7 +90,7 @@ function Shares() {
                 {t("ControlYourProfitsAndLosses")}
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-                {t("PredefineStopsAndLimitsOnThePlus500Platform")}
+                {t("PredefineStopsAndLimitsOnTheVertexPlusePlatform")}
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ function Shares() {
       steps={[
         t("1.ChooseYourSharesTradingMethod"),
         t("2.LearnAboutTheSharesMarket"),
-        t("3.OpenAndVerifyYourPlus500Account"),
+        t("3.OpenAndVerifyYourVertexPluseAccount"),
         t("4.PlanYourSharesTradingStrategy"),
         t("5.StartTrading!"),
       ]}

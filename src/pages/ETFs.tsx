@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import MenuBar from "../components/MenuBar";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
-import GlobalMarketsSectionWithParameters from "../components/GlobalMarketSectionWIthTextParameter";
+import GlobalMarketsSectionWithParameters from "../components/GlobalMarketsSectionWith2TextParameter";
 import { useTranslation } from "react-i18next";
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
@@ -92,7 +92,7 @@ function ETFS() {
                 {t("ProfessionalCustomerSupport")}
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-                {t("Plus500CustomersEnjoyHighStandardCustomer")}
+                {t("VertexPluseCustomersEnjoyHighStandardCustomer")}
               </p>
             </div>
           </div>

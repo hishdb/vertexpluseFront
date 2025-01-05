@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import MenuBar from "../components/MenuBar";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
-import GlobalMarketsSectionWithParameters from "../components/GlobalMarketSectionWIthTextParameter";
+import GlobalMarketsSectionWith2TextParameter from "../components/GlobalMarketsSectionWith2TextParameter.tsx";
 import { useTranslation } from "react-i18next";
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
@@ -45,7 +45,7 @@ function Crypto() {
   
       <CoverAnimationWithoutImage backgroundImage={backgroundglobal}  text1={t("BuySell")} text2={t("CryptocurrencyCdf")} text3={t("TradeTheWorldMostPopular")}/>  
       <PaymentMethodsSection/>
-    <GlobalMarketsSectionWithParameters text1={t("TradeCryptocurrenciesWithLeverage")} text2={t("TradeCryptocurrenciesDescription")} />
+    <GlobalMarketsSectionWith2TextParameter text1={t("TradeCryptocurrenciesWithLeverage")} text2={t("TradeCryptocurrenciesDescription")} />
       
           <div className="bg-white text-blue-900 py-16 px-8 lg:px-24 max-w-7xl mx-auto flex flex-col items-center">
          
@@ -116,7 +116,7 @@ function Crypto() {
       steps={[
         t("1.ChooseYourCryptoTradingMethod"),
         t("2.LearnAboutTheCryptoMarket"),
-        t("3.OpenAndVerifyYourPlus500Account"),
+        t("3.OpenAndVerifyYourVertexPluseAccount"),
         t("4.PlanYourCryptoTradingStrategy"),
         t("5.StartTrading!"),
       ]}

@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import MenuBar from "../components/MenuBar";
 import PaymentMethodsSection from "../components/PaymentMethodsSection";
-import GlobalMarketsSectionWithParameters from "../components/GlobalMarketSectionWIthTextParameter";
+import GlobalMarketsSectionWithParameters from "../components/GlobalMarketsSectionWith2TextParameter";
 import { useTranslation } from "react-i18next";
 import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
@@ -68,7 +68,7 @@ function Commodities() {
    
       <CoverAnimationWithoutImage backgroundImage={backgroundglobal}   text1={t("TradeCommodityCFDs")} text2={t("")} text3={t("TradeAvarietyOfPopularCommodityCFDsWithLeverage")}/>  
       <PaymentMethodsSection/>
-    <GlobalMarketsSectionWithParameters text1={t("TradingCommoditiesWithLeverage")} text2={t("CommoditiesCFDsAreAvailableForTradingAtPlus500")} />
+    <GlobalMarketsSectionWithParameters text1={t("TradingCommoditiesWithLeverage")} text2={t("CommoditiesCFDsAreAvailableForTradingAtVertexPluse")} />
       
           <div className="bg-white text-blue-900 py-16 px-8 lg:px-24 max-w-7xl mx-auto flex flex-col items-center">
          
@@ -96,7 +96,7 @@ function Commodities() {
                 {t("ProfitAndLossControl")}
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-                {t("OnThePlus500TradingPlatformYouCanEasilyDefine")}
+                {t("OnTheVertexPluseTradingPlatformYouCanEasilyDefine")}
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ function Commodities() {
       steps={[
         t("1.ChooseYourCommoditiesTradingMethod"),
         t("2.LearnAboutTheCommoditiesMarket"),
-        t("3.OpenAndVerifyYourPlus500Account"),
+        t("3.OpenAndVerifyYourVertexPluseAccount"),
         t("4.PlanYourCommoditiesTradingStrategy"),
         t("5.StartTrading!"),
       ]}
