@@ -44,35 +44,30 @@ function TradeSlider() {
   };
   const slides = [
     {
-      background: "./src/assets/bitcoinBackground.png",
       SlideTitle: t("SlideTitle1"),
       title: t("Title1"),
       description: t("Description1"),
       SlideButtonLabel: t("SlideButtonLabel1"),
     },
     {
-      background: "./src/assets/bitcoinBackground.png",
       SlideTitle: t("SlideTitle2"),
       title: t("Title2"),
       description: t("Description2"),
       SlideButtonLabel: t("SlideButtonLabel2"),
     },
     {
-      background: "./src/assets/bitcoinBackground.png",
       SlideTitle: t("SlideTitle3"),
       title: t("Title3"),
       description: t("Description3"),
       SlideButtonLabel: t("SlideButtonLabel3"),
     },
     {
-      background: "./src/assets/bitcoinBackground.png",
       SlideTitle: t("SlideTitle4"),
       title: t("Title4"),
       description: t("Description4"),
       SlideButtonLabel: t("SlideButtonLabel4"),
     },
     {
-      background: "./src/assets/bitcoinBackground.png",
       SlideTitle: t("SlideTitle5"),
       title: t("Title5"),
       description: t("Description5"),
@@ -82,16 +77,16 @@ function TradeSlider() {
   
 
   return (
-    <div className="relative bg-transparent py-12 lg:py-20 mt-40">
+    <div className="relative bg-transparent  px-50 mt-40">
       <div className="max-w-full mx-auto">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`cursor-grabbing bg-none md:bg-[url('./src/assets/bitcoinBackground.png')] bg-cover bg-center bg-no-repeat flex flex-col md:flex-row items-center justify-between shadow-lg rounded-xl p-6 md:p-12 lg:p-16 gap-6 max-w-[90%] mx-auto transition-all duration-500`}
+              className={`cursor-grabbing shadow-lg rounded-xl p-6 transition-all duration-500`}
             >
              {/* Left Section: Content */}
-             <div className="text-center md:text-left md:w-1/2 space-y-4 md:space-y-6">
+             <div className="text-center space-y-6">
                 <h4 className="text-sm md:text-lg font-medium text-blue-700 leading-tight">
                   {slide.SlideTitle}
                 </h4>

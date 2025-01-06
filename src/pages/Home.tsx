@@ -11,7 +11,7 @@ import TradeSmarterSection from "../components/TradeSmarterSection"
 import WeSponsor from "../components/WeSponsor";
 import VertexPluse3Packages from "../components/VertexPluse3Packages";
 import { useTranslation } from "react-i18next";
-import GlobalMarketsSectionWith3TextParameter from "../components/GlobalMarketSectionWIth3TextParameter";
+import GlobalMarketsSectionWith3TextParameter from "../components/GlobalMarketSectionWith3TextParameter";
 function Home() {
   const { t } = useTranslation();
 

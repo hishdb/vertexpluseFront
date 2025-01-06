@@ -90,20 +90,20 @@ const MenuBar: React.FC = () => {
     { label: t("Cookies & Privacy"), href: "/CookiesPrivacy" },
   ];
 
-  const educationItems: MenuItem[] = [
+  /*const educationItems: MenuItem[] = [
     { label: t("Trading Academy"), href: "/TradingAcademy" },
     { label: t("News & Market Insights"), href: "/NewsMarketInsights" },
     { label: t("+Insights"), href: "/Insights" },
     { label: t("Economic Calendar"), href: "/EconomicCalendar" },
     { label: t("Risk Management"), href: "/RiskManagement" },
     { label: t("Alerts"), href: "/Alerts" },
-  ];
+  ];*/
 
   const categories = [
     { label: t("Markets"), items: marketItems },
     { label: t("Trading"), items: tradingItems },
     { label: t("Company"), items: companyItems },
-    { label: t("Education"), items: educationItems },
+    
   ];
 
   const handleMenuHover = (menu: string | null) => {

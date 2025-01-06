@@ -65,7 +65,7 @@ function WhatIsESGScoringAllAbout() {
             className={`text-center text-sky-400 text-5xl font-semibold`}
             dir={isArabic ? "rtl" : "ltr"}>
             {t("WhatIsESGScoringAllAbout")}
-        </h2>isR
+        </h2>
         <p
             className={`text-center text-white text-lg font-medium mt-4 max-w-2xl`}
             dir={isArabic ? "rtl" : "ltr"}>

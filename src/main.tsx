@@ -15,6 +15,7 @@ import ETFS from './pages/ETFs.tsx';
 import PremiumService from './pages/PremiumService.tsx';
 import FeesCharges from './pages/FeesCharges.tsx';
 import ESG from './pages/ESG.tsx';
+import AboutUs from './pages/AboutUs.tsx';
 
 
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter(
     {
       path:'/ESG',
       element: <ESG/>,
+    },
+    {
+      path:'/About Us',
+      element: <AboutUs/>,
     }
   ],
   {

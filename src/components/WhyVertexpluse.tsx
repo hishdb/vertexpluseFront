@@ -32,15 +32,15 @@ function WhyVertexPluse() {
   ];
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden mt-40">
-      {/* Decorative Background */}
+    <div className="relative bg-trasnparent md:min-h-screen w-full overflow-hidden mt-60">
+           {/* Decorative Background */}
       <div className="absolute inset-0 z-0 ">
         <svg
           viewBox="0 0 1200 600"
           className="w-full h-full"
           preserveAspectRatio="xMidYMid slice"
         >
-          <g transform="rotate(-2, 500, 300)">
+          <g transform="rotate(2, 500, 300)">
             <rect
               x="160"
               y="20"
@@ -65,12 +65,12 @@ function WhyVertexPluse() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-24 bg-blue-900 sm:bg-transparent">
-      <h2 className={`text-center text-blue-500 text-5xl font-semibold mb-10`}
+      <div className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-0 pt-28 pb-28 sm:px-8 lg:px-12 bg-blue-900 sm:bg-transparent">
+      <h2 className={`text-center text-blue-500 text-2xl md:text-4xl lg:text-5xl  font-semibold mb-10`}
           dir={isArabic ? "rtl" : "ltr"}
         >
           {t("WHYVERTEXPLUSE?")}
-        </h2>
+      </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-2">
           {features.map((feature, index) => (
@@ -88,7 +88,7 @@ function WhyVertexPluse() {
               {/* Title */}
               <h3 className="text-2xl font-semibold mb-2">{feature.title}</h3>
               {/* Description */}
-              <p className="text-lg md:text-xl text-center md:text-left">
+              <p className="text-md md:text-xl sm:text-md text-center font-light md:text-left">
                 {feature.description}
               </p>
             </div>
