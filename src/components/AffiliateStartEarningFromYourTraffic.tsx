@@ -1,0 +1,25 @@
+function AffiliateStartEarningFromYourTraffic () {
+  return (
+    <div className="relative w-full h-full flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500  to-blue-950 " >
+      {/* Yellow decorative line */}
+      <div className="absolute top-12 left-1/2 -translate-x-1/2">
+        <div className="w-12 h-1 bg-[#FABC3F]" />
+      </div>
+
+      {/* Main content */}
+      <div className="text-center">
+        <h1 className="text-white lg:text-6xl md:text-5xl sm:text-2xl  font-bold italic mb-8">
+          Start earning from your traffic, today.
+        </h1>
+        
+        <button className="bg-[#FABC3F] text-[#001A6E] px-12 py-3 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
+          JOIN NOW
+        </button>
+      </div>
+
+   
+    </div>
+  );
+};
+
+export default AffiliateStartEarningFromYourTraffic;

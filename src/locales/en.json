@@ -421,6 +421,40 @@
   "AllOurScores": "All our scores",
   "EveryESGScoreIsBetween": " Every ESG score is between 1 (low) to 10 (high).",
   "Industry ranking": "Industry ranking",
-  "LeaderAboveAverage": " Leader, Above Average, Average, Below Average, Laggard."
+  "LeaderAboveAverage": " Leader, Above Average, Average, Below Average, Laggard.",
+
+  "WhoWeAre": "Who We Are",
+  "TheVertexPlusetradingPlatformOfferedVertexPluseLtd": "The VertexPluse trading platform is offered by VertexPluse Ltd, a UK based company with its main offices located in the city of London. The company is authorised and regulated by the Financial Conduct Authority (FCA) to offer Contracts For Difference (CFD). The company is a rapidly growing CFD provider in Europe and Asia and currently offers its portfolio of over 1000 instruments to over a million clients",
+  "ClientMoney": "Client Money",
+  "WhenAccountVertexPlusewillHoldYourFundsSegregatedBasis": "When you open an account, VertexPluse Ltd will hold your funds on a segregated basis, in accordance with the Financial Conduct Authority's client money rules.",
+  "ClientMoneyProtection": "Client Money Protection",
+  "HighlyRatedTradingProvider": "Highly Rated Trading Provider",
+  "VertexPluseIsOneOfTheHighestRatedTradingAppsAppleAppStoreGooglePlay": "VertexPluse is one of the highest-rated trading apps on Apple's App Store and Google Play as it is understandable yet powerful in its many advanced features.",
+  "VertexPluseReviewsRealStoriesRealTraders": "Vertex Pluse Reviews - Real Stories, Real Traders.",
+  "WithMillionCustomersWorldwide": "With over 26 million customers worldwide, the VertexPluse Group has become a trusted choice for both new and seasoned traders. Discover what our traders are saying about us by reading thousands of authentic reviews.",
+
+
+  "AboutVertexPluse™": "About Vertex Pluse™",
+  "VertexPluseGlobalMultiAsset": "VertexPluse is a global multi-asset fintech group operating proprietary technology-based trading platforms. vertexPluse offers customers a range of trading products, including Contracts for Difference (“CFDs”), share dealing, and futures trading. vertexPluse has a premium listing on the Main Market of the London Stock Exchange (symbol: PLUS) and is a constituent of the FTSE 250 index.",
+  "OBJECTIVESVISION": "Objectives & Vision",
+  "OurVision": "Our Vision",
+  "OurPurpose": "Our Purpose",
+  "OurValues": "Our Values",
+  "WeContinuallyStrengtheningPosition": "We are continually strengthening our position as a multi-asset fintech group over time by expanding our core product offering to new and existing markets, launching new trading and financial products, and deepening our engagement with customers.",
+  "VertexPluseOperatesAcrossProductsDevicesCountriesToProvideOurClients": "Vertex Pluse operates across products, devices, and countries to provide our clients with reliable and intuitive access to financial opportunities.",
+  "WeConsistentlyStriveForExcellenceWhenItComes": "We consistently strive for excellence when it comes to customer satisfaction and innovation.",
+  
+  
+  
+  "OfficeAddress": "Office Address",
+  "ComplaintsProcess": "Complaints Process",
+  "FullDetailsAreAvailableRequest": "Full details are available on request. The disputes body to which vertexPluse is affiliated is:",
+  "CommunicationWithCustomers": "Communication with customers and unsolicited approaches",
+  "AllCommunicationWithCustomersIsDone": "All communication with customers is done in writing, either by email or live chat. To contact vertexPluse by email, you should fill in the form available on the “Contact Us” page (the 'Request Form'). Following the submission of the Request Form, vertexPluse’s response will be sent by email directly to the email address that you specified in the form.",
+  "OnlyEmailsReceivedFromTheVertexPluse.comDomain": "Only emails received from the VertexPluse.com domain are legitimate email communications from VertexPluse.",
+  "AnyOtherEmailsClaimingFromVertexPluseAreDeemedFraudulent": "Any other emails claiming to be from Plus500 are deemed to be fraudulent. Make sure you are only visiting vertexPluse's official website - www.plus500.com, and using vertexPluse's official app available on Google Play, App Store, Huawei AppGallery, and Microsoft Store. Note that Plus500 does not have a sales department or a call center.",
+  "VertexPluseWillNeverContactCustome":"Plus500 will never contact customers by phone with a request to deposit funds.",
+  "vertexPluseWillNeverContact": "Vertex Pluse will never contact you unsolicited.",
+  "vertexPluseDoesNotOfferInvestment": "Plus500 does not offer investment advice to its clients."
     
 }

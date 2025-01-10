@@ -16,7 +16,8 @@ import PremiumService from './pages/PremiumService.tsx';
 import FeesCharges from './pages/FeesCharges.tsx';
 import ESG from './pages/ESG.tsx';
 import AboutUs from './pages/AboutUs.tsx';
-
+import Affiliate from './pages/Afiliates.tsx';
+import { register } from 'swiper/element/bundle';
 
 
 const router = createBrowserRouter(
@@ -69,6 +70,10 @@ const router = createBrowserRouter(
     {
       path:'/About Us',
       element: <AboutUs/>,
+    },
+    {
+      path:'/Affiliate',
+      element: <Affiliate/>,
     }
   ],
   {
@@ -81,7 +86,7 @@ const router = createBrowserRouter(
     },
   }
 );
-
+register();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

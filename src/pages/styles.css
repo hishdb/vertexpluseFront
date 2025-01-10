@@ -1,0 +1,101 @@
+
+.custom-swiper .swiper-pagination-vertical {
+    left: 50px !important;
+    right: auto !important;
+}
+
+.custom-swiper .custom-bullet {
+    width: 18px;  /* Increased from 8px */
+    height: 18px; /* Increased from 8px */
+    display: block;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.5;
+    margin: 12px 0 !important; /* Increased from 8px for better spacing */
+    transition: all 0.3s;
+}
+
+.custom-swiper .custom-bullet-active {
+    width: 20px;  /* Slightly larger for active state */
+    height: 20px; /* Slightly larger for active state */
+    opacity: 1;
+    background: #FABC3F;
+}
+
+/* Add hover effect */
+.custom-swiper .custom-bullet:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    70% { transform: scale(0.9); }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 1s ease-out;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 1s ease-out;
+}
+
+.animate-bounceIn {
+    animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Enhance the responsive layout */
+@media (max-width: 768px) {
+    .custom-swiper .swiper-pagination-vertical {
+        left: 20px !important;
+    }
+    
+    .custom-bullet {
+        width: 14px;
+        height: 14px;
+        margin: 8px 0 !important;
+    }
+}

@@ -9,13 +9,38 @@ import TwoTexts from "../components/TwoTexts";
 import HowDoITrade from "../components/HowDoITrade";
 import DiveIntoExtensive from "../components/DiveIntoExtensive";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import backgroundglobal from "../assets/CoverBtcBackground.png";
 
 
 
 function Crypto() {
     const controls = useAnimation();
+
+
+    const tradingViewRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "https://s3.tradingview.com/external-embedding/embed-widget-timeline.js";
+      script.async = true;
+      script.innerHTML = JSON.stringify({
+        "feedMode": "market",
+        "market": "crypto",
+        "isTransparent": true,
+        "displayMode": "regular",
+        "width": "100%",
+        "height": "100%",
+        "colorTheme": "light",
+        locale: "en",
+      });
+  
+      if (tradingViewRef.current) {
+        tradingViewRef.current.appendChild(script);
+      }
+    }, []);
+
 
     // Button animation
     useEffect(() => {
@@ -109,7 +134,7 @@ function Crypto() {
 
       <WhyVertexPluse/>  
       <TwoTexts text1={t("WhatIsCryptoTrading")} text2={t("TradingCryptoCFDInvolvesTheBuying")}/>
-      
+
       <HowDoITrade
       title={t("HOWDOITRADECRYPTO?")}
       subtitle={t("StartTradingCryptoIn5SimpleSteps")}
@@ -121,9 +146,20 @@ function Crypto() {
         t("5.StartTrading!"),
       ]}
     />
-      <DiveIntoExtensive/>
+    
 
-      <motion.div
+      <DiveIntoExtensive/>
+      <div>
+           <h2 className="text-center p-10 font-semibold text-sky-400 md:text-5xl sm:text-2xl lg:text-6xl">
+        Related News & Market Insights</h2>
+         {/* TradingView Widget */}
+         <div
+          ref={tradingViewRef}
+          className="bg-white shadow-lg rounded-lg p-6 mx-auto my-16 max-w-5xl h-80"
+        >
+          <div className="tradingview-widget-container__widget"></div>
+        </div>  
+        <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -148,6 +184,10 @@ function Crypto() {
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             </motion.button>
       </motion.div>
+      </div>
+   
+
+    
          
     </main>
     
