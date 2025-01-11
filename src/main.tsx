@@ -18,7 +18,11 @@ import ESG from './pages/ESG.tsx';
 import AboutUs from './pages/AboutUs.tsx';
 import Affiliate from './pages/Afiliates.tsx';
 import { register } from 'swiper/element/bundle';
-
+import AllMarkets from './pages/AllMarkets.tsx';
+import InvestorRelations from './pages/InvestorRelations.tsx';
+import Login from './pages/Login.tsx';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import SignUp from './pages/SignUp.tsx';
 
 const router = createBrowserRouter(
   [
@@ -74,6 +78,22 @@ const router = createBrowserRouter(
     {
       path:'/Affiliate',
       element: <Affiliate/>,
+    },
+    {
+      path: '/all-markets',
+      element: <AllMarkets/>,
+    },
+    {
+      path: '/Investor Relations',
+      element: <InvestorRelations/>,
+    },
+    {
+      path: '/Login',
+      element: <Login/>,
+    },
+    {
+      path: '/SignUp',
+      element: <SignUp/>
     }
   ],
   {

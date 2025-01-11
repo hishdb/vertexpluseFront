@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import shapeImage2Black from "../assets/shapeObject2-black.png";
-import shapeImage1Black from "../assets/shapeObject1-black.png";
+import shapeImage2Black from "../assets/itemListIcon.png";
+import shapeImage1Black from "../assets/itemListIcon.png";
 import MarketInsights from "./MarketInsights";
 
 interface GlobalMarketsSectionProps {
@@ -65,12 +65,12 @@ const GlobalMarketsSectionWith2TextParameters = ({ text1, text2 }: GlobalMarkets
         </svg>
       </div>
       <div className="absolute left-0 top-44 h-full w-full pointer-events-none">
-        <motion.div style={{ y: springY }} className="absolute left-0 bottom-1/4 w-60 h-60 opacity-40">
+        <motion.div style={{ y: springY }} className="absolute left-10 bottom-1/4 w-40 h-40 opacity-40 rotate-[20deg]">
           <img src={shapeImage1Black} alt="Shape Image 1" />
         </motion.div>
 
         <motion.div style={{ y: springFasterY }} className="absolute right-20 bottom-1/4 w-20 h-20 opacity-20">
-          <img src={shapeImage2Black} alt="Shape Image 2" className="rotate-[40deg]" />
+          <img src={shapeImage2Black} alt="Shape Image 2" className="rotate-[10deg]" />
         </motion.div>
       </div>
 

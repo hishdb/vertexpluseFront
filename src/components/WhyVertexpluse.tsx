@@ -65,7 +65,7 @@ function WhyVertexPluse() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-0 pt-28 pb-28 sm:px-8 lg:px-12 bg-blue-900 sm:bg-transparent">
+      <div className=" relative z-10 flex flex-col items-center max-w-7xl mx-auto px-0 pt-28 pb-28 sm:px-8 lg:px-12 bg-blue-900 sm:bg-transparent">
       <h2 className={`text-center text-blue-500 text-2xl md:text-4xl lg:text-5xl  font-semibold mb-10`}
           dir={isArabic ? "rtl" : "ltr"}
         >

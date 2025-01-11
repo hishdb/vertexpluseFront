@@ -183,13 +183,21 @@ const MenuBar: React.FC = () => {
             ))}
           </div>
           <div className="flex items-center space-x-2 lg:space-x-4">
-            <button className="px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold text-blue-700 hover:text-blue-500">
-              {t("Login")}
-            </button>
-            <button className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded">
+          {/* Login Button */}
+          <Link
+            to="/Login" // Ensure the path matches exactly as defined in your router
+            className="px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold text-blue-700 hover:text-blue-500"
+          >
+            {t("Login")}
+          </Link>
+          
+          {/* Start Trading Button */}
+          <Link 
+          to="/SignUp"
+          className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded">
             {t("StartTrading")}
-            </button>
-          </div>
+          </Link>
+        </div>
         </div>
       </div>
 

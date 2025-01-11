@@ -17,7 +17,38 @@ import FAQ from "../components/FAQ";
 
 function Commodities() {
     const controls = useAnimation();
-
+    useEffect(() => {
+      // Create script element
+      const script = document.createElement('script');
+      script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
+      script.type = 'text/javascript';
+      script.async = true;
+  
+      // Configure widget settings
+      script.innerHTML = JSON.stringify({
+        feedMode: "market",
+        market: "futures",
+        isTransparent: true,
+        displayMode: "regular",
+        width: "100%",
+        height: "100%",
+        colorTheme: "light",
+        locale: "en"
+      });
+  
+      // Create widget container
+      const widgetContainer = document.querySelector('.tradingview-widget-container__widget');
+      if (widgetContainer) {
+        widgetContainer.appendChild(script);
+      }
+  
+      return () => {
+        // Cleanup script when component unmounts
+        if (widgetContainer && widgetContainer.contains(script)) {
+          widgetContainer.removeChild(script);
+        }
+      };
+    }, []);
     // Button animation
     useEffect(() => {
       const startButtonAnimation = async () => {
@@ -121,11 +152,17 @@ function Commodities() {
       title={t("CommoditiesFAQ")}
       faqs={faqData}
     />
+                         <h2 className="text-center pt-10 font-semibold text-sky-400 md:text-5xl sm:text-2xl lg:text-6xl">
+        Related News & Market Insights</h2>
+
+        <div className="tradingview-widget-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-8  bg-gradient-to-b from-sky-100 to-white rounded-3xl shadow-2xl">
+      <div className="tradingview-widget-container__widget h-[600px]"></div>
+      </div>
       <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 mt-32 mb-32"
+           className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32"
           >
             <motion.button
               animate={controls}

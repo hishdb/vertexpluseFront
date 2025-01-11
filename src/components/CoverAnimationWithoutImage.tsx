@@ -1,5 +1,5 @@
-import shapeImage1 from "../assets/shapeObject1.png";
-import shapeImage2 from "../assets/shapeObject2.png";
+import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage2 from "../assets/itemListIconWhite.png";
 import { useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
@@ -64,23 +64,23 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
       <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
         <motion.div
           style={{ y: springY1 }}
-          className="absolute left-0 top-4 w-48 h-48 opacity-60"
+          className="absolute left-0 top-4 w-48 h-48 opacity-50"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[40deg]" />
+          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[80deg]" />
         </motion.div>
 
         <motion.div
           style={{ y: springY2 }}
-          className="absolute -left-60 top-1/2 w-106 h-106 opacity-70"
+          className="absolute -left-40 top-[60%] w-90 h-90 opacity-70"
         >
-          <img src={shapeImage1} alt="Shape Image 1" />
+          <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]" />
         </motion.div>
 
         <motion.div
           style={{ y: springY3 }}
-          className="absolute left-8 bottom-1/2 w-16 h-16 opacity-30"
+          className="absolute left-24 bottom-1/2 w-16 h-16 opacity-20"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[240deg]" />
+          <img src={shapeImage2} alt="Shape Image 4" />
         </motion.div>
       </div>
 

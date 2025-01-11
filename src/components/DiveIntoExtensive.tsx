@@ -1,12 +1,25 @@
 import backgroundglobal from "../assets/CryptoBackground.png";
-import shapeImage1 from "../assets/shapeObject1.png";
-import shapeImage2 from "../assets/shapeObject2.png";
-import { motion } from "framer-motion";
+import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage2 from "../assets/itemListIconWhite.png";
+import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 
 function DiveIntoExtensive ()  {   
   const {t} = useTranslation();
-
+  const controls = useAnimation();
+  // Scroll animations setup
+  const { scrollY } = useScroll();
+  
+  // Transform values for floating elements
+  const y1 = useTransform(scrollY, [0, 300], [0, -100]);
+  const y2 = useTransform(scrollY, [0, 300], [0, -120]);
+  const y3 = useTransform(scrollY, [0, 300], [0, -80]);
+  
+  // Spring configurations for smoother animations
+  const springConfig = { stiffness: 100, damping: 30, mass: 0.5 };
+  const springY1 = useSpring(y1, springConfig);
+  const springY2 = useSpring(y2, springConfig);
+  const springY3 = useSpring(y3, springConfig);
 
   return(
     <div
@@ -20,26 +33,27 @@ function DiveIntoExtensive ()  {
     <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-500/50"></div>
 
       {/* Animated decorative elements */}
-      <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
+  {/* Animated decorative elements */}
+  <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
         <motion.div
-       
-          className="absolute left-0 top-4 w-48 h-48 opacity-60"
+          style={{ y: springY1 }}
+          className="absolute left-0 top-2 w-40 h-40 opacity-50"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[40deg]" />
+          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[80deg]" />
         </motion.div>
 
         <motion.div
-         
-          className="absolute -left-60 top-1/2 w-106 h-106 opacity-70"
+          style={{ y: springY2 }}
+          className="absolute -left-10 top-[80%] w-60 h-60 opacity-70"
         >
-          <img src={shapeImage1} alt="Shape Image 1" />
+          <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]" />
         </motion.div>
 
         <motion.div
-    
-          className="absolute left-8 bottom-1/2 w-16 h-16 opacity-30"
+          style={{ y: springY3 }}
+          className="absolute left-24 bottom-[40%] w-16 h-16 opacity-10"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[240deg]" />
+          <img src={shapeImage2} alt="Shape Image 4"  />
         </motion.div>
       </div>
 
