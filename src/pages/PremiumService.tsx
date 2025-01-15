@@ -93,7 +93,7 @@ function PremiumService() {
         </div>
 
         {/* Premium Client Section */}
-        <div className={`-mt-32 md:-mt-32 lg:-mt-20 py-12 md:py-20 items-center justify-start bg-auto bg-no-repeat bg-right-top text-white ${isRTL ? 'rtl' : ''}`} dir={isRTL ? 'rtl' : 'ltr'}
+        <div className={`-mt-32 md:-mt-32 lg:-mt-20 py-0 sm:py-12 md:py-20 items-center justify-start bg-auto bg-no-repeat bg-right-top text-white ${isRTL ? 'rtl' : ''}`} dir={isRTL ? 'rtl' : 'ltr'}
          style={{
           backgroundImage: `url(${manWithSuitBackground})`,
         }}>
@@ -139,7 +139,7 @@ function PremiumService() {
                 </p>
               </div>
             </div>
-            <button className="mt-10 px-20 py-5 bg-yellow-300 text-blue-900 text-sm sm:text-base md:text-lg lg:text-xl rounded-full font-semibold hover:bg-yellow-600 transition">
+            <button className="mt-10 px-20 py-5 bg-yellow-300 text-blue-900 text-sm sm:text-base md:text-lg lg:text-xl rounded-md font-semibold hover:bg-yellow-600 transition">
               {t("StartTradingNow")}
             </button>
           </div>

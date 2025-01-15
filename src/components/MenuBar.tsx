@@ -64,7 +64,8 @@ const MenuBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [backgroundOpacity, setBackgroundOpacity] = useState(1);
   const [isScrolled, setIsScrolled] = useState(false);
-  const {t} = useTranslation();
+  const {t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const marketItems: MenuItem[] = [
     { label: t("Crypto"), href: "/crypto" },
     { label: t("Indices"), href: "/indices" },
@@ -135,6 +136,7 @@ const MenuBar: React.FC = () => {
 
   return (
     <nav
+      dir= {isRTL ? "rtl" : "ltr"}
       className={`bg-white text-blue-900 py-4 md:py-4 px-4 md:px-6 fixed top-0 left-0 w-full z-50 shadow-md transition-opacity duration-300 ${
         isScrolled ? "rounded-b-2xl" : ""
       }`} 
@@ -192,7 +194,7 @@ const MenuBar: React.FC = () => {
           </Link>
           
           {/* Start Trading Button */}
-          <Link 
+           <Link
           to="/SignUp"
           className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded">
             {t("StartTrading")}

@@ -7,7 +7,6 @@ import ShareholderCentre from "../assets/ShareholderCentre.jpg"
 
 function InvestorRelations() {
 
-  
     const stockPrice = {
       value: 1959.42,
       change: -1.12,
@@ -17,13 +16,17 @@ function InvestorRelations() {
     };
 
 
+    const {t, i18n} = useTranslation();
+    const isRTL = i18n.language === "ar";
 
-   const {t} = useTranslation();
+
     return (    
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen"   >
     <MenuBar />
     
-    <main className="flex-grow ">
+    <main className="flex-grow "
+    dir={isRTL ? "rtl" : "ltr"}
+    >
      {/* first */}   
      <div className="w-full max-w-7xl mx-auto p-6 space-y-8 pt-48">
       {/* Hero Section */}
@@ -33,18 +36,18 @@ function InvestorRelations() {
         <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold tracking-tight">
-              Investor Relations
+              {t("InvestorRelations")}
             </h1>
             <p className="text-blue-100 max-w-xl">
-            Plus500 is a global multi-asset fintech group operating proprietary technology-based trading platforms. Plus500 offers customers a range of OTC trading products, share dealing and futures and options on futures in the US. Plus500 was admitted to trading on the London Stock Exchange (LON: PLUS) on 24 July 2013, is admitted to the Equity Shares in Commercial Companies (“ESCC”) Category of the Official List and is a constituent of the FTSE 250 Index.
+            {t("VertexPluseIsAGlobal")}
             </p>
             <div className="flex gap-4">
               <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
-                Learn More
+                {t("LEARNMORE")}
                 <ArrowUpRight className="w-4 h-4" />
               </button>
               <button className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg transition-colors">
-                Subscribe
+                {t("Subscribe")}
                 <Mail className="w-4 h-4" />
               </button>
             </div>
@@ -52,7 +55,7 @@ function InvestorRelations() {
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
             <div className="flex items-baseline gap-2">
-              <h2 className="text-2xl font-semibold">LON:PLUS</h2>
+              <h2 className="text-2xl font-semibold">{t("LON:PLUS")}</h2>
               <span className="text-sm text-blue-200">London Stock Exchange</span>
             </div>
             <div className="mt-4 flex items-baseline gap-3">
@@ -76,7 +79,7 @@ function InvestorRelations() {
       <div className="w-full max-w-7xl mx-auto px-4">
         <div className="text-center mb-16 text-blue-900">
           <h1 className=" text-7xl font-bold mb-4">FY 2023</h1>
-          <h2 className=" text-2xl tracking-wider">KEY METRICS</h2>
+          <h2 className=" text-2xl tracking-wider">{t("KEYMETRICS")}</h2>
         </div>
 
         <div className="flex flex-wrap justify-center gap-8">
@@ -87,7 +90,7 @@ function InvestorRelations() {
               </svg>
             }
             value="$726.2m"
-            label="REVENUE"
+            label={t("REVENUE")}
           />
 
           <MetricCard 
@@ -98,7 +101,7 @@ function InvestorRelations() {
               </svg>
             }
             value="$340.5m"
-            label="EBITDA"
+            label={t("EBITDA")}
           />
 
           <MetricCard 
@@ -109,7 +112,7 @@ function InvestorRelations() {
               </svg>
             }
             value="233,037"
-            label="ACTIVE CUSTOMERS"
+            label={t("ACTIVECUSTOMERS")}
           />
 
           <MetricCard 
@@ -121,7 +124,7 @@ function InvestorRelations() {
               </svg>
             }
             value="90,944"
-            label="NEW CUSTOMERS"
+            label={t("NEWCUSTOMERS")}
           />
         </div>
       </div>
@@ -138,18 +141,17 @@ function InvestorRelations() {
           className="lg:w-1/2 space-y-6 text-center lg:text-left"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
-            SHAREHOLDER CENTRE
+            {t("SHAREHOLDERCENTRE")}
           </h2>
           <p className="text-gray-600 text-lg">
-            Access Plus500’s shareholder data, including historic and current
-            share prices from various financial sources.
+            {t("AccessPlus500’sShareholder")}           
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-4 px-8 py-3 bg-blue-500 text-white font-medium text-lg rounded-md shadow-md hover:bg-blue-600 transition duration-300"
           >
-            LEARN MORE
+            {t("LEARNMORE")}
           </motion.button>
         </motion.div>
 
@@ -184,7 +186,6 @@ interface MetricCardProps {
     value: string;
     label: string;
   }
-  
   const MetricCard: React.FC<MetricCardProps> = ({ icon, value, label }) => (
     <div className="bg-white rounded-xl p-12 flex flex-col items-center text-center min-w-[160px] min-h-[250px] border-2 border-blue-500 justify-center">
       <div className="text-blue-500 mb-8">

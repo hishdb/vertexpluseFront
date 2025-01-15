@@ -13,7 +13,7 @@ function InsightsIntroductionSection ()  {
     t("AnalyseTrendsAndSeeWhat")
   ];
   return (
-    <div className="relative bg-trasnparent md:min-h-screen w-full overflow-hidden mt-60">
+    <div className="relative bg-trasnparent md:min-h-screen w-full overflow-hidden sm:mt-60 mt-0">
        {/* Decorative Background */}
       <div className="absolute inset-0 z-0 ">
         <svg
@@ -46,7 +46,7 @@ function InsightsIntroductionSection ()  {
       </div>
    
       {/* Content */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-0 pt-28 pb-28 sm:px-8 lg:px-12">
+      <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-0 pt-10 sm:pt-28 pb-28 sm:px-8 lg:px-12">
       {/* Left Content */}
       <div className="text-white  md:w-1/2 space-y-14 p-8 mt-32 md:mt-0">
           {/* Title with responsive text size */}

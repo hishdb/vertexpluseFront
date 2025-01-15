@@ -3,8 +3,8 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import shapeImage1 from "../assets/shapeObject1.png";
-import shapeImage2 from "../assets/shapeObject2.png";
+import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage2 from "../assets/itemListIconWhite.png";
 import backgroundImage from "../assets/team.jpg"
 import logo from "../assets/vertexpluseWhite.png"
 import aboutUsIcon1 from "../assets/about-us-who-we-are-icon1.svg"
@@ -107,23 +107,23 @@ function AboutUs() {
       <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
         <motion.div
           style={{ y: springY1 }}
-          className="absolute left-0 top-4 w-48 h-48 opacity-60"
+          className="absolute left-0 top-4 w-48 h-48 opacity-50"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[40deg]" />
+          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[80deg]" />
         </motion.div>
 
         <motion.div
           style={{ y: springY2 }}
-          className="absolute -left-60 top-1/2 w-106 h-106 opacity-70"
+          className="absolute -left-40 top-[60%] w-90 h-90 opacity-70"
         >
-          <img src={shapeImage1} alt="Shape Image 1" />
+          <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]" />
         </motion.div>
 
         <motion.div
           style={{ y: springY3 }}
-          className="absolute left-8 bottom-1/2 w-16 h-16 opacity-30"
+          className="absolute left-24 bottom-1/2 w-16 h-16 opacity-20"
         >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[240deg]" />
+          <img src={shapeImage2} alt="Shape Image 4" />
         </motion.div>
       </div>
 
@@ -460,7 +460,7 @@ function AboutUs() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 mt-8 pb-20"
+              className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 p-6 sm:p-0 md:p-10 lg:p-10 mt-8 pb-20"
             >
               <motion.button
                 animate={controls}

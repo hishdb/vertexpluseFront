@@ -157,7 +157,7 @@ function CoverAnimation ()  {
           <img
             src="https://www.forex.com/en-us/-/media/project/gain-capital/forex/heroes/platforms/overview/fx-us-platform-overview-mobile.png?h=1000&iar=0&w=1440&hash=191914194E4FCDA9FD9CD987A6AC6C1C"
             alt="Trading Devices"
-            className="max-w-full h-auto scale-110 relative z-10"
+            className=" h-auto scale-110 relative z-10"
           />
         </motion.div>
       </div>

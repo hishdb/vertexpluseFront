@@ -18,32 +18,96 @@ const HowDoITrade: React.FC<HowDoITradeProps> = ({ title, subtitle, steps }) => 
       dir={isArabic ? "rtl" : "ltr"} // Dynamically set text direction
     >
       {/* Decorative Background */}
-      <div className="absolute inset-0 z-0 ">
+        <div className="absolute inset-0 z-0 ">
         <svg
           viewBox="0 0 1200 600"
           className="w-full h-full"
           preserveAspectRatio="xMidYMid slice"
         >
-          <g transform="rotate(-2, 500, 300)">
+                <defs>
+            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#1e3a8a" stopOpacity="1" />
+              <stop offset="100%" stopColor="#1e40af" stopOpacity="1" />
+            </linearGradient>
+            
+            <pattern id="smallDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1" fill="white" opacity="0.1"/>
+            </pattern>
+
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <g transform="rotate(2, 500, 300)">
             <rect
-              x="160"
+              x="100"
               y="20"
-              width="850"
-              height="350"
+              width="950"
+              height="400"
               rx="16"
               ry="16"
               className="fill-blue-900/20"
               transform="translate(8, 8)"
             />
             <rect
-              x="180"
+              x="100"
               y="40"
-              width="850"
-              height="350"
+              width="950"
+              height="400"
               rx="16"
               ry="16"
               className="fill-blue-900"
             />
+            <rect
+              x="100"
+              y="40"
+              width="950"
+              height="500"
+              rx="16"
+              ry="16"
+              fill="url(#smallDots)"
+            />
+             <path
+              d="M120 60 Q 570 20, 1020 60"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.1"
+            />
+            
+            <path
+              d="M120 520 Q 570 560, 1020 520"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.1"
+            />
+                  <circle cx="150" cy="90" r="30" fill="white" opacity="0.03"/>
+            <circle cx="1000" cy="490" r="40" fill="white" opacity="0.03"/>
+            
+            <g opacity="0.07">
+              <line x1="200" y1="40" x2="200" y2="540" stroke="white" strokeWidth="1"/>
+              <line x1="400" y1="40" x2="400" y2="540" stroke="white" strokeWidth="1"/>
+              <line x1="600" y1="40" x2="600" y2="540" stroke="white" strokeWidth="1"/>
+              <line x1="800" y1="40" x2="800" y2="540" stroke="white" strokeWidth="1"/>
+            </g>
+
+            <path
+              d="M100 290 L1050 290"
+              stroke="white"
+              strokeWidth="0.5"
+              strokeDasharray="5,5"
+              opacity="0.1"
+            />
+            
+            <circle cx="120" cy="60" r="4" fill="white" opacity="0.2" filter="url(#glow)"/>
+            <circle cx="1030" cy="60" r="4" fill="white" opacity="0.2" filter="url(#glow)"/>
+            <circle cx="120" cy="520" r="4" fill="white" opacity="0.2" filter="url(#glow)"/>
+            <circle cx="1030" cy="520" r="4" fill="white" opacity="0.2" filter="url(#glow)"/>
           </g>
         </svg>
       </div>

@@ -23,6 +23,7 @@ import InvestorRelations from './pages/InvestorRelations.tsx';
 import Login from './pages/Login.tsx';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SignUp from './pages/SignUp.tsx';
+import Support from './pages/Support.tsx';
 
 const router = createBrowserRouter(
   [
@@ -94,6 +95,10 @@ const router = createBrowserRouter(
     {
       path: '/SignUp',
       element: <SignUp/>
+    },
+    {
+      path: 'Support',
+      element: <Support/>
     }
   ],
   {
