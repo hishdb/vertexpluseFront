@@ -144,7 +144,7 @@ function InvestorRelations() {
             {t("SHAREHOLDERCENTRE")}
           </h2>
           <p className="text-gray-600 text-lg">
-            {t("AccessPlus500’sShareholder")}           
+            {t("AccessvertexPluse’sShareholder")}           
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}

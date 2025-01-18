@@ -64,8 +64,10 @@ const MenuBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [backgroundOpacity, setBackgroundOpacity] = useState(1);
   const [isScrolled, setIsScrolled] = useState(false);
-  const {t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
+
+  // Your existing menu items...
   const marketItems: MenuItem[] = [
     { label: t("Crypto"), href: "/crypto" },
     { label: t("Indices"), href: "/indices" },
@@ -81,7 +83,6 @@ const MenuBar: React.FC = () => {
     { label: t("Premium Service"), href: "/PremiumService" },
     { label: t("Fees & Charges"), href: "/FeesCharges" },
     { label: t("ESG"), href: "/ESG" },
- 
   ];
 
   const companyItems: MenuItem[] = [
@@ -90,20 +91,10 @@ const MenuBar: React.FC = () => {
     { label: t("Investor Relations"), href: "/Investor Relations" },
   ];
 
-  /*const educationItems: MenuItem[] = [
-    { label: t("Trading Academy"), href: "/TradingAcademy" },
-    { label: t("News & Market Insights"), href: "/NewsMarketInsights" },
-    { label: t("+Insights"), href: "/Insights" },
-    { label: t("Economic Calendar"), href: "/EconomicCalendar" },
-    { label: t("Risk Management"), href: "/RiskManagement" },
-    { label: t("Alerts"), href: "/Alerts" },
-  ];*/
-
   const categories = [
     { label: t("Markets"), items: marketItems },
     { label: t("Trading"), items: tradingItems },
     { label: t("Company"), items: companyItems },
-    
   ];
 
   const handleMenuHover = (menu: string | null) => {
@@ -117,6 +108,18 @@ const MenuBar: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -135,10 +138,10 @@ const MenuBar: React.FC = () => {
 
   return (
     <nav
-      dir= {isRTL ? "rtl" : "ltr"}
+      dir={isRTL ? "rtl" : "ltr"}
       className={`bg-white text-blue-900 py-4 md:py-4 px-4 md:px-6 fixed top-0 left-0 w-full z-50 shadow-md transition-opacity duration-300 ${
         isScrolled ? "rounded-b-2xl" : ""
-      }`} 
+      }`}
       style={{
         backgroundColor: `rgba(255, 255, 255, ${backgroundOpacity})`,
       }}
@@ -147,18 +150,16 @@ const MenuBar: React.FC = () => {
         <div className="flex justify-between items-center w-full">
           {/* Logo */}
           <Link to="/" className="font-bold text-xl">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-8 md:h-10 lg:h-12"
-            />
+            <img src={logo} alt="Logo" className="h-8 md:h-10 lg:h-12" />
           </Link>
           <LanguageSwitcher />
           {/* Mobile Menu Toggle */}
           <div className="flex items-center space-x-2 md:hidden">
-            <button className="bg-blue-600 text-white hover:bg-blue-700 px-3 py-1 mr-2 text-xs font-semibold rounded">
+                        <a
+                href="https://platform.vertexpluse.com/register"
+           className="bg-blue-600 text-white hover:bg-blue-700 px-3 py-1 mr-2 text-xs font-semibold rounded">
               {t("Trade")}
-            </button>
+            </a>
             <button
               className="text-blue-900 hover:text-blue-600 focus:outline-none"
               onClick={toggleMenu}
@@ -168,7 +169,7 @@ const MenuBar: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu - Keeping exactly the same */}
         <div className="hidden md:flex md:items-center md:space-x-2 lg:space-x-4 xl:space-x-6 w-full justify-end">
           <div className="flex items-center space-x-2 lg:space-x-4">
             {categories.map((category) => (
@@ -184,75 +185,105 @@ const MenuBar: React.FC = () => {
             ))}
           </div>
           <div className="flex items-center space-x-2 lg:space-x-4">
-          {/* Login Button */}
-          <a
-          href="https://platform.vertexpluse.com/login" // External login URL
-          className="px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold text-blue-700 hover:text-blue-500"
-          target="_blank" // Opens the link in a new tab
-          rel="noopener noreferrer" // Ensures security and performance
-        >
-          {t("Login")}
-        </a>
-
-        {/* Start Trading Button */}
-        <a
-          href="https://platform.vertexpluse.com/register" // External register URL
-          className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded"
-          target="_blank" // Opens the link in a new tab
-          rel="noopener noreferrer" // Ensures security and performance
-        >
-          {t("StartTrading")}
-        </a>
-
-        </div>
+            <a
+              href="https://platform.vertexpluse.com/login"
+              className="px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold text-blue-700 hover:text-blue-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("Login")}
+            </a>
+            <a
+              href="https://platform.vertexpluse.com/register"
+              className="bg-blue-600 text-white hover:bg-blue-700 hover:text-black px-4 lg:px-6 py-1 lg:py-2 text-xs lg:text-sm font-semibold rounded"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("StartTrading")}
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Enhanced Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-blue-900 text-white h-screen overflow-y-auto fixed inset-0 z-50 flex flex-col">
-          <div className="flex items-center justify-between p-4">
-            {/* Close Button */}
-            <button className="self-end text-xl text-white" onClick={toggleMenu}>
-              <FaTimes />
+        <div className="md:hidden fixed inset-0 z-50 flex flex-col bg-white">
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between p-4 border-b">
+            <Link to="/" className="font-bold text-xl" onClick={toggleMenu}>
+              <img src={logo} alt="Logo" className="h-8" />
+            </Link>
+            <button
+              className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+              onClick={toggleMenu}
+            >
+              <FaTimes size={24} className="text-blue-900" />
             </button>
           </div>
 
           {/* Mobile Menu Content */}
-          <div className="flex-grow p-6">
+          <div className="flex-1 overflow-y-auto">
             {categories.map((category) => (
-              <div key={category.label} className="mb-4">
+              <div key={category.label} className="border-b border-gray-100">
                 <button
-                  className={`flex justify-between items-center w-full text-left text-base font-semibold ${
-                    activeMenu === category.label
-                      ? "text-blue-300"
-                      : "text-white"
-                  }`}
+                  className="flex items-center justify-between w-full p-4 text-left"
                   onClick={() =>
-                    setActiveMenu(
-                      activeMenu === category.label ? null : category.label
-                    )
+                    setActiveMenu(activeMenu === category.label ? null : category.label)
                   }
                 >
-                  {category.label}
-                  <ArrowDropDownIcon />
+                  <span className="text-lg font-medium text-blue-900">
+                    {category.label}
+                  </span>
+                  <ArrowDropDownIcon
+                    className={`transform transition-transform duration-200 ${
+                      activeMenu === category.label ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-                {activeMenu === category.label && (
-                  <ul className="mt-2 space-y-2 pl-4">
+                <div
+                  className={`overflow-hidden transition-all duration-200 ${
+                    activeMenu === category.label ? "max-h-96" : "max-h-0"
+                  }`}
+                >
+                  <div className="bg-gray-50 px-4 py-2">
                     {category.items.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={item.href}
-                          className="block hover:text-blue-300"
-                        >
-                          {item.label}
-                        </a>
-                      </li>
+                      <a
+                        key={index}
+                        href={item.href}
+                        className="block py-3 text-gray-600 hover:text-blue-600 transition-colors"
+                        onClick={toggleMenu}
+                      >
+                        {item.label}
+                      </a>
                     ))}
-                  </ul>
-                )}
+                  </div>
+                </div>
               </div>
             ))}
+          </div>
+
+          {/* Mobile Menu Footer */}
+          <div className="p-4 border-t bg-gray-50">
+            <div className="flex flex-col space-y-3">
+              <a
+                href="https://platform.vertexpluse.com/login"
+                className="block w-full py-3 text-center text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={toggleMenu}
+              >
+                {t("Login")}
+              </a>
+              <a
+                href="https://platform.vertexpluse.com/register"
+                className="block w-full py-3 text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={toggleMenu}
+              >
+                {t("StartTrading")}
+              </a>
+            </div>
           </div>
         </div>
       )}

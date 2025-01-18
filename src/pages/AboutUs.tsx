@@ -327,9 +327,9 @@ function AboutUs() {
             className="absolute right-10 bottom-20 w-40 opacity-50"
           />
           <img
-            src={shapeImage2}
+            src={shapeImage1}
             alt="Shape"
-            className="absolute right-45 bottom-80 w-40 opacity-90"
+            className="absolute right-45 bottom-80 w-40 opacity-40 rotate-[20deg]"
           />
         </div>
 

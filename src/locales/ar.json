@@ -436,9 +436,9 @@
   "StartEarningFromYourTraffic": "ابدأ بجني الأرباح من حركة المرور الخاصة بك اليوم",
   "StartEarningFrom": "ابدأ بجني الأرباح من",
   "YourTrafficToday": "حركة المرور الخاصة بك اليوم.",
-  "MonetizeYourTraffic": "قم بتحقيق الدخل من حركة المرور الخاصة بك واكسب العمولات من خلال الترويج لـ Plus500 على موقعك الإلكتروني",
+  "MonetizeYourTraffic": "قم بتحقيق الدخل من حركة المرور الخاصة بك واكسب العمولات من خلال الترويج لـ vertexPluse على موقعك الإلكتروني",
   "HighConversionTools": "أدوات تحويل عالية",
-  "OurMarketingSolutions": "يمكن لحلولنا التسويقية أن تساعد بسهولة في تحقيق أقصى استفادة من موقعك الإلكتروني أثناء الترويج لـ Plus500",
+  "OurMarketingSolutions": "يمكن لحلولنا التسويقية أن تساعد بسهولة في تحقيق أقصى استفادة من موقعك الإلكتروني أثناء الترويج لـ vertexPluse",
   "PersonalSupportGuidance": "دعم وإرشاد شخصي",
   "EachAffiliateIs": "يتم مرافقة كل شريك مدير شراكة",
   "ContactUs": "اتصل بنا لمزيد من المعلومات - سنكون سعداء بمساعدتك!",
@@ -446,12 +446,12 @@
   "ForFurtherInformation": "لمزيد من المعلومات",
   "MarketingSolutions": "حلول تسويقية",
   "InvestorRelations": "علاقات المستثمرين",
-  "VertexPluseIsAGlobal": "VertexPluse هي مجموعة فينتك عالمية متعددة الأصول تدير منصات تداول تعتمد على التكنولوجيا المملوكة. تقدم Plus500 للعملاء مجموعة من منتجات التداول OTC، والتعامل في الأسهم، والعقود الآجلة والخيارات على العقود الآجلة في الولايات المتحدة. تم قبول Plus500 للتداول في بورصة لندن (LON: PLUS) في 24 يوليو 2013، وتم إدراجها في فئة أسهم الشركات التجارية (“ESCC”) ضمن القائمة الرسمية وهي جزء من مؤشر FTSE 250.",
+  "VertexPluseIsAGlobal": "VertexPluse هي مجموعة فينتك عالمية متعددة الأصول تدير منصات تداول تعتمد على التكنولوجيا المملوكة. تقدم vertexPluse للعملاء مجموعة من منتجات التداول OTC، والتعامل في الأسهم، والعقود الآجلة والخيارات على العقود الآجلة في الولايات المتحدة. تم قبول vertexPluse للتداول في بورصة لندن (LON: PLUS) في 24 يوليو 2013، وتم إدراجها في فئة أسهم الشركات التجارية (“ESCC”) ضمن القائمة الرسمية وهي جزء من مؤشر FTSE 250.",
   "Subscribe": "اشترك",
   "LON:PLUS": "LON: PLUS",
   "KEYMETRICS": "المقاييس الرئيسية",
   "SHAREHOLDERCENTRE": "مركز المساهمين",
-  "AccessPlus500’sShareholder": "احصل على بيانات مساهمي Plus500، بما في ذلك أسعار الأسهم التاريخية والحالية من مصادر مالية متنوعة.",
+  "AccessvertexPluse’sShareholder": "احصل على بيانات مساهمي vertexPluse، بما في ذلك أسعار الأسهم التاريخية والحالية من مصادر مالية متنوعة.",
   "LEARNMORE": "تعرف على المزيد",
   "REVENUE": "الإيرادات",
   "EBITDA": "الأرباح",
@@ -465,7 +465,19 @@
   "VertexPluseIsATrademark": "VertexPluse هي علامة تجارية مسجلة لشركة VertexPluse Ltd.",
   "TheSP500Dow": "مؤشرات S&P 500، Dow Jones Industrial Average وS&P/ASX 200 هي منتجات لشركة S&P Dow Jones Indices LLC ('SPDJI') و/أو المرخصين التابعين لها. S&P 500®، USA 500، USA 30 هي علامات تجارية مسجلة لشركة Standard & Poor's Financial Services LLC ('S&P')؛ Dow Jones® هي علامة تجارية مسجلة لشركة Dow Jones Trademark Holdings LLC ('Dow Jones'). ASX® هي علامة تجارية مسجلة لبورصة الأوراق المالية الأسترالية. منتجات VertexPluse ليست مدعومة، مروجة، أو مباعة من قبل SPDJI أو Dow Jones أو ASX أو أي من الشركات التابعة لها، ولا تتحمل أي مسؤولية عن الأخطاء أو السهو أو انقطاعات المؤشرات.",
   "SecuredBySSL": "مؤمن بواسطة SSL. حقوق الطبع والنشر © VertexPluse. جميع الحقوق محفوظة.",
-  "FollowUsOn": "تابعنا على:" 
+  "FollowUsOn": "تابعنا على:" ,
+
+  "Here to": "هنا لـ",
+  "Support You": "دعمك",
+  "Ask you question without hesitation.": "اطرح سؤالك دون تردد.",
+  "Your Name": "اسمك",
+  "Email Address": "عنوان البريد الإلكتروني",
+  "Message": "رسالة",
+  "Sending": "جارٍ الإرسال",
+  "Send Your Message": "أرسل رسالتك",
+  "Enter name here": "أدخل الاسم هنا",
+  "Email address": "عنوان البريد الإلكتروني",
+  "Message goes here": "اكتب الرسالة هنا"
   
   
 }

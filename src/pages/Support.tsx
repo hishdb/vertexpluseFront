@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaRegUser, FaEnvelope, FaRegCommentDots } from "react-icons/fa";
 import axios from "axios";
 import MenuBar from "../components/MenuBar";
+import { useTranslation } from "react-i18next";
 
 function Support() {
   const [formData, setFormData] = useState({
@@ -35,18 +36,19 @@ function Support() {
       setLoading(false);
     }
   };
-
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   return (
     <div className="flex flex-col min-h-screen">
       <MenuBar />
-      <div className="flex items-center justify-center h-screen bg-gray-100 px-4 lg:px-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500 to-blue-950">
+      <div dir={isRTL ? "rtl" : "ltr"} className="flex items-center justify-center h-screen bg-gray-100 px-4 lg:px-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500 to-blue-950">
         {/* Right Section */}
         <div className="bg-white shadow-lg rounded-lg p-8 lg:p-12 w-full max-w-md sm:max-w-lg">
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4 text-center">
-            Here to <span className="text-blue-500">*Support You</span>
+            {t("Here to")} <span className="text-blue-500">*{t("Support You")}</span>
           </h2>
           <p className="text-gray-600 mb-6 text-center">
-            Share your project details without hesitation.
+            {t("Ask you question without hesitation.")}
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -54,7 +56,7 @@ function Support() {
             <div className="mb-4">
               <label htmlFor="name" className="flex items-center text-gray-800 font-medium mb-2">
                 <FaRegUser className="mr-2" />
-                Your Name
+                {t("Your Name")}
               </label>
               <input
                 type="text"
@@ -62,7 +64,7 @@ function Support() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter name here"
+                placeholder={t("Enter name here")}
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -71,7 +73,7 @@ function Support() {
             <div className="mb-4">
               <label htmlFor="email" className="flex items-center text-gray-800 font-medium mb-2">
                 <FaEnvelope className="mr-2" />
-                Email Address
+                {t("Email Address")}
               </label>
               <input
                 type="email"
@@ -79,7 +81,7 @@ function Support() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email address"
+                placeholder={t("Email address")}
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -88,7 +90,7 @@ function Support() {
             <div className="mb-4">
               <label htmlFor="message" className="flex items-center text-gray-800 font-medium mb-2">
                 <FaRegCommentDots className="mr-2" />
-                Message
+                {t("Message")}
               </label>
               <textarea
                 id="message"
@@ -96,7 +98,7 @@ function Support() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Message goes here"
+                placeholder={t("Message goes here")}
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
@@ -114,10 +116,10 @@ function Support() {
               {loading ? (
                 <div className="flex items-center justify-center">
                   <div className="loader border-t-2 border-white rounded-full w-4 h-4 mr-2"></div>
-                  Sending...
+                  {t("Sending")}...
                 </div>
               ) : (
-                "Send Your Message"
+                t("Send Your Message")
               )}
             </button>
           </form>

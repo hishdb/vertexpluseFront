@@ -80,10 +80,6 @@ function Footer() {
           <div>
             <p className="text-lg font-semibold mb-2">{t("FollowUsOn")}</p>
 
-            {/* Countdown */}
-            <p className="text-md text-blue-300 font-medium mb-4">
-              {t("Available in :")} {timeLeft}
-            </p>
 
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook">
@@ -101,6 +97,10 @@ function Footer() {
             </div>
           </div>
           <div>
+            {/* Countdown */}
+            <p className="text-md text-blue-300 font-medium mb-4">
+              {t("Available in :")} {timeLeft}
+            </p>
             <a href="#">
               <img
                 src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-gb"
