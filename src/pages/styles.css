@@ -9,7 +9,7 @@
     height: 18px; /* Increased from 8px */
     display: block;
     border-radius: 50%;
-    background: white;
+    background: #e6c27a;
     opacity: 0.5;
     margin: 12px 0 !important; /* Increased from 8px for better spacing */
     transition: all 0.3s;

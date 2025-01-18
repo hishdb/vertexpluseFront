@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
 import shapeImage2 from "../assets/itemListIconWhite.png";
 import backgroundImage from "../assets/team.jpg"
 import logo from "../assets/vertexpluseWhite.png"

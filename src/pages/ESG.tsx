@@ -2,13 +2,13 @@ import { motion, useScroll, useTransform, useSpring, useInView } from "framer-mo
 import { useRef } from "react";
 import MenuBar from "../components/MenuBar";
 import backgroundglobal from "../assets/CoverESGBackground.png";
-import shapeImage1 from "../assets/shapeObject1.png";
-import shapeImage2 from "../assets/shapeObject2.png";
+import shapeImage1 from "../assets/itemListIcon.png";
+import shapeImage2 from "../assets/itemListIconWhiteEmpty.png";
 import phoneImage from "../assets/esg-indexes-phone.webp";
 import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import WhatIsESGScoringAllAbout from "../components/WhatIsESGScroringAllAbout";
-import esgBG from "../assets/esg-bg.png"
+import esgBG from "../assets/esg-bg.jpg"
 import { useTranslation } from "react-i18next";
 
 function ESG() {
@@ -52,7 +52,8 @@ function ESG() {
           backgroundRepeat: 'no-repeat', // Prevents the image from repeating
         }}
         >
-          
+                {/* Enhanced gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-300/50"></div>
           <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 sm:px-12 md:px-16 lg:px-24 space-y-10 lg:space-y-0 lg:space-x-20" dir={isRTL ? "rtl" : "ltr"}>
             {/* Left Section */}
             <div className="flex-1 space-y-6">
@@ -104,12 +105,12 @@ function ESG() {
           >
             <motion.div
               style={{ y: Y1 }}
-              className="absolute left-6 top-20 w-48 h-48 opacity-60"
+              className="absolute left-6 top-20 w-48 h-48 opacity-60 "
             >
               <img
                 src={shapeImage2}
                 alt="Shape Image 4"
-                className="rotate-[0deg]"
+                className="rotate-[100deg]"
               />
             </motion.div>
 
@@ -117,7 +118,7 @@ function ESG() {
               style={{ y: Y2 }}
               className="absolute right-20 top-1/2 w-60 h-60 opacity-70"
             >
-              <img src={shapeImage1} alt="Shape Image 1" />
+              <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]"/>
             </motion.div>
 
         

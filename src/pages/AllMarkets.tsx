@@ -124,10 +124,10 @@ function AllMarkets () {
     <div className="flex flex-col min-h-screen " >
     <MenuBar />
     
-    <main className="flex-grow ">
-    <div className="tradingview-widget-container mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 my-8 pt-20">
+    <main className="flex-grow bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500  to-blue-950 ">
+    <div className="tradingview-widget-container mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 my-8 pt-20 ">
       <div className="tradingview-widget-container__widget h-[800px]"></div>
-      <div className="tradingview-widget-copyright text-center mt-2">
+      <div className="tradingview-widget-copyright text-center mt-2 ">
         <a
           href="https://www.tradingview.com/"
           rel="noopener noreferrer"

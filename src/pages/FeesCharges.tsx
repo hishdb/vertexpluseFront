@@ -38,7 +38,7 @@ function FeesCharges() {
     <main className="flex-grow ">
     <CoverAnimationWithoutImage backgroundImage={backgroundglobal}  text1={t("OurFeesAndCharges")} text2={t("")} text3={t("CompetitiveStraightforwardAndWithNo")}/>  
     {/* Trade and pay 0 fees for */}
-    <div className="flex items-center justify-center mb-16 mt-16">
+    <div className="flex items-center justify-center mb-16 mt-16" dir={isRTL ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-bold text-sky-500 text-center">
           {t("TRADEANDPAY0FEESFOR")}

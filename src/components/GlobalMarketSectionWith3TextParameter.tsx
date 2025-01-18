@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import shapeImage2Black from "../assets/itemListIcon.png";
-import shapeImage1Black from "../assets/itemListIcon.png";
+import shapeImage1Black from "../assets/itemListIconEmpty.png";
 import MarketInsights from "./MarketInsights";
 
 interface GlobalMarketsSectionProps {

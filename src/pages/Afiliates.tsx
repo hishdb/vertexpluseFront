@@ -2,8 +2,7 @@ import MenuBar from "../components/MenuBar";
 import './styles.css';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.css';
 import AffiliateStartEarningSection from "../components/AffiliateStartEarningSection";
 import AffiliateStartEarningFromYourTraffic from "../components/AffiliateStartEarningFromYourTraffic";
 import AffiliateFirstElement from "../components/AffiliateFirstElement";
@@ -16,10 +15,7 @@ function Affiliate() {
                 <div className="h-[calc(100%)]"> {/* Adjust based on MenuBar height */}
                     <Swiper
                         style={{
-                            "--swiper-pagination-color": "#FABC3F",
-                            "--swiper-pagination-left": "auto",
-                            "--swiper-pagination-right": "auto",
-                            "--swiper-pagination-position": "50px",
+
                             height: "100%"
                         }}
                         direction={'vertical'}

@@ -9,7 +9,7 @@ import TwoTexts from "../components/TwoTexts";
 import HowDoITrade from "../components/HowDoITrade";
 import DiveIntoExtensive from "../components/DiveIntoExtensive";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect} from "react";
 import backgroundglobal from "../assets/CoverBtcBackground.png";
 
 

@@ -1,4 +1,4 @@
-import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
 import shapeImage2 from "../assets/itemListIconWhite.png";
 import { useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";

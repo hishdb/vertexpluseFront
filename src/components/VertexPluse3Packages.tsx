@@ -161,13 +161,17 @@ function VertexPluse3Packages() {
               </p>
             </div>
 
-            {/* Invest Button */}
-            <motion.button
-              className="mt-6 px-6 py-3 w-full bg-white text-blue-800 font-medium rounded-lg shadow-lg hover:bg-blue-600 hover:text-white transition-all z-10"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}>
-              {t("InvestNow")}
-            </motion.button>
+          {/* Invest Button */}
+          <motion.button
+            className="mt-6 px-6 py-3 w-full bg-white text-blue-800 font-medium rounded-lg shadow-lg hover:bg-blue-600 hover:text-white transition-all z-10"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              window.location.href = "https://platform.vertexpluse.com/users/investments";
+            }}
+          >
+            {t("InvestNow")}
+          </motion.button>
           </motion.div>
         ))}
       </div>

@@ -1,12 +1,11 @@
 import backgroundglobal from "../assets/CryptoBackground.png";
-import shapeImage1 from "../assets/itemListIconWhite.png";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
 import shapeImage2 from "../assets/itemListIconWhite.png";
-import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 
 function DiveIntoExtensive ()  {   
   const {t} = useTranslation();
-  const controls = useAnimation();
   // Scroll animations setup
   const { scrollY } = useScroll();
   
