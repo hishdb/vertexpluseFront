@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import tradingIcon from "../assets/tradingIcon.png";
+import tradingIcon from "../assets/tradingIcon.webp";
 
 // Define the interface for the props
 interface HowDoITradeProps {

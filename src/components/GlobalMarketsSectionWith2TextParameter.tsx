@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import shapeImage2Black from "../assets/itemListIcon.png";
-import shapeImage1Black from "../assets/itemListIconEmpty.png";
+import shapeImage2Black from "../assets/itemListIcon.webp";
+import shapeImage1Black from "../assets/itemListIconEmpty.webp";
 import MarketInsights from "./MarketInsights";
 
 interface GlobalMarketsSectionProps {
@@ -13,7 +13,7 @@ const GlobalMarketsSectionWith2TextParameters = ({ text1, text2 }: GlobalMarkets
 
 
   const sectionRef = useRef<HTMLDivElement>(null);
-  const marketListRef = useRef<HTMLDivElement>(null);
+
 
   // Scroll animation configuration
   const { scrollYProgress } = useScroll({
@@ -82,7 +82,6 @@ const GlobalMarketsSectionWith2TextParameters = ({ text1, text2 }: GlobalMarkets
 
         <motion.div
         className="mt-20 sm:mt-0 w-full"
-          ref={marketListRef}
           style={{
             scale: springScale,
             y: springY,

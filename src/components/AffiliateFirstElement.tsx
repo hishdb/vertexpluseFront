@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import logo from "../assets/vertexpluseWhite.png";
-import workingLaptop from "../assets/workingLaptop.jpg";
+import logo from "../assets/vertexpluseWhite.webp";
+import workingLaptop from "../assets/workingLaptop.webp";
 
 function AffiliateHero() {
   const { t, i18n } = useTranslation();

@@ -8,63 +8,60 @@ import WhyVertexPluse from "../components/WhyVertexpluse";
 import TwoTexts from "../components/TwoTexts";
 import HowDoITrade from "../components/HowDoITrade";
 import DiveIntoExtensive from "../components/DiveIntoExtensive";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import backgroundglobal from "../assets/CoverSharesBackground.png";
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import backgroundglobal from "../assets/CoverSharesBackground.webp";
 import FAQ from "../components/FAQ";
 
 function Shares() {
-    const controls = useAnimation();
-    useEffect(() => {
-      // Create script element
-      const script = document.createElement('script');
-      script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
-      script.type = 'text/javascript';
-      script.async = true;
-  
-      // Configure widget settings
-      script.innerHTML = JSON.stringify({
-        feedMode: "market",
-        market: "stock",
-        isTransparent: true,
-        displayMode: "regular",
-        width: "100%",
-        height: "100%",
-        colorTheme: "light",
-        locale: "en"
-      });
-  
-      // Create widget container
-      const widgetContainer = document.querySelector('.tradingview-widget-container__widget');
-      if (widgetContainer) {
-        widgetContainer.appendChild(script);
-      }
-  
-      return () => {
-        // Cleanup script when component unmounts
-        if (widgetContainer && widgetContainer.contains(script)) {
-          widgetContainer.removeChild(script);
-        }
-      };
-    }, []);
-    // Button animation
-    useEffect(() => {
-      const startButtonAnimation = async () => {
-        while (true) {
-          await controls.start({
-            scale: 1,
-            boxShadow: "0 0 20px 0 rgba(59, 130, 246, 0.3)",
-            transition: { duration: 1 }
-          });
-          await controls.start({
-            scale: 0.95,
-            boxShadow: "0 0 0 0 rgba(59, 130, 246, 0)",
-            transition: { duration: 1 }
-          });
-        }
-      };
-      startButtonAnimation();
-    }, [controls]);
+     const widgetContainerRef = useRef<HTMLDivElement>(null);
+     useEffect(() => {
+       if (!widgetContainerRef.current) return;
+   
+       widgetContainerRef.current.innerHTML = '';
+   
+       const widgetOuterContainer = document.createElement('div');
+       widgetOuterContainer.className = 'tradingview-widget-container';
+   
+       const widgetContainer = document.createElement('div');
+       widgetContainer.className = 'tradingview-widget-container__widget';
+       widgetContainer.style.height = '600px';
+       widgetContainer.style.width = '100%';
+   
+       widgetOuterContainer.appendChild(widgetContainer);
+   
+       const script = document.createElement('script');
+       script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
+       script.type = 'text/javascript';
+       script.async = true;
+   
+       const widgetConfig = {
+         feedMode: 'market',
+         market: 'crypto',
+         isTransparent: true,
+         displayMode: 'regular',
+         width: '100%',
+         height: '600',
+         colorTheme: 'light',
+         locale: 'en',
+         enableScrolling: true,
+         autosize: true,
+         container_id: 'tradingview-widget',
+       };
+   
+       script.innerHTML = JSON.stringify(widgetConfig);
+       widgetContainer.id = 'tradingview-widget';
+   
+       widgetOuterContainer.appendChild(script);
+       widgetContainerRef.current.appendChild(widgetOuterContainer);
+   
+       return () => {
+         if (widgetContainerRef.current) {
+           widgetContainerRef.current.innerHTML = '';
+         }
+       };
+     }, []);
+
     const {t} = useTranslation();
     const faqData = [
       {
@@ -149,18 +146,18 @@ function Shares() {
                  <h2 className="text-center pt-10 font-semibold text-sky-400 md:text-5xl sm:text-2xl lg:text-6xl">
         Related News & Market Insights</h2>
 
-        <div className="tradingview-widget-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-8  bg-gradient-to-b from-sky-100 to-white rounded-3xl shadow-2xl">
-      <div className="tradingview-widget-container__widget h-[600px]"></div>
+        <div
+          ref={widgetContainerRef}
+          className="tradingview-widget-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-8 bg-gradient-to-b from-sky-100 to-white rounded-3xl shadow-2xl relative"
+          style={{
+            minHeight: '600px',
+            overflow: 'hidden',
+          }}
+        />
 
-    </div>
-      <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-           className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32"
+      <div className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32"
           >
             <motion.button
-              animate={controls}
               className="relative overflow-hidden bg-blue-500 text-white font-semibold px-28 py-3 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -177,7 +174,7 @@ function Shares() {
               <span className="relative z-10">{t("TryFreeDemo")}</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             </motion.button>
-      </motion.div>
+      </div>
          
     </main>
     

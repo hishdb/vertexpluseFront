@@ -1,40 +1,43 @@
 import { useEffect, useRef } from "react";
 
-interface MarketInsights {
-  text1: string; // Explicitly define text1 as a string
-  text2: string; // Also defining text2 as a string for consistency
-}
-
-function MarketInsights () {
+function MarketInsights() {
   const tradingViewRef = useRef<HTMLDivElement>(null);
+  const scriptLoaded = useRef(false);
 
   useEffect(() => {
-    // Dynamically load the TradingView script
-    const script = document.createElement("script");
+    // Prevent multiple script loads
+    if (scriptLoaded.current) return;
+
+    const loadTradingViewWidget = () => {
+      if (!tradingViewRef.current) return;
+
+      const script = document.createElement("script");
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js";
     script.async = true;
-
+    // Create a container div for the widget
+    const widgetContainer = document.createElement("div");
+    widgetContainer.className = "tradingview-widget-container";
     script.innerHTML = JSON.stringify({
         
-"colorTheme": "light",
-  "dateRange": "1D",
-  "showChart": true,
-  "locale": "en",
-  "largeChartUrl": "",
-  "isTransparent": true,
-  "showSymbolLogo": true,
-  "showFloatingTooltip": true,
-  "width": "100%",
-  "height": "100%",
-  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-  "gridLineColor": "rgba(42, 46, 57, 0)",
-  "scaleFontColor": "rgba(19, 23, 34, 1)",
-  "belowLineFillColorGrowing": "rgba(0, 0, 0, 0.12)",
-  "belowLineFillColorFalling": "rgba(0, 0, 0, 0.12)",
-  "belowLineFillColorGrowingBottom": "rgba(0, 0, 0, 0)",
-  "belowLineFillColorFallingBottom": "rgba(0, 0, 0, 0)",
-  "symbolActiveColor": "rgba(0, 0, 0, 0.12)",
+    "colorTheme": "light",
+    "dateRange": "1D",
+    "showChart": true,
+    "locale": "en",
+    "largeChartUrl": "",
+    "isTransparent": true,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": true,
+    "width": "100%",
+    "height": "100%",
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(19, 23, 34, 1)",
+    "belowLineFillColorGrowing": "rgba(0, 0, 0, 0.12)",
+    "belowLineFillColorFalling": "rgba(0, 0, 0, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(0, 0, 0, 0)",
+    "belowLineFillColorFallingBottom": "rgba(0, 0, 0, 0)",
+    "symbolActiveColor": "rgba(0, 0, 0, 0.12)",
     "tabs": [
         {
         "title": "Crypto",
@@ -290,27 +293,44 @@ function MarketInsights () {
     }
     );
 
-    if (tradingViewRef.current) {
-      tradingViewRef.current.appendChild(script);
-    }
+      // Add error handling for script loading
+      script.onerror = () => {
+        console.error("Failed to load TradingView widget script");
+      };
+
+      // Clean up the container first
+      tradingViewRef.current.innerHTML = "";
+      
+      // Append the script to the container
+      widgetContainer.appendChild(script);
+      tradingViewRef.current.appendChild(widgetContainer);
+      
+      scriptLoaded.current = true;
+    };
+
+    // Add a small delay to ensure DOM is ready
+    const timeoutId = setTimeout(loadTradingViewWidget, 100);
 
     return () => {
-      // Cleanup script
+      clearTimeout(timeoutId);
       if (tradingViewRef.current) {
         tradingViewRef.current.innerHTML = "";
       }
+      scriptLoaded.current = false;
     };
   }, []);
 
   return (
-
-
-      
-        <div ref={tradingViewRef} className="w-full md:w-[500px] lg:w-[550px] h-[700px] bg-gradient-to-b from-sky-100 to-white rounded-3xl shadow-2xl p-4 ">
-         
-        </div>
-    
+    <div 
+      ref={tradingViewRef}
+      className="w-full md:w-[500px] lg:w-[550px] h-[700px] bg-gradient-to-b from-sky-100 to-white rounded-3xl shadow-2xl p-4"
+    >
+      {/* Optional loading state */}
+      <div className="h-full w-full flex items-center justify-center">
+        Loading market data...
+      </div>
+    </div>
   );
-};
+}
 
 export default MarketInsights;

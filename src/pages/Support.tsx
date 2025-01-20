@@ -27,7 +27,7 @@ function Support() {
     setLoading(true);
     setStatus("");
     try {
-      await axios.post("http://localhost:5000/send-email", formData);
+      await axios.post("http://localhost:5002/api/send-email", formData);
       setStatus("Message sent successfully!");
     } catch (error: any) {
       console.error("Error sending message:", error);

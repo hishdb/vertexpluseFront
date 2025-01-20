@@ -1,6 +1,6 @@
-import backgroundglobal from "../assets/CryptoBackground.png";
-import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
-import shapeImage2 from "../assets/itemListIconWhite.png";
+import backgroundglobal from "../assets/CryptoBackground.webp";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.webp";
+import shapeImage2 from "../assets/itemListIconWhite.webp";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 

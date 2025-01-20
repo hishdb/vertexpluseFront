@@ -1,6 +1,6 @@
-import backgroundglobal from "../assets/backgroundglobal.jpg";
-import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
-import shapeImage2 from "../assets/itemListIconWhite.png";
+import backgroundglobal from "../assets/backgroundglobal.webp";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.webp";
+import shapeImage2 from "../assets/itemListIconWhite.webp";
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
@@ -25,9 +25,7 @@ function CoverAnimation ()  {
   const springY1 = useSpring(y1, springConfig);
   const springY2 = useSpring(y2, springConfig);
   const springY3 = useSpring(y3, springConfig);
-
-  // Button animation
-  useEffect(() => {
+  
     const startButtonAnimation = async () => {
       while (true) {
         await controls.start({
@@ -42,6 +40,9 @@ function CoverAnimation ()  {
         });
       }
     };
+  // Button animation
+  useEffect(() => {
+
     startButtonAnimation();
   }, [controls]);
 

@@ -6,7 +6,7 @@ import tradingInfoImage from "../assets/trading-info.webp"; // Add your trading 
 import clockImage from "../assets/clock-image.webp"; // Add your clock image
 import { useTranslation } from "react-i18next";
 import CoverAnimationWithoutImage from '../components/CoverAnimationWithoutImage';
-import itemListIcon from "../assets/itemListIcon.png";
+import itemListIcon from "../assets/itemListIcon.webp";
 import Footer from '../components/Footer';
 import FAQ from '../components/FAQ';
 

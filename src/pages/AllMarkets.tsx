@@ -79,7 +79,6 @@ function AllMarkets () {
             { name: "NASDAQ:COIN", displayName: "Coinbase Global, Inc." },
             { name: "NASDAQ:NFLX", displayName: "Netflix, Inc." },
             { name: "NASDAQ:AVGO", displayName: "Broadcom Inc." },
-            { name: "NSE:RELIANCE", displayName: "RELIANCE INDUSTRIES LTD" },
             { name: "NASDAQ:MARA", displayName: "MARA Holdings, Inc." }
           ]
         },

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import StartEarningMoney from "../assets/StartEarningMoney.png";
+import StartEarningMoney from "../assets/StartEarningMoney.webp";
 
 function AffiliateStartEarningSection() {
   const {t, i18n} = useTranslation();

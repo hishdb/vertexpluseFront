@@ -3,15 +3,15 @@ import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
-import shapeImage2 from "../assets/itemListIconWhite.png";
-import backgroundImage from "../assets/team.jpg"
-import logo from "../assets/vertexpluseWhite.png"
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.webp";
+import shapeImage2 from "../assets/itemListIconWhite.webp";
+import backgroundImage from "../assets/team.webp"
+import logo from "../assets/vertexpluseWhite.webp"
 import aboutUsIcon1 from "../assets/about-us-who-we-are-icon1.svg"
 import aboutUsIcon2 from "../assets/about-us-who-we-are-icon2.svg"
 import aboutUsIcon3 from "../assets/about-us-who-we-are-icon3.svg"
 import aboutUsIcon4 from "../assets/about-us-who-we-are-icon4.svg"
-import teamImage from "../assets/team2.jpg";
+import teamImage from "../assets/team2.webp";
 import WeSponsor from "../components/WeSponsor";
 
 function AboutUs() {

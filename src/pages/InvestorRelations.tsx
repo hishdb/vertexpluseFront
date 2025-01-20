@@ -3,7 +3,7 @@ import MenuBar from "../components/MenuBar";
 import { useTranslation } from "react-i18next";
 import { ArrowUpRight, TrendingDown, TrendingUp, Mail } from 'lucide-react';
 import { motion } from "framer-motion";
-import ShareholderCentre from "../assets/ShareholderCentre.jpg"
+import ShareholderCentre from "../assets/ShareholderCentre.webp"
 
 function InvestorRelations() {
 

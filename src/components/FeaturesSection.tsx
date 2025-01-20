@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import itemListIcon from "../assets/itemListIcon.png";
+import itemListIcon from "../assets/itemListIcon.webp";
 import { useTranslation } from "react-i18next";
 
 function FeaturesSection () {

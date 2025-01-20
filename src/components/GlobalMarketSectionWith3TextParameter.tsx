@@ -1,20 +1,13 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import shapeImage2Black from "../assets/itemListIcon.png";
-import shapeImage1Black from "../assets/itemListIconEmpty.png";
+import shapeImage2Black from "../assets/itemListIcon.webp";
+import shapeImage1Black from "../assets/itemListIconEmpty.webp";
 import MarketInsights from "./MarketInsights";
 
-interface GlobalMarketsSectionProps {
-  text1: string;
-  text2: string;
-  text3:string
-}
 
-const GlobalMarketsSectionWith3TextParameter = ({ text1, text2, text3 }: GlobalMarketsSectionProps) => {
-
-
+function GlobalMarketsSectionWith3TextParameter ({ text1, text2, text3 }: GlobalMarketsSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const marketListRef = useRef<HTMLDivElement>(null);
+
 
   // Scroll animation configuration
   const { scrollYProgress } = useScroll({
@@ -87,7 +80,6 @@ const GlobalMarketsSectionWith3TextParameter = ({ text1, text2, text3 }: GlobalM
 
         <motion.div
         className="mt-20 sm:mt-0 w-full sm:w-0"
-          ref={marketListRef}
           style={{
             scale: springScale,
             y: springY,
@@ -100,4 +92,9 @@ const GlobalMarketsSectionWith3TextParameter = ({ text1, text2, text3 }: GlobalM
   );
 };
 
+interface GlobalMarketsSectionProps {
+  text1: string;
+  text2: string;
+  text3:string
+}
 export default GlobalMarketsSectionWith3TextParameter;

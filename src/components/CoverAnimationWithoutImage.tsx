@@ -1,5 +1,5 @@
-import shapeImage1 from "../assets/itemListIconWhiteEmpty.png";
-import shapeImage2 from "../assets/itemListIconWhite.png";
+import shapeImage1 from "../assets/itemListIconWhiteEmpty.webp";
+import shapeImage2 from "../assets/itemListIconWhite.webp";
 import { useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
@@ -29,24 +29,31 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
   const springY1 = useSpring(y1, springConfig);
   const springY2 = useSpring(y2, springConfig);
   const springY3 = useSpring(y3, springConfig);
-
+  
   // Button animation
   useEffect(() => {
+    let isMounted = true;
+
     const startButtonAnimation = async () => {
-      while (true) {
+      while (isMounted) {
         await controls.start({
           scale: 1,
           boxShadow: "0 0 20px 0 rgba(59, 130, 246, 0.3)",
-          transition: { duration: 1 }
+          transition: { duration: 1 },
         });
         await controls.start({
           scale: 0.95,
           boxShadow: "0 0 0 0 rgba(59, 130, 246, 0)",
-          transition: { duration: 1 }
+          transition: { duration: 1 },
         });
       }
     };
+
     startButtonAnimation();
+
+    return () => {
+      isMounted = false; // Clean up to stop the animation when the component unmounts
+    };
   }, [controls]);
 
   return (

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import instrumentScreen2 from "../assets/instrument-screen2-en.png";
 import instrumentScreen1 from "../assets/instrument-screen1-en.png";
-import itemListIconWhite from "../assets/itemListIconWhite.png";
+import itemListIconWhite from "../assets/itemListIconWhite.webp";
 import InsightsIcon from '@mui/icons-material/Insights';
 import { useTranslation } from 'react-i18next';
 

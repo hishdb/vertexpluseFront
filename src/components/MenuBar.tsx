@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/vertexpluse.png";
+import logo from "../assets/vertexpluse.webp";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 

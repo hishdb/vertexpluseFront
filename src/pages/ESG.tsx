@@ -2,13 +2,13 @@ import { motion, useScroll, useTransform, useSpring, useInView } from "framer-mo
 import { useRef } from "react";
 import MenuBar from "../components/MenuBar";
 import backgroundglobal from "../assets/CoverESGBackground.png";
-import shapeImage1 from "../assets/itemListIcon.png";
-import shapeImage2 from "../assets/itemListIconWhiteEmpty.png";
+import shapeImage1 from "../assets/itemListIcon.webp";
+import shapeImage2 from "../assets/itemListIconWhiteEmpty.webp";
 import phoneImage from "../assets/esg-indexes-phone.webp";
 import Footer from "../components/Footer";
 import CoverAnimationWithoutImage from "../components/CoverAnimationWithoutImage";
 import WhatIsESGScoringAllAbout from "../components/WhatIsESGScroringAllAbout";
-import esgBG from "../assets/esg-bg.jpg"
+import esgBG from "../assets/esg-bg.webp"
 import { useTranslation } from "react-i18next";
 
 function ESG() {

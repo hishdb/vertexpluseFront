@@ -16,7 +16,6 @@ function Footer() {
 
   const [timeLeft, setTimeLeft] = useState("");
 
-  useEffect(() => {
     const fetchCountdown = async () => {
       try {
         const response = await axios.get("http://localhost:5001/api/countdown");
@@ -34,6 +33,8 @@ function Footer() {
       }
     };
 
+
+  useEffect(() => {
     fetchCountdown();
     const intervalId = setInterval(fetchCountdown, 1000);
 
@@ -65,15 +66,11 @@ function Footer() {
           <p className="text-md font-medium">{t("VertexPluseIsMainly")}</p>
           <p className="text-md font-medium">{t("VertexPluseIsATrademark")}</p>
           <p className="text-md font-medium">{t("TheSP500Dow")}</p>
-          <p className="text-md font-medium">
-            <span className="flex items-center justify-center md:justify-start space-x-2">
-              <span>
-                <img src={secureLock} alt="secureLock" />
-              </span>
-              <p>{t("SecuredBySSL")}</p>
-            </span>
-          </p>
-        </div>
+          <div className="flex items-center justify-center md:justify-start space-x-2">
+              <img src={secureLock} alt="secureLock" />
+              <p className="text-md font-medium">{t("SecuredBySSL")}</p>
+          </div>
+          </div>
 
         {/* Right Section */}
         <div className="md:w-2/6 flex flex-col items-center md:items-start space-y-8">
