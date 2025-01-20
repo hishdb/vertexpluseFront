@@ -164,6 +164,7 @@ function ESG() {
 
           {/* Button Section */}
           <button
+           onClick={() => window.location.href = "https://platform.vertexpluse.com"}
                 className="relative overflow-hidden bg-blue-500 text-white font-semibold px-24 py-5 rounded-lg transition-colors duration-300 hover:bg-blue-600">
                 <span className="relative z-10">{t("learnMore")}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>

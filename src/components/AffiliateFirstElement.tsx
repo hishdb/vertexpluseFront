@@ -48,7 +48,9 @@ function AffiliateHero() {
           </h1>
           
           {/* CTA Button */}
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-all w-fit">
+          <button 
+           onClick={() => window.location.href = "https://platform.vertexpluse.com"}
+          className="bg-white text-blue-900 px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-all w-fit">
             {t("JOINNOW")}
           </button>
 

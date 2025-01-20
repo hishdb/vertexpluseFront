@@ -79,6 +79,7 @@ function TradeSmarterSection() {
                   style={{ width: "300px" }} // Ensures all buttons have the same width
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.location.href = "https://platform.vertexpluse.com"}
                 >
                   <span className="relative z-10">{feature.buttonLabel}</span>
                 </motion.button>

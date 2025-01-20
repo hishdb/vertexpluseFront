@@ -170,6 +170,7 @@ function WhatIsESGScoringAllAbout() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center mt-10 space-y-4 sm:space-y-0 sm:space-x-6">
         <button
+            onClick={() => window.location.href = "https://platform.vertexpluse.com/login"}
             className="relative overflow-hidden bg-blue-500 text-white font-semibold px-24 py-5 rounded-lg transition-colors duration-300 hover:bg-blue-600"
         >
             <span className="relative z-10">{t("StartTradingNow")}</span>
@@ -177,6 +178,7 @@ function WhatIsESGScoringAllAbout() {
         </button>
 
         <button
+             onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
             className="relative overflow-hidden bg-transparent border-2 border-white text-white font-semibold px-24 py-5 rounded-lg transition-colors duration-300 hover:bg-white hover:text-blue-500 group"
         >
             <span className="relative z-10">{t("TryFreeDemo")}</span>

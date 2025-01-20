@@ -107,7 +107,9 @@ function ETFS() {
                 {t("GetFREERealTimeStreamingQuotes")}
               </p>
               
-            <button className="bg-blue-500 text-white font-medium px-20 py-3 rounded-md hover:bg-blue-600 transition duration-200">
+            <button 
+             onClick={() => window.location.href = "https://platform.vertexpluse.com"}
+            className="bg-blue-500 text-white font-medium px-20 py-3 rounded-md hover:bg-blue-600 transition duration-200">
               {t("learnMore")}
             </button>
             <div className="mt-6 text-gray-500 text-xs text-left">
@@ -158,11 +160,14 @@ function ETFS() {
           }}
         />
 
-      <div  className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32">
+        <div
+            className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32"
+          >
             <motion.button
               className="relative overflow-hidden bg-blue-500 text-white font-semibold px-28 py-3 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.location.href = "https://platform.vertexpluse.com/login"}
             >
               <span className="relative z-10">{t("StartTradingNow")}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -172,6 +177,7 @@ function ETFS() {
               className="relative overflow-hidden bg-transparent text-blue-500 border-2 border-blue-500 font-semibold px-28 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-blue-500 hover:text-white group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
             >
               <span className="relative z-10">{t("TryFreeDemo")}</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>

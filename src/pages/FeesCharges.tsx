@@ -1,7 +1,7 @@
 import MenuBar from '../components/MenuBar';
 import backgroundglobal from "../assets/CoverFeesChargesBackground.png";
 import zerofees from "../assets/zero-fees.svg";
-import zerofeesWithPresentage from "../assets/ZerofeeswithPersentage.png";
+import zerofeesWithPresentage from "../assets/ZerofeeswithPersentage.webp";
 import tradingInfoImage from "../assets/trading-info.webp"; // Add your trading info image
 import clockImage from "../assets/clock-image.webp"; // Add your clock image
 import { useTranslation } from "react-i18next";

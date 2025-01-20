@@ -100,6 +100,7 @@ function TradeSlider() {
                   className="relative overflow-hidden bg-blue-500 text-white font-semibold px-6 py-3 md:px-20 lg:px-28 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600 w-full md:w-auto shadow-lg"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.location.href = "https://platform.vertexpluse.com"}
                 >
                   <span className="relative z-10">{slide.SlideButtonLabel}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>

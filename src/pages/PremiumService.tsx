@@ -139,7 +139,9 @@ function PremiumService() {
                 </p>
               </div>
             </div>
-            <button className="mt-10 px-20 py-5 bg-yellow-300 text-blue-900 text-sm sm:text-base md:text-lg lg:text-xl rounded-md font-semibold hover:bg-yellow-600 transition">
+            <button 
+              onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
+            className="mt-10 px-20 py-5 bg-yellow-300 text-blue-900 text-sm sm:text-base md:text-lg lg:text-xl rounded-md font-semibold hover:bg-yellow-600 transition">
               {t("StartTradingNow")}
             </button>
           </div>

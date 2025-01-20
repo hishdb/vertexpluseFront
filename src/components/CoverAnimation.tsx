@@ -1,6 +1,7 @@
 import backgroundglobal from "../assets/backgroundglobal.webp";
 import shapeImage1 from "../assets/itemListIconWhiteEmpty.webp";
 import shapeImage2 from "../assets/itemListIconWhite.webp";
+import LaptopBackground from "../assets/LaptopBackground.webp"
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useTranslation } from 'react-i18next';
@@ -132,6 +133,7 @@ function CoverAnimation ()  {
                 className="relative overflow-hidden bg-blue-500 text-white font-semibold px-16 py-3 rounded-lg transition-colors duration-300 hover:bg-blue-600"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.location.href = "https://platform.vertexpluse.com/login"}
               >
                 <span className="relative z-10">{t("StartTradingNow")}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -141,6 +143,7 @@ function CoverAnimation ()  {
                 className="relative overflow-hidden bg-transparent text-white border-2 border-white font-semibold px-16 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500 group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
               >
                 <span className="relative z-10">{t("TryFreeDemo")}</span>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
@@ -156,7 +159,7 @@ function CoverAnimation ()  {
           className="hidden md:flex w-4/5 h-full justify-center items-center relative"
         >
           <img
-            src="https://www.forex.com/en-us/-/media/project/gain-capital/forex/heroes/platforms/overview/fx-us-platform-overview-mobile.png?h=1000&iar=0&w=1440&hash=191914194E4FCDA9FD9CD987A6AC6C1C"
+            src={LaptopBackground}
             alt="Trading Devices"
             className=" h-auto scale-110 relative z-10"
           />

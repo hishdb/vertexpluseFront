@@ -124,6 +124,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
               className="relative overflow-hidden bg-blue-500 text-white font-semibold px-28 py-3 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.location.href = "https://platform.vertexpluse.com/login"}
             >
               <span className="relative z-10">{t("StartTradingNow")}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -133,6 +134,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
               className="relative overflow-hidden bg-transparent text-white border-2 border-white font-semibold px-28 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500 group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
             >
               <span className="relative z-10">{t("TryFreeDemo")}</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>

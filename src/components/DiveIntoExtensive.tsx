@@ -90,6 +90,7 @@ function DiveIntoExtensive ()  {
               className="relative overflow-hidden bg-white text-blue-600 border-2 border-blue-600 font-semibold px-28 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:text-white group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.location.href = "https://platform.vertexpluse.com"}
             >
               <span className="relative z-10">{t("LearnAboutTrading")}</span>
             </motion.button>

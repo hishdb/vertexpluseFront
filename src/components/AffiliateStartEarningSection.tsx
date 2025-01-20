@@ -41,7 +41,7 @@ function AffiliateStartEarningSection() {
           </div>
 
           {/* Personal Support Section */}
-          <div>
+          <div className="sm:block hidden">
             <h3 className="text-gray-800 text-xl font-semibold ">
               {t("PersonalSupportGuidance")}
             </h3>
@@ -52,7 +52,9 @@ function AffiliateStartEarningSection() {
           </div>
         </div>
 
-        <button className="bg-[#FABC3F] text-[#001653]  px-12 py-4 rounded w-fit text-lg font-semibold hover:bg-opacity-90 transition-all">
+        <button
+         onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
+        className="bg-[#FABC3F] text-[#001653]  px-12 py-4 rounded w-fit text-lg font-semibold hover:bg-opacity-90 transition-all">
           {t("JOINNOW")}
         </button>
       </div>

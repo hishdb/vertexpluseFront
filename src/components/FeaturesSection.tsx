@@ -56,6 +56,7 @@ function FeaturesSection () {
             className="relative overflow-hidden bg-blue-500 text-white font-semibold px-6 md:px-28 py-3 md:py-4 rounded-lg transition-colors duration-300 hover:bg-blue-600 w-full md:w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = "https://vertexpluse.com/all-markets"}
         >
             <span className="relative z-10">{t("ExploreMarkets")}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -65,6 +66,7 @@ function FeaturesSection () {
             className="relative overflow-hidden bg-transparent text-blue-600 border-2 border-blue-600 font-semibold px-8 md:px-28 py-3 md:py-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500 group w-full md:w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = "https://vertexpluse.com/all-markets"}
         >
             <span className="relative z-10">{t("MarketNews")}</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>

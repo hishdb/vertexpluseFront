@@ -19,7 +19,9 @@ function AffiliateStartEarningFromYourTraffic () {
           {t("StartEarningFromYourTraffic")}
         </h1>
         
-        <button className="bg-[#FABC3F] text-[#001A6E] px-12 py-3 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
+        <button
+         onClick={() => window.location.href = "https://platform.vertexpluse.com/register"}
+        className="bg-[#FABC3F] text-[#001A6E] px-12 py-3 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
           {t("JOINNOW")}
         </button>
       </div>
