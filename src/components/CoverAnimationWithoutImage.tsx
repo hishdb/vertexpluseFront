@@ -13,7 +13,8 @@ interface CoverAnimationWithoutImageProps {
 }
 
 function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: CoverAnimationWithoutImageProps)  {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const controls = useAnimation();
 
   // Scroll animations setup
@@ -56,6 +57,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
     };
   }, [controls]);
 
+
   return (
     <div
       className="relative bg-cover bg-center text-white overflow-hidden"
@@ -63,6 +65,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
         backgroundImage: `url(${backgroundImage})`,
         height: "82vh",
       }}
+      
     >
       {/* Enhanced gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-300/50"></div>
@@ -96,6 +99,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
         <div className="w-full h-full flex justify-center items-center">
           <div className="flex flex-col justify-center items-center text-center  space-y-6 ">
           <motion.h1
+          dir= {isRTL ? "rtl" : "ltr"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -106,6 +110,7 @@ function CoverAnimationWithoutImage ({ backgroundImage, text1, text2, text3 }: C
            {text2}
           </motion.h1>
           <motion.p
+          dir= {isRTL ? "rtl" : "ltr"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}

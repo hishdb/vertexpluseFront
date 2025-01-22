@@ -128,14 +128,15 @@ function AboutUs() {
       </div>
 
       {/* Content Wrapper */}
-       <div className="relative  flex flex-col md:flex-row h-full items-start justify-start px-6 md:px-10 max-w-6xl" dir= {isRTL ? "rtl" : "ltr"}>
+       <div className="relative  flex flex-col md:flex-row h-full items-start justify-start px-6 md:px-10 max-w-6xl" >
         <div className="w-full h-full flex items-center sm:pl-60">
           <div className="flex flex-col items-start space-y-6 ">
          
-          <img src={logo} alt="Shape Image 4" className="w-1/4 h-1/4" />
+          <img src={logo} alt="Shape Image 4" className="w-1/4 h-1/4" dir= {isRTL ? "rtl" : "ltr"}/>
           
 
           <motion.h1
+          dir= {isRTL ? "rtl" : "ltr"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -144,6 +145,7 @@ function AboutUs() {
            {t("AboutVertexPluse™")}
           </motion.h1>
           <motion.p
+          dir= {isRTL ? "rtl" : "ltr"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -151,6 +153,8 @@ function AboutUs() {
           >
             {t("VertexPluseGlobalMultiAsset")}
           </motion.p>
+
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

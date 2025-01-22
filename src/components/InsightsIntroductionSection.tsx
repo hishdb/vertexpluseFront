@@ -6,7 +6,8 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import { useTranslation } from 'react-i18next';
 
 function InsightsIntroductionSection ()  {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const features = [
     t("UncoverUniverseOfExclusive"),
     t("HarnessTheWisdomCrowd"),
@@ -48,7 +49,7 @@ function InsightsIntroductionSection ()  {
       {/* Content */}
       <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-0 pt-10 sm:pt-28 pb-28 sm:px-8 lg:px-12">
       {/* Left Content */}
-      <div className="text-white  md:w-1/2 space-y-14 p-8 mt-32 md:mt-0">
+      <div className="text-white  md:w-1/2 space-y-14 p-8 mt-32 md:mt-0" dir={isRTL ? "rtl" : "ltr"}>
           {/* Title with responsive text size */}
           <span className="text-sky-500 text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold">
               {t("Introducing")} <InsightsIcon style={{ fontSize: '3.5rem' }} /> {t("Insights")}
@@ -62,7 +63,7 @@ function InsightsIntroductionSection ()  {
                           src={itemListIconWhite}
                           width="28px"
                           height="28px"
-                          className="flex-shrink-0"
+                          className="flex-shrink-0 ml-4"
                       />
                       <p className="text-white font-normal text-sm sm:text-base md:text-lg lg:text-xl">
                           {feature}

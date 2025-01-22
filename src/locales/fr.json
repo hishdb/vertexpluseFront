@@ -222,6 +222,17 @@
   "1.ChooseYourForexTradingMethod": "1. Choisissez votre méthode de trading Forex",
   "2.LearnAboutTheForexMarket": "2. Découvrez le marché du Forex",
   "4.PlanYourForexTradingStrategy": "4. Planifiez votre stratégie de trading Forex",
+  "ForexFAQ": "FAQ Forex",
+  "ForexFaq": {
+    "q1": "Que signifie le trading Forex et que sont les CFDs sur Forex ?",
+    "a1": "Que signifie le trading Forex et que sont les CFDs sur Forex ? Le trading Forex (également connu sous le nom de change ou de trading FX) est un marché mondial pour échanger la monnaie d'un pays contre celle d'un autre. Il sert de base au commerce et à l'investissement international : importations et exportations, transactions financières par les gouvernements, institutions économiques ou particuliers, tourisme et voyages internationaux – tout cela nécessite l'utilisation de capitaux sous forme d'échange de devises. Lorsque vous tradez des CFDs sur Forex, vous spéculez essentiellement sur les variations de leur taux de change. Par exemple, dans la paire EUR/USD, la valeur d'un euro (EUR) est déterminée par rapport au dollar américain (USD). Si vous pensez que le taux de change va augmenter, vous pouvez ouvrir une position 'Achat'. Inversement, si vous pensez que le taux de change va baisser, vous pouvez ouvrir une position 'Vente'.",
+    "q2": "Quels facteurs économiques peuvent influencer les taux de change Forex ?",
+    "a2": "Les taux de change Forex sont influencés par un éventail de facteurs politiques et économiques liés à la différence de valeur d'une monnaie ou d'une région économique par rapport à celle d'un autre pays. Parmi les facteurs pouvant influencer les taux de change Forex, on trouve les termes de l'échange, les relations politiques et les performances économiques globales entre les deux pays ou régions économiques. Cela inclut également leur stabilité économique (par exemple, le taux de croissance du PIB), les taux d'intérêt et d'inflation, la production de biens et services, ainsi que la balance des paiements.",
+    "q3": "En quoi le trading Forex diffère-t-il du trading boursier ?",
+    "a3": "Les 4 principales différences entre le trading Forex et les actions sont : Volume de trading – le marché Forex a un volume de trading plus important que le marché boursier. Diversité des instruments – il existe des milliers d'actions, mais seulement quelques dizaines de paires de devises. Volatilité du marché – les prix des actions peuvent fluctuer fortement, généralement plus que ceux des marchés Forex. Ratios de levier – le levier disponible pour les CFDs sur Forex sur la plateforme VertexPluse est de 1:300, tandis que celui des CFDs sur actions est de 1:20. Notez que lorsque vous tradez des CFDs sur Forex ou actions, vous ne possédez pas l'instrument sous-jacent, mais vous spéculez sur les variations de son prix.",
+    "q4": "Quels sont les risques associés au trading Forex ?",
+    "a4": "Le trading de devises comporte plusieurs risques à connaître avant d'ouvrir une position : Risques liés au levier – en cas de conditions de marché volatiles, le trading avec levier peut entraîner des pertes importantes (ainsi que des gains plus élevés). Risques liés au pays émetteur – la stabilité politique et économique d'un pays peut influencer la force de sa devise. En général, les devises des grandes économies ont une plus grande liquidité et une volatilité moindre. Risques liés aux taux d'intérêt – la politique des taux d'intérêt des pays a un impact majeur sur les taux de change. Lorsque les taux sont augmentés ou diminués, la devise du pays a tendance à augmenter ou diminuer en conséquence. Nous proposons des outils de gestion des risques pour vous aider à minimiser vos risques de trading."
+  },
   "TradeCommodityCFDs": "Tradez des CFD sur matières premières",
   "TradeAvarietyOfPopularCommodityCFDsWithLeverage": "Tradez une variété de CFD populaires sur matières premières avec effet de levier. L'or, le pétrole et l'argent sont tous disponibles sur notre plateforme de trading leader.",
   "TradingCommoditiesWithLeverage": "Tradez des matières premières avec effet de levier",
@@ -262,6 +273,17 @@
   "1.ChooseYourSharesTradingMethod": "1. Choisissez votre méthode de trading sur actions",
   "2.LearnAboutTheSharesMarket": "2. Découvrez le marché des actions",
   "4.PlanYourSharesTradingStrategy": "4. Planifiez votre stratégie de trading sur actions",
+  "SharesFAQ": "FAQ sur les actions",
+  "SharesFaq": {
+    "q1": "Qu'est-ce que le trading d'actions en ligne et comment cela fonctionne-t-il ?",
+    "a1": "Le trading d'actions en ligne signifie acheter et vendre des actions de sociétés cotées en bourse. Le prix d'une action donnée est déterminé par le nombre total d'actions créées par une entreprise, généralement mesuré dans la devise du marché boursier où elle est cotée, par exemple, le penny (au Royaume-Uni), l'euro (en Europe), le yen (au Japon) et le dollar américain (aux États-Unis). Selon la loi de l'offre et de la demande, lorsqu'il y a plus de traders qui veulent acheter une entreprise que de la vendre, son prix augmente généralement. À l'inverse, lorsqu'il y a plus de traders qui veulent vendre une entreprise que de l'acheter, le prix baisse.",
+    "q2": "Qu'est-ce que le trading de CFDs sur actions ?",
+    "a2": "Le trading de CFDs sur actions est une forme de trading qui vous permet de spéculer sur les prix des sociétés cotées en bourse telles que la Bourse de New York, la Bourse de Londres, le NASDAQ et la Bourse de Tokyo, sans avoir besoin de posséder les actions sous-jacentes. Une autre caractéristique unique du trading de CFDs sur actions est la possibilité d'augmenter votre exposition au marché grâce à l'effet de levier (ou marge). Cela signifie que vous n'avez besoin que d'une fraction de la valeur totale de la transaction.",
+    "q3": "En quoi le trading en bourse est-il différent du trading Forex ?",
+    "a3": "Les cinq principales différences entre le trading d'actions et le Forex sont : Volume de trading – le marché Forex a un volume de trading plus important que le marché des actions. Diversité des instruments – il existe des milliers d'actions disponibles, contre seulement quelques dizaines de paires de devises. Effet sur les prix – les prix des actions sont principalement affectés par des « facteurs internes » comme les rapports financiers et autres événements d'entreprise (dividendes, fractionnements, etc.), tandis que les paires de devises sont principalement influencées par des « facteurs externes » comme les développements politiques et économiques entre les pays/régions. Volatilité du marché – les prix des actions peuvent fluctuer fortement d'un jour à l'autre, et leurs fluctuations sont généralement plus importantes que celles des marchés Forex. Ratios de levier – l'effet de levier disponible pour les CFDs sur Forex sur la plateforme VertexPluse est de 1:300, tandis que pour les CFDs sur actions, il est de 1:20.",
+    "q4": "Comment commencer à trader les prix du marché des actions ?",
+    "a4": "Suivez ces étapes pour commencer à trader des CFDs sur actions avec VertexPluse : Si vous n'avez pas encore de compte VertexPluse, ouvrez un compte de trading ici. Complétez votre inscription et vérification des documents, puis déposez des fonds. Pour rechercher une action spécifique, cliquez sur la barre de recherche et saisissez le nom ou le symbole de la société. Envisagez de placer des ordres stop à l'avance : vous pouvez définir le niveau de profit que vous seriez satisfait d'atteindre et/ou le niveau auquel vous souhaitez clôturer la position si la tendance se retourne contre vous."
+  },
   "TradeOptionsCFDs": "Tradez des CFD sur options",
   "CallAndPutOptionsOnGermany": "Les options d'achat et de vente sur l'Allemagne 40, le pétrole et Meta sont disponibles pour le trading avec effet de levier. Tradez sur la volatilité grâce à nos CFD flexibles sur options.",
   "TradeOptionsCFDsWithLeverage": "Tradez des CFD sur options avec effet de levier",
@@ -476,7 +498,16 @@
 "Send Your Message": "Envoyez votre message",
 "Enter name here": "Entrez le nom ici",
 "Email address": "Adresse e-mail",
-"Message goes here": "Entrez le message ici"
+"Message goes here": "Entrez le message ici",
+"RelatedNewsMarketInsights": "Actualités et analyses de marché connexes",
+"Availableon": "Disponible le :",
+"days": "jours",
+"hours": "heures",
+"minutes": "minutes",
+"seconds": "secondes",
+"Messagesentsuccessfully": "Message envoyé avec succès !",
+"Errorsendingmessage": "Erreur lors de l'envoi du message :",
+"Failedtosendmessage": "Échec de l'envoi du message. Veuillez réessayer."
 }
 
 

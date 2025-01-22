@@ -504,6 +504,15 @@
   "Send Your Message" : "Send Your Message",
   "Enter name here" : "Enter name here",
   "Email address": "Email address",
-  "Message goes here" : "Message goes here" 
+  "Message goes here" : "Message goes here",
+  "RelatedNewsMarketInsights": "Related News & Market Insights",
+  "Availableon": "Available on : ",
+  "days" : "days",
+  "hours" : "hours",
+  "minutes" : "minutes",
+  "seconds" : "seconds",
+  "Messagesentsuccessfully" : "Message sent successfully!",
+  "Errorsendingmessage" : "Error sending message:",
+  "Failedtosendmessage" : "Failed to send message. Please try again." 
 
 }

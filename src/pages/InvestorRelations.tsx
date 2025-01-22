@@ -42,11 +42,15 @@ function InvestorRelations() {
             {t("VertexPluseIsAGlobal")}
             </p>
             <div className="flex gap-4">
-              <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+              <button
+               onClick={() => window.location.href = "https://platform.vertexpluse.com"}
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
                 {t("LEARNMORE")}
                 <ArrowUpRight className="w-4 h-4" />
               </button>
-              <button className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg transition-colors">
+              <button
+               onClick={() => window.location.href = "https://platform.vertexpluse.com"}
+              className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg transition-colors">
                 {t("Subscribe")}
                 <Mail className="w-4 h-4" />
               </button>
@@ -147,6 +151,7 @@ function InvestorRelations() {
             {t("AccessvertexPluse’sShareholder")}           
           </p>
           <motion.button
+           onClick={() => window.location.href = "https://platform.vertexpluse.com/login"}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-4 px-8 py-3 bg-blue-500 text-white font-medium text-lg rounded-md shadow-md hover:bg-blue-600 transition duration-300"
@@ -186,17 +191,17 @@ interface MetricCardProps {
     value: string;
     label: string;
   }
-  const MetricCard: React.FC<MetricCardProps> = ({ icon, value, label }) => (
-    <div className="bg-white rounded-xl p-12 flex flex-col items-center text-center min-w-[160px] min-h-[250px] border-2 border-blue-500 justify-center">
-      <div className="text-blue-500 mb-8">
-        {icon}
-      </div>
-      <div className="text-4xl font-bold text-blue-900 mb-3">
-        {value}
-      </div>
-      <div className="text-gray-500 text-base uppercase tracking-wider">
-        {label}
-      </div>
+const MetricCard: React.FC<MetricCardProps> = ({ icon, value, label }) => (
+  <div className="bg-white rounded-xl p-12 flex flex-col items-center text-center min-w-[160px] min-h-[250px] border-2 border-blue-500 justify-center">
+    <div className="text-blue-500 mb-8">
+      {icon}
     </div>
-  );
+    <div className="text-4xl font-bold text-blue-900 mb-3">
+      {value}
+    </div>
+    <div className="text-gray-500 text-base uppercase tracking-wider">
+      {label}
+    </div>
+  </div>
+);
 export default InvestorRelations;

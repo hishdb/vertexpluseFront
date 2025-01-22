@@ -70,36 +70,36 @@ function CoverAnimation ()  {
       {/* Enhanced gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-500/50"></div>
 
-  {/* Animated decorative elements */}
-  <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
-        <motion.div
-          style={{ y: springY1 }}
-          className="absolute left-0 top-4 w-48 h-48 opacity-50"
-        >
-          <img src={shapeImage2} alt="Shape Image 4" className="rotate-[80deg]" />
-        </motion.div>
+      {/* Animated decorative elements */}
+      <div className="absolute left-0 top-0 h-full w-full pointer-events-none">
+            <motion.div
+              style={{ y: springY1 }}
+              className="absolute left-0 top-4 w-48 h-48 opacity-50"
+            >
+              <img src={shapeImage2} alt="Shape Image 4" className="rotate-[80deg]" />
+            </motion.div>
 
-        <motion.div
-          style={{ y: springY2 }}
-          className="absolute -left-40 top-[60%] w-90 h-90 opacity-70"
-        >
-          <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]" />
-        </motion.div>
+            <motion.div
+              style={{ y: springY2 }}
+              className="absolute -left-40 top-[60%] w-90 h-90 opacity-70"
+            >
+              <img src={shapeImage1} alt="Shape Image 1" className="rotate-[20deg]" />
+            </motion.div>
 
-        <motion.div
-          style={{ y: springY3 }}
-          className="absolute left-24 bottom-1/2 w-16 h-16 opacity-20"
-        >
-          <img src={shapeImage2} alt="Shape Image 4"  />
-        </motion.div>
-      </div>
+            <motion.div
+              style={{ y: springY3 }}
+              className="absolute left-24 bottom-1/2 w-16 h-16 opacity-20"
+            >
+              <img src={shapeImage2} alt="Shape Image 4"  />
+            </motion.div>
+          </div>
 
 
       {/* Content Wrapper */}
        <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-6 md:px-10">
         {/* Left Section: Text and Buttons */}
-        <div className="w-full h-full flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 ">
+        <div className="w-full h-full flex justify-center items-center" >
+          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 " >
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

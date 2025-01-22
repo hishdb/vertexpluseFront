@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import shapeImage2Black from "../assets/itemListIcon.webp";
 import shapeImage1Black from "../assets/itemListIconEmpty.webp";
 import MarketInsights from "./MarketInsights";
+import { useTranslation } from "react-i18next";
 
 
 function GlobalMarketsSectionWith3TextParameter ({ text1, text2, text3 }: GlobalMarketsSectionProps) {
@@ -24,10 +25,11 @@ function GlobalMarketsSectionWith3TextParameter ({ text1, text2, text3 }: Global
 
   const springScale = useSpring(scale, springConfig);
   const springY = useSpring(y, springConfig);
-
+  const { i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   return (
-    <div ref={sectionRef} className="relative bg-transparent min-h-screen w-full overflow-hidden">
+    <div ref={sectionRef} className="relative bg-transparent min-h-screen w-full overflow-hidden"  dir={isRTL ? "rtl" : "ltr"}>
       {/* Decorative Background */}
       <div className="absolute inset-0 z-0 ">
         <svg

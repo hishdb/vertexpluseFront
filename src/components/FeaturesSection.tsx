@@ -3,7 +3,8 @@ import itemListIcon from "../assets/itemListIcon.webp";
 import { useTranslation } from "react-i18next";
 
 function FeaturesSection () {
-  const {t} = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const features = [
     t("FastAndReliableOrderExecution"),
     t("NoCommissionsAndTightSpreads"),
@@ -16,7 +17,7 @@ function FeaturesSection () {
   return (
     <section className="flex items-center justify-center bg-transparent pt-40">
       <div className=" px-6 md:px-16">
-            <ul className="space-y-10 pb-20">
+            <ul className="space-y-10 pb-20" dir={isRTL ? "rtl" : "ltr"}>
                 {features.map((feature, index) => (
                 <li
                 key={index}

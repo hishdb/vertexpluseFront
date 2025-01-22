@@ -17,53 +17,53 @@ import FAQ from "../components/FAQ";
 
 function Forex() {
 
-        const widgetContainerRef = useRef<HTMLDivElement>(null);
-        useEffect(() => {
-          if (!widgetContainerRef.current) return;
-      
-          widgetContainerRef.current.innerHTML = '';
-      
-          const widgetOuterContainer = document.createElement('div');
-          widgetOuterContainer.className = 'tradingview-widget-container';
-      
-          const widgetContainer = document.createElement('div');
-          widgetContainer.className = 'tradingview-widget-container__widget';
-          widgetContainer.style.height = '600px';
-          widgetContainer.style.width = '100%';
-      
-          widgetOuterContainer.appendChild(widgetContainer);
-      
-          const script = document.createElement('script');
-          script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
-          script.type = 'text/javascript';
-          script.async = true;
-      
-          const widgetConfig = {
-            feedMode: 'market',
-            market: 'crypto',
-            isTransparent: true,
-            displayMode: 'regular',
-            width: '100%',
-            height: '600',
-            colorTheme: 'light',
-            locale: 'en',
-            enableScrolling: true,
-            autosize: true,
-            container_id: 'tradingview-widget',
-          };
-      
-          script.innerHTML = JSON.stringify(widgetConfig);
-          widgetContainer.id = 'tradingview-widget';
-      
-          widgetOuterContainer.appendChild(script);
-          widgetContainerRef.current.appendChild(widgetOuterContainer);
-      
-          return () => {
-            if (widgetContainerRef.current) {
-              widgetContainerRef.current.innerHTML = '';
-            }
-          };
-        }, []);
+  const widgetContainerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!widgetContainerRef.current) return;
+
+    widgetContainerRef.current.innerHTML = '';
+
+    const widgetOuterContainer = document.createElement('div');
+    widgetOuterContainer.className = 'tradingview-widget-container';
+
+    const widgetContainer = document.createElement('div');
+    widgetContainer.className = 'tradingview-widget-container__widget';
+    widgetContainer.style.height = '600px';
+    widgetContainer.style.width = '100%';
+
+    widgetOuterContainer.appendChild(widgetContainer);
+
+    const script = document.createElement('script');
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
+    script.type = 'text/javascript';
+    script.async = true;
+
+    const widgetConfig = {
+      feedMode: 'market',
+      market: 'crypto',
+      isTransparent: true,
+      displayMode: 'regular',
+      width: '100%',
+      height: '600',
+      colorTheme: 'light',
+      locale: 'en',
+      enableScrolling: true,
+      autosize: true,
+      container_id: 'tradingview-widget',
+    };
+
+    script.innerHTML = JSON.stringify(widgetConfig);
+    widgetContainer.id = 'tradingview-widget';
+
+    widgetOuterContainer.appendChild(script);
+    widgetContainerRef.current.appendChild(widgetOuterContainer);
+
+    return () => {
+      if (widgetContainerRef.current) {
+        widgetContainerRef.current.innerHTML = '';
+      }
+    };
+  }, []);
 
     const {t} = useTranslation();
     const faqData = [
@@ -149,7 +149,7 @@ function Forex() {
       faqs={faqData}
     />
              <h2 className="text-center pt-10 font-semibold text-sky-400 md:text-5xl sm:text-2xl lg:text-6xl">
-        Related News & Market Insights</h2>
+        {t("RelatedNewsMarketInsights")}</h2>
 
         <div
           ref={widgetContainerRef}
@@ -160,7 +160,7 @@ function Forex() {
           }}
         />
 
-<div
+        <div
             className="flex flex-col md:flex-row px-10 justify-center space-y-4 md:space-y-0 md:space-x-6 mt-10 mb-32"
           >
             <motion.button

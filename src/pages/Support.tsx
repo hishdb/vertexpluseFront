@@ -5,6 +5,9 @@ import MenuBar from "../components/MenuBar";
 import { useTranslation } from "react-i18next";
 
 function Support() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,6 +16,7 @@ function Support() {
 
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -20,24 +24,32 @@ function Support() {
       ...formData,
       [name]: value,
     });
+    setError(""); // Clear the error message when typing
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError(""); // Clear previous errors
+    setStatus(""); // Clear previous status
+
+    // Check if all fields are filled
+    if (formData.name != "" || formData.email != "" || formData.message != "") {
+      setError(t("Please fill in all fields before sending the message."));
+      return;
+    }
+
     setLoading(true);
-    setStatus("");
     try {
       await axios.post("http://localhost:5002/api/send-email", formData);
-      setStatus("Message sent successfully!");
+      setStatus(t("Messagesentsuccessfully"));
     } catch (error: any) {
-      console.error("Error sending message:", error);
-      setStatus("Failed to send message. Please try again.");
+      console.error(t("Errorsendingmessage"), error);
+      setStatus(t("Failedtosendmessage"));
     } finally {
       setLoading(false);
     }
   };
-  const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+
   return (
     <div className="flex flex-col min-h-screen">
       <MenuBar />
@@ -48,7 +60,7 @@ function Support() {
             {t("Here to")} <span className="text-blue-500">*{t("Support You")}</span>
           </h2>
           <p className="text-gray-600 mb-6 text-center">
-            {t("Ask you question without hesitation.")}
+            {t("Ask your question without hesitation.")}
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -59,6 +71,7 @@ function Support() {
                 {t("Your Name")}
               </label>
               <input
+                required
                 type="text"
                 id="name"
                 name="name"
@@ -76,6 +89,7 @@ function Support() {
                 {t("Email Address")}
               </label>
               <input
+                required
                 type="email"
                 id="email"
                 name="email"
@@ -93,6 +107,7 @@ function Support() {
                 {t("Message")}
               </label>
               <textarea
+                required
                 id="message"
                 name="message"
                 value={formData.message}
@@ -102,6 +117,9 @@ function Support() {
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
+
+            {/* Error Message */}
+            {error && <p className="text-red-500 text-sm text-center mb-4">{error}</p>}
 
             {/* Submit Button */}
             <button
@@ -123,6 +141,8 @@ function Support() {
               )}
             </button>
           </form>
+
+          {/* Success/Failure Status */}
           {status && <p className="mt-4 text-center text-sm text-green-500">{status}</p>}
         </div>
       </div>

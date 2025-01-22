@@ -150,7 +150,7 @@ function Crypto() {
     <DiveIntoExtensive/>
      
     <h2 className="text-center pt-10 font-semibold text-sky-400 md:text-5xl sm:text-2xl lg:text-6xl">
-    Related News & Market Insights</h2>
+    {t("RelatedNewsMarketInsights")}</h2>
 
     <div
       ref={widgetContainerRef}

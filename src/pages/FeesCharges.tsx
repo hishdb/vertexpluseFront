@@ -61,7 +61,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("Deposits")}</span>
               </li>
@@ -70,7 +70,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("LiveShareCFDPrices")}</span>
               </li>
@@ -79,7 +79,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("RealTimeForexQuotes")}</span>
               </li>
@@ -88,7 +88,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("OpeningClosingTrades")}</span>
               </li>
@@ -97,7 +97,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("DynamicChartsAndGraphs")}</span>
               </li>
@@ -106,7 +106,7 @@ function FeesCharges() {
                   src={itemListIcon}
                   width="30px"
                   height="30px"
-                  className="flex-shrink-0"
+                  className={isRTL ? "flex-shrink-0 ml-4" : "flex-shrink-0"}
                 />
                 <span className="ml-4">{t("RollingYourPosition")}</span>
               </li>
@@ -117,7 +117,7 @@ function FeesCharges() {
     </div>
 
     {/* Buy/Sell Spreads Section */}
-    <div className="flex flex-wrap items-center bg-blue-900 text-white px-8 md:px-40 lg:px-40 py-20">
+    <div className="flex flex-wrap items-center bg-blue-900 text-white px-8 md:px-40 lg:px-40 py-20" dir={isRTL ? "rtl" : "ltr"}>
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <h2 className="text-3xl md:text-4xl font-bold text-sky-400">
           {t("BuySellSpreads")}
@@ -144,7 +144,7 @@ function FeesCharges() {
     </div>
 
     {/* Additional Fees Section */}
-    <div className="relative px-4 py-16 bg-gray-50 pt-40 pb-40">
+    <div className="relative px-4 py-16 bg-gray-50 pt-40 pb-40" >
     <div className="container mx-auto">
         <div className="flex flex-wrap items-center">
         {/* Clock Image Container */}
@@ -157,7 +157,7 @@ function FeesCharges() {
         </div>
         
         {/* Additional Fees Card - Positioned to overlap */}
-        <div className="w-full md:w-7/12 md:absolute md:right-4 lg:right-20 relative z-10">
+        <div className="w-full md:w-7/12 md:absolute md:right-4 lg:right-20 relative z-10"  dir={isRTL ? "rtl" : "ltr"}>
             <div className="bg-white shadow-lg rounded-lg border border-cyan-500 text-slate-500 p-8">
             <h2 className="text-3xl md:text-4xl font-bold text-sky-500 mb-6">
               {t("AdditionalFees")}
@@ -196,8 +196,10 @@ function FeesCharges() {
         </div>
     </div>
     </div>
+
+
     {/* Deposits and Withdrawals */ }
-    <div className="flex flex-wrap items-center bg-blue-900 text-white px-8 md:px-40 lg:px-40 py-20">
+    <div className="flex flex-wrap items-center bg-blue-900 text-white px-8 md:px-40 lg:px-40 py-20"  dir={isRTL ? "rtl" : "ltr"}>
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <h2 className="text-3xl md:text-4xl font-bold text-sky-400">
           {t("DepositsAndWithdrawals")}

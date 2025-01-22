@@ -35,7 +35,7 @@ function AffiliateStartEarningSection() {
               {t("HighConversionTools")}
             </h3>
             <p className="text-gray-600">
-              {t("OurMarketingSolutions")} <span className="text-blue-500 cursor-pointer">{t("MarketingSolutions")}</span>
+              {t("OurMarketingSolutions")} <span  onClick={() => window.location.href = "https://platform.vertexpluse.com"} className="text-blue-500 cursor-pointer">{t("MarketingSolutions")}</span>
               {t("CanEasilyHelpMaximize")}
             </p>
           </div>
@@ -47,7 +47,7 @@ function AffiliateStartEarningSection() {
             </h3>
             <p className="text-gray-600">
               {t("EachAffiliateIs")}<br />
-              <span className="text-blue-500 cursor-pointer">{t("ContactUs")}</span> {t("ForFurtherInformation")}
+              <span  onClick={() => window.location.href = "https://vertexpluse.com/Support"} className="text-blue-500 cursor-pointer">{t("ContactUs")}</span> {t("ForFurtherInformation")}
             </p>
           </div>
         </div>
