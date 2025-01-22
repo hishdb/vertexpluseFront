@@ -40,7 +40,7 @@ function Support() {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:5002/api/send-email", formData);
+      await axios.post("/api/send-email", formData);
       setStatus(t("Messagesentsuccessfully"));
     } catch (error: any) {
       console.error(t("Errorsendingmessage"), error);
@@ -60,7 +60,7 @@ function Support() {
             {t("Here to")} <span className="text-blue-500">*{t("Support You")}</span>
           </h2>
           <p className="text-gray-600 mb-6 text-center">
-            {t("Ask your question without hesitation.")}
+            {t("Askyouquestionwithouthesitation")}
           </p>
 
           <form onSubmit={handleSubmit}>

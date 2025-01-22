@@ -17,7 +17,7 @@ function Footer() {
 
     const fetchCountdown = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/countdown");
+        const response = await axios.get("/api/countdown");
         const { remainingTime } = response.data;
 
         if (remainingTime) {
