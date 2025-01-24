@@ -33,7 +33,7 @@ function Support() {
     setStatus(""); // Clear previous status
 
     // Check if all fields are filled
-    if (formData.name != "" || formData.email != "" || formData.message != "") {
+    if (!formData.name || !formData.email || !formData.message) {
       setError(t("Please fill in all fields before sending the message."));
       return;
     }
